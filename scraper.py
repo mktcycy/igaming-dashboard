@@ -46,6 +46,8 @@ RSS_SOURCES = [
     "https://igamingbusiness.com/igaming/feed/",
     # Pragmatic Play official news (game launch announcements) — slow, uses extended timeout
     "https://pragmaticplay.com/en/feed/",
+    # Microgaming official news (game & product launches)
+    "https://www.microgaming.co.uk/feed/",
     # Thunderkick (new game releases)
     "https://www.thunderkick.com/feed/",
     # Spinomenal (new game & partnership news)
@@ -146,12 +148,21 @@ CAT_RULES = [
       "igt ","igt gaming",
       "aristocrat",
       "playago"], "熱門廠商"),
-    # 4. Technology (specific AI/blockchain/crypto terms only)
+    # 4. Technology & Marketing (AI, digital marketing, brand campaigns)
     (["artificial intelligence","ai-powered","ai prediction","blockchain",
       "cryptocurrency","crypto casino","nft ","metaverse","virtual reality",
       "machine learning","chatgpt","generative ai","web3 ",
       "responsible ai","gambling tech","igaming tech","platform innovation",
-      "data analytics","digital transformation","fintech gambling"], "科技應用"),
+      "data analytics","digital transformation","fintech gambling",
+      # Digital marketing / brand marketing
+      "affiliate marketing","performance marketing","digital marketing",
+      "brand campaign","brand awareness","marketing campaign","marketing strategy",
+      "influencer","seo ","sem ","social media marketing","content marketing",
+      "player acquisition","player retention","crm ","loyalty program",
+      "gamification","user experience","ux design","conversion rate",
+      "paid media","programmatic","email marketing","push notification",
+      "media buy","media buying","media partnership",
+      "brand ambassador","sponsorship deal","esports sponsor"], "行銷科技"),
     # 5. Asia market — non-Philippines
     (["macau ","macao ","singapore casino","singapore integrated",
       "japan casino","japan ir","vietnam gambl","cambodia casino",
@@ -310,10 +321,16 @@ def guess_category(text):
     return "市場趨勢"
 
 
+_AUTHORITATIVE_CAT_DOMAINS = ["cq9gaming.com"]
+
+
 def reclassify_all(records):
     """Re-run category classification using English fields (rules are English keywords)."""
     updated = 0
     for r in records:
+        # Skip records from scrapers that set authoritative categories
+        if any(d in r.get("url", "") for d in _AUTHORITATIVE_CAT_DOMAINS):
+            continue
         # Prefer English fields so keyword rules match correctly
         en_title = r.get("game_en") or r.get("game", "")
         en_summary = r.get("summary_en") or ""  # may be empty for legacy records
@@ -485,6 +502,70 @@ def scrape_vendor_html(source, existing_ids):
     return articles
 
 
+_CQ9_CAT = {47: "新遊戲", 46: "熱門廠商", 48: "業界大事", 49: "科技應用", 50: "亞洲市場", 51: "市場趨勢"}
+
+
+def scrape_cq9(existing_ids):
+    """Scrape CQ9 Gaming news via embedded __NEXT_DATA__ JSON."""
+    articles = []
+    try:
+        r = requests.get("https://cq9gaming.com/news", headers=HEADERS, timeout=TIMEOUT)
+        r.raise_for_status()
+        match = re.search(r'<script id="__NEXT_DATA__"[^>]*>(.*?)</script>', r.text, re.DOTALL)
+        if not match:
+            raise ValueError("__NEXT_DATA__ not found")
+        data = json.loads(match.group(1))
+        items = data["props"]["pageProps"]["newsListData"]
+
+        from datetime import timedelta
+        cutoff = (date.today() - timedelta(days=MAX_AGE_DAYS)).isoformat()
+
+        for item in items:
+            art_date = (item.get("date") or "")[:10]
+            if art_date < cutoff:
+                continue
+
+            title_raw = clean(item.get("title") or "")
+            if not title_raw or len(title_raw) < 6:
+                continue
+
+            art_url = f"https://cq9gaming.com/news/{item['id']}"
+            item_uid = uid(art_url, title_raw)
+            if item_uid in existing_ids:
+                continue
+
+            # Extract plain text from editor_content HTML
+            html_body = (item.get("data") or {}).get("editor_content") or ""
+            summary_raw = clean(BeautifulSoup(html_body, "lxml").get_text())[:300] if html_body else title_raw
+
+            if not is_relevant(title_raw, summary_raw):
+                continue
+
+            title_zh = translate_zh(title_raw)
+            summary_zh = translate_zh(summary_raw)
+
+            # Use CQ9's own category_id as the primary signal; fallback to keyword rules
+            cat = _CQ9_CAT.get(item.get("category_id"), guess_category(title_raw + " " + summary_raw))
+            vendor = extract_vendor("CQ9 Gaming " + title_raw + " " + summary_raw)
+
+            articles.append({
+                "id": item_uid,
+                "date": art_date,
+                "cat": cat,
+                "vendor": vendor,
+                "game": title_zh,
+                "game_en": title_raw,
+                "summary": summary_zh,
+                "summary_en": summary_raw,
+                "stars": guess_importance(title_raw + " " + summary_raw, cat),
+                "url": art_url,
+            })
+            time.sleep(0.05)
+    except Exception as e:
+        print(f"  ✗ CQ9 Gaming: {e}")
+    return articles
+
+
 def monitor_page(source, existing_ids):
     """Detect content changes on a static page with no RSS."""
     results = []
@@ -592,6 +673,14 @@ def run():
             existing_ids.add(a["id"])
         print(f"    → {len(arts)} 新筆")
         time.sleep(0.5)
+
+    # Vendor-specific HTML scrapers (no RSS available)
+    print("  HTML: CQ9 Gaming News")
+    cq9_arts = scrape_cq9(existing_ids)
+    for a in cq9_arts:
+        new_records.append(a)
+        existing_ids.add(a["id"])
+    print(f"    → {len(cq9_arts)} 新筆")
 
     # Page change monitors (sites without RSS)
     for src in PAGE_MONITORS:

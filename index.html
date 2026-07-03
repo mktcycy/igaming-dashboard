@@ -109,7 +109,7 @@ header {
 .cat-btn[data-cat="菲律賓市場"].active .cat-icon  { background: #fce7f3; }
 .cat-btn[data-cat="全球法規"].active .cat-icon    { background: #fee2e2; }
 .cat-btn[data-cat="亞洲市場"].active .cat-icon    { background: #ffedd5; }
-.cat-btn[data-cat="科技應用"].active .cat-icon    { background: #f3e8ff; }
+.cat-btn[data-cat="行銷科技"].active .cat-icon    { background: #f3e8ff; }
 .cat-btn[data-cat="業界大事"].active .cat-icon    { background: #fef9c3; }
 .cat-btn[data-cat="市場趨勢"].active .cat-icon    { background: #dcfce7; }
 .cat-btn[data-cat="平台動態"].active .cat-icon    { background: #e0f2fe; }
@@ -399,9 +399,9 @@ header {
           <span class="cat-label">亞洲市場</span>
           <span class="cat-count" id="cnt-asia">0</span>
         </button>
-        <button class="cat-btn" data-cat="科技應用">
-          <span class="cat-icon">💻</span>
-          <span class="cat-label">科技應用</span>
+        <button class="cat-btn" data-cat="行銷科技">
+          <span class="cat-icon">📣</span>
+          <span class="cat-label">行銷科技</span>
           <span class="cat-count" id="cnt-tech">0</span>
         </button>
         <button class="cat-btn" data-cat="業界大事">
@@ -476,10 +476,10 @@ let selCat = 'all', selDate = 'all', selStar = 0;
 function tagClass(cat) {
   const m = {
     '新遊戲':'tag-game','熱門廠商':'tag-vendor','菲律賓市場':'tag-ph',
-    '全球法規':'tag-law','亞洲市場':'tag-asia','科技應用':'tag-tech',
+    '全球法規':'tag-law','亞洲市場':'tag-asia','行銷科技':'tag-tech',
     '業界大事':'tag-event','市場趨勢':'tag-trend','平台動態':'tag-platform',
     // Legacy names
-    '業界趨勢':'tag-trend','菲律賓法規':'tag-ph','全球科技應用':'tag-tech',
+    '科技應用':'tag-tech','業界趨勢':'tag-trend','菲律賓法規':'tag-ph','全球科技應用':'tag-tech',
   };
   return m[cat] || 'tag-default';
 }
@@ -521,7 +521,7 @@ function updateCounts() {
   document.getElementById('cnt-all').textContent = subset.length;
   const cats = {
     '新遊戲':'cnt-game','熱門廠商':'cnt-vendor','菲律賓市場':'cnt-ph',
-    '全球法規':'cnt-law','亞洲市場':'cnt-asia','科技應用':'cnt-tech',
+    '全球法規':'cnt-law','亞洲市場':'cnt-asia','行銷科技':'cnt-tech',
     '業界大事':'cnt-event','市場趨勢':'cnt-trend','平台動態':'cnt-platform',
   };
   for (const [cat, id] of Object.entries(cats)) {

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""iGaming daily market news scraper — uses RSS feeds for reliability"""
+"""iGaming daily market news scraper — RSS feeds + translation to Traditional Chinese"""
 
 import json, os, time, hashlib, re
 from datetime import datetime, date, timezone
@@ -8,50 +8,102 @@ from email.utils import parsedate_to_datetime
 import requests
 from bs4 import BeautifulSoup
 
+try:
+    from deep_translator import GoogleTranslator
+    TRANSLATE = True
+except ImportError:
+    TRANSLATE = False
+    print("deep_translator not installed, skipping translation")
+
 HEADERS = {"User-Agent": "Mozilla/5.0 (compatible; iGaming-Monitor/1.0; RSS reader)"}
 TIMEOUT = 15
 BASE = os.path.dirname(os.path.abspath(__file__))
 DATA_FILE = os.path.join(BASE, "data.json")
 
 RSS_SOURCES = [
+    # iGaming Business (4 channels)
     "https://igamingbusiness.com/feed/",
     "https://igamingbusiness.com/asia/feed/",
     "https://igamingbusiness.com/legal-compliance/feed/",
     "https://igamingbusiness.com/casino-games/feed/",
+    # iGaming Future
     "https://igamingfuture.com/feed/",
+    # Asia Gaming Brief
     "https://agbrief.com/feed/",
+    # Yogonet International
     "https://www.yogonet.com/international/rss.xml",
-    "https://calvinayre.com/feed/",
+    # Casino.org
     "https://casino.org/news/feed/",
+    # EGR Global
     "https://egr.global/feed/",
+    # SBC News (major B2B — covers vendor launches, regulation)
+    "https://sbcnews.co.uk/feed/",
+    # Casino Beats (excellent for new game releases)
+    "https://casinobeats.com/feed/",
+    # iGB (iGaming Business sister brand)
+    "https://igamingbusiness.com/igaming/feed/",
+    # Pragmatic Play official news
+    "https://pragmaticplay.com/en/feed/",
 ]
 
+VENDOR_HTML_SOURCES = []  # vendor sites block scraping; covered via RSS industry news
+
 CAT_RULES = [
-    (["pagcor","philippines","philippine","pogo","kyc","aml","anti-money","regulation","law","license","compliance"], "菲律賓法規"),
-    (["ai ","artificial intelligence","blockchain","crypto","nft","vr ","ar ","metaverse","5g","technology","tech"], "全球科技應用"),
-    (["pg soft","pgsoft","jili","jdb","playtech","microgaming","cq9","fa chai","fachai","evolution","pragmatic","netent","hacksaw","nolimit","push gaming","relax gaming","blueprint"], "熱門廠商"),
-    (["sigma","igb live","g2e","ice barcelona","sbc summit","casinobeats","event","summit","expo","conference","award"], "業界大事"),
+    (["pagcor","philippines","philippine","pogo","kyc","aml","anti-money","regulation","law","license","compliance","licensing"], "菲律賓法規"),
+    (["ai ","artificial intelligence","blockchain","crypto","nft","vr ","ar ","metaverse","5g","technology","tech","machine learning","chatgpt"], "全球科技應用"),
+    (["pg soft","pgsoft","jili","jdb","playtech","microgaming","cq9","fa chai","fachai","evolution","pragmatic","netent","hacksaw","nolimit","push gaming","relax gaming","blueprint","yggdrasil","play'n go","playngo","red tiger","elk studios","nolimit city","spinomenal","wazdan","bgaming","betsoft"], "熱門廠商"),
+    (["sigma","igb live","g2e","ice barcelona","sbc summit","casinobeats","event","summit","expo","conference","award","igb affiliate"], "業界大事"),
 ]
 
 VENDOR_MAP = {
-    "PG Soft": ["pg soft","pgsoft","pocket games"],
+    "PG Soft": ["pg soft","pgsoft","pocket games soft"],
     "JILI Games": ["jili"],
     "JDB Gaming": ["jdb"],
     "MG（Microgaming）": ["microgaming"],
     "Playtech（PT）": ["playtech"],
     "CQ9 Gaming": ["cq9"],
     "Fa Chai Gaming（FG）": ["fa chai","fachai"],
-    "Evolution": ["evolution gaming","evolution"],
+    "Evolution": ["evolution gaming","evolution live"],
     "Pragmatic Play": ["pragmatic play"],
     "NetEnt": ["netent"],
     "PAGCOR": ["pagcor"],
     "SiGMA": ["sigma"],
     "Hacksaw Gaming": ["hacksaw"],
     "Nolimit City": ["nolimit city"],
+    "Yggdrasil": ["yggdrasil"],
+    "Play'n GO": ["play'n go","playngo"],
+    "Red Tiger": ["red tiger"],
+    "Wazdan": ["wazdan"],
+    "Spinomenal": ["spinomenal"],
+    "BGaming": ["bgaming"],
+    "Betsoft": ["betsoft"],
+    "Relax Gaming": ["relax gaming"],
 }
 
-HIGH_WORDS = ["launch","launches","record","ban","banned","regulation","billion","major","first","exclusive","new law","merger","acquisition","deal","partnership","approved","license"]
-LOW_WORDS = ["reminder","minor","opinion","column","analysis"]
+HIGH_WORDS = ["launch","launches","record","ban","banned","regulation","billion","major","first","exclusive","new law","merger","acquisition","deal","partnership","approved","license","jackpot","milestone","breakthrough","surge","growth"]
+LOW_WORDS = ["reminder","minor","opinion","column","analysis","roundup","preview"]
+
+
+def is_english(text):
+    """Simple heuristic: >65% ASCII chars = likely English."""
+    if not text:
+        return False
+    ascii_count = sum(1 for c in text if ord(c) < 128)
+    return ascii_count / len(text) > 0.65
+
+
+def translate_zh(text, max_len=500):
+    if not text or not TRANSLATE:
+        return text
+    if not is_english(text):
+        return text
+    try:
+        chunk = text[:max_len]
+        result = GoogleTranslator(source='auto', target='zh-TW').translate(chunk)
+        return result.strip() if result else text
+    except Exception:
+        return text
+
 
 def guess_category(text):
     t = text.lower()
@@ -60,15 +112,20 @@ def guess_category(text):
             return cat
     return "業界趨勢"
 
+
 def guess_importance(text, cat):
     t = text.lower()
     score = 3
     for w in HIGH_WORDS:
-        if w in t: score = min(5, score + 1)
+        if w in t:
+            score = min(5, score + 1)
     for w in LOW_WORDS:
-        if w in t: score = max(1, score - 1)
-    if cat in ("菲律賓法規", "業界大事"): score = min(5, score + 1)
+        if w in t:
+            score = max(1, score - 1)
+    if cat in ("菲律賓法規", "業界大事"):
+        score = min(5, score + 1)
     return score
+
 
 def extract_vendor(text):
     t = text.lower()
@@ -77,11 +134,18 @@ def extract_vendor(text):
             return vendor
     return "市場動態"
 
+
 def uid(url, title):
     return hashlib.md5(f"{url}{title}".encode()).hexdigest()[:12]
 
+
+def clean(text):
+    return re.sub(r'\s+', ' ', text or '').strip()
+
+
 def parse_rss_date(date_str):
-    if not date_str: return date.today().isoformat()
+    if not date_str:
+        return date.today().isoformat()
     try:
         dt = parsedate_to_datetime(date_str)
         return dt.astimezone(timezone.utc).date().isoformat()
@@ -89,83 +153,181 @@ def parse_rss_date(date_str):
         m = re.search(r'\d{4}-\d{2}-\d{2}', date_str)
         return m.group() if m else date.today().isoformat()
 
-def scrape_rss(feed_url):
+
+def scrape_rss(feed_url, existing_ids):
     articles = []
     try:
         r = requests.get(feed_url, headers=HEADERS, timeout=TIMEOUT)
         r.raise_for_status()
         soup = BeautifulSoup(r.content, "xml")
         items = soup.find_all("item")
-        for item in items[:20]:
-            title = item.find("title")
-            link = item.find("link")
-            pub_date = item.find("pubDate")
-            description = item.find("description")
+        for item in items[:30]:
+            title_tag = item.find("title")
+            link_tag = item.find("link")
+            pub_date_tag = item.find("pubDate")
+            description_tag = item.find("description")
 
-            title_text = title.get_text(strip=True) if title else ""
-            url = link.get_text(strip=True) if link else ""
-            art_date = parse_rss_date(pub_date.get_text(strip=True) if pub_date else "")
-            desc = BeautifulSoup(description.get_text() if description else "", "lxml").get_text(strip=True)[:200] if description else ""
+            title_raw = clean(title_tag.get_text() if title_tag else "")
+            url = clean(link_tag.get_text() if link_tag else "")
+            art_date = parse_rss_date(clean(pub_date_tag.get_text() if pub_date_tag else ""))
+            desc_html = description_tag.get_text() if description_tag else ""
+            desc_raw = clean(BeautifulSoup(desc_html, "lxml").get_text())[:300]
 
-            if not title_text or not url or len(title_text) < 10: continue
+            if not title_raw or not url or len(title_raw) < 10:
+                continue
 
-            summary = re.sub(r'\s+', ' ', desc if desc else title_text).strip()
-            title_clean = re.sub(r'\s+', ' ', title_text).strip()
-            cat = guess_category(title_clean + " " + summary)
-            vendor = extract_vendor(title_clean + " " + summary)
+            item_uid = uid(url, title_raw)
+            if item_uid in existing_ids:
+                continue
+
+            summary_raw = desc_raw if desc_raw else title_raw
+
+            # Translate to Chinese
+            title_zh = translate_zh(title_raw)
+            summary_zh = translate_zh(summary_raw)
+
+            cat = guess_category(title_raw + " " + summary_raw)
+            vendor = extract_vendor(title_raw + " " + summary_raw)
 
             articles.append({
-                "id": uid(url, title_clean),
+                "id": item_uid,
                 "date": art_date,
                 "cat": cat,
                 "vendor": vendor,
-                "game": title_clean,
-                "summary": summary[:300],
-                "stars": guess_importance(title_clean + " " + summary, cat),
+                "game": title_zh,
+                "game_en": title_raw,
+                "summary": summary_zh,
+                "stars": guess_importance(title_raw + " " + summary_raw, cat),
                 "url": url,
             })
+            time.sleep(0.05)  # small delay between translations
     except Exception as e:
         print(f"  ✗ {feed_url}: {e}")
     return articles
 
+
+def scrape_vendor_html(source, existing_ids):
+    """Scrape vendor press release pages that lack RSS."""
+    articles = []
+    try:
+        r = requests.get(source["url"], headers=HEADERS, timeout=TIMEOUT)
+        r.raise_for_status()
+        soup = BeautifulSoup(r.content, "lxml")
+        items = soup.select(source["item_sel"])[:15]
+        for item in items:
+            title_tag = item.select_one(source["title_sel"])
+            link_tag = item.select_one(source["link_sel"])
+            desc_tag = item.select_one(source["desc_sel"])
+
+            title_raw = clean(title_tag.get_text() if title_tag else "")
+            href = link_tag.get("href", "") if link_tag else ""
+            if href and not href.startswith("http"):
+                from urllib.parse import urljoin
+                href = urljoin(source["url"], href)
+            desc_raw = clean(desc_tag.get_text() if desc_tag else "")[:300]
+
+            if not title_raw or not href or len(title_raw) < 10:
+                continue
+
+            item_uid = uid(href, title_raw)
+            if item_uid in existing_ids:
+                continue
+
+            summary_raw = desc_raw if desc_raw else title_raw
+            title_zh = translate_zh(title_raw)
+            summary_zh = translate_zh(summary_raw)
+
+            cat = guess_category(title_raw + " " + summary_raw)
+            vendor = extract_vendor(source["name"] + " " + title_raw + " " + summary_raw)
+
+            articles.append({
+                "id": item_uid,
+                "date": date.today().isoformat(),
+                "cat": cat,
+                "vendor": vendor,
+                "game": title_zh,
+                "game_en": title_raw,
+                "summary": summary_zh,
+                "stars": guess_importance(title_raw + " " + summary_raw, cat),
+                "url": href,
+            })
+    except Exception as e:
+        print(f"  ✗ {source['name']}: {e}")
+    return articles
+
+
 def load_existing():
-    if not os.path.exists(DATA_FILE): return []
+    if not os.path.exists(DATA_FILE):
+        return []
     with open(DATA_FILE, "r", encoding="utf-8") as f:
         return json.load(f)
+
 
 def save_data(records):
     with open(DATA_FILE, "w", encoding="utf-8") as f:
         json.dump(records, f, ensure_ascii=False, indent=2)
 
+
+def translate_existing(records):
+    """Back-translate existing English records that haven't been translated yet."""
+    updated = 0
+    for r in records:
+        if r.get("game_en"):
+            continue  # already processed
+        game = r.get("game", "")
+        summary = r.get("summary", "")
+        if is_english(game):
+            r["game_en"] = game
+            r["game"] = translate_zh(game)
+            r["summary"] = translate_zh(summary)
+            updated += 1
+            time.sleep(0.05)
+    return updated
+
+
 def run():
     today = date.today().isoformat()
     print(f"[{datetime.now().strftime('%H:%M:%S')}] iGaming 爬蟲啟動 — {today}")
+    print(f"Translation: {'ON (zh-TW)' if TRANSLATE else 'OFF'}")
 
     existing = load_existing()
     existing_ids = {r.get("id") for r in existing}
     new_records = []
 
+    # RSS sources
     for feed_url in RSS_SOURCES:
         print(f"  RSS: {feed_url}")
-        arts = scrape_rss(feed_url)
-        added = 0
+        arts = scrape_rss(feed_url, existing_ids)
         for a in arts:
-            if a["id"] in existing_ids: continue
             new_records.append(a)
             existing_ids.add(a["id"])
-            added += 1
-        print(f"    → {len(arts)} 筆，新增 {added} 筆")
+        print(f"    → {len(arts)} 新筆")
         time.sleep(0.5)
 
-    if new_records:
+    # Vendor HTML sources
+    for src in VENDOR_HTML_SOURCES:
+        print(f"  HTML: {src['name']}")
+        arts = scrape_vendor_html(src, existing_ids)
+        for a in arts:
+            new_records.append(a)
+            existing_ids.add(a["id"])
+        print(f"    → {len(arts)} 新筆")
+        time.sleep(1)
+
+    # Back-translate existing English records
+    if TRANSLATE and existing:
+        print("\n翻譯既有英文資料中...")
+        updated = translate_existing(existing)
+        print(f"  → 翻譯 {updated} 筆舊資料")
+
+    if new_records or True:  # always save to persist translations
         all_records = existing + new_records
         all_records.sort(key=lambda r: r["date"], reverse=True)
         save_data(all_records)
         print(f"\n✅ 新增 {len(new_records)} 筆，資料庫共 {len(all_records)} 筆")
-    else:
-        print("ℹ️  今日無新資料（可能已是最新）")
 
     return len(new_records)
+
 
 if __name__ == "__main__":
     run()

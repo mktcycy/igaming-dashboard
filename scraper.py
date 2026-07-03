@@ -28,7 +28,7 @@ RSS_SOURCES = [
     "https://igamingbusiness.com/casino-games/feed/",
     # iGaming Future
     "https://igamingfuture.com/feed/",
-    # Asia Gaming Brief
+    # Asia Gaming Brief (Asia-focused, Philippines, Macau, Singapore)
     "https://agbrief.com/feed/",
     # Yogonet International
     "https://www.yogonet.com/international/rss.xml",
@@ -51,6 +51,12 @@ RSS_SOURCES = [
     "https://spinomenal.com/feed/",
     # BonusFinder (casino & game news)
     "https://www.bonusfinder.com/feed",
+    # Calvin Ayre — strong Asia/Philippines iGaming coverage
+    "https://calvinayre.com/feed/",
+    # European Gaming — covers vendor product releases across all major suppliers
+    "https://europeangaming.eu/portal/feed/",
+    # Casino Guru news — tracks new slot releases and industry news
+    "https://casino.guru/news/feed/rss",
 ]
 
 # Sites to monitor for page-content changes (no RSS available)
@@ -68,69 +74,197 @@ PAGE_MONITORS = [
 CAT_RULES = [
     # 1. Philippines — ONLY with explicit PH entities
     (["pagcor","pogo ","philippine ","philippines ","pcso ","ceza "], "菲律賓市場"),
-    # 2. New game releases — specific launch keywords
+    # 2. New game releases — broad coverage of launch/release patterns
     (["new slot","new game","new title","launches new","new casino game",
       "unleashes","unearths","new release","slot launch","new addition to portfolio",
-      "launches a ","new instant","new scratchcard"], "新遊戲"),
-    # 3. Named game suppliers (business/partnership/expansion news)
-    (["pg soft","pgsoft","jili ","jdb gaming","playtech","microgaming",
-      "cq9 ","fa chai","fachai","evolution gaming","pragmatic play","netent",
-      "hacksaw gaming","nolimit city","wazdan","spinomenal","thunderkick",
-      "yggdrasil","play'n go","playngo","relax gaming","push gaming",
-      "bgaming","betsoft","blueprint gaming","quickspin","iron dog studio",
-      "red tiger","elk studios","3 oaks gaming","kalamba"], "熱門廠商"),
+      "launches a new","new instant","new scratchcard",
+      "releases new","release new","introduces new","presents new",
+      "unveils new","reveals new","debuts","just released","goes live",
+      "now live","just launched","game launch","new offering",
+      "newly released","latest slot","latest game","fresh slot",
+      "slot release","game release","drops new","brand new slot",
+      "brand new game","new video slot","new table game","new live game",
+      "new jackpot slot","world premiere","global launch","soft launch",
+      "has released","has launched","studio releases","provider releases",
+      "releases its latest","launches its","presents its","unveils its",
+      "new fish game","new arcade","new crash game","new live dealer"], "新遊戲"),
+    # 3. Named game suppliers (vendor-specific business/partnership/expansion news)
+    (["pg soft","pgsoft","pocket games soft",
+      "jili ","jili games",
+      "jdb gaming","jdb ",
+      "playtech","play tech",
+      "microgaming","micro gaming",
+      "cq9 ","cq9 gaming",
+      "fa chai","fachai","fa-chai",
+      "evolution gaming","evolution live","evo gaming",
+      "pragmatic play","pragmatic live",
+      "netent","net ent",
+      "hacksaw gaming","hacksaw ",
+      "nolimit city","no limit city",
+      "wazdan",
+      "spinomenal",
+      "thunderkick",
+      "yggdrasil",
+      "play'n go","playngo","play n go",
+      "relax gaming",
+      "push gaming",
+      "bgaming","b-gaming",
+      "betsoft",
+      "blueprint gaming",
+      "quickspin",
+      "iron dog studio",
+      "red tiger","red tiger gaming",
+      "elk studios",
+      "3 oaks gaming",
+      "kalamba",
+      # Asian/B2B focused vendors
+      "sa gaming","sa live casino",
+      "wm casino","wm live","wm gaming",
+      "spade gaming","spadegaming",
+      "skywind group","skywind gaming",
+      "tada gaming","tadagaming",
+      "booming games",
+      "playson",
+      "endorphina",
+      "habanero systems","habanero ",
+      "isoftbet","isoft bet",
+      "high 5 games","high5games",
+      "gpk platform","gpk gaming",
+      "topplay","top play gaming",
+      "netgame","net game entertainment",
+      "reelplay","reel play",
+      "games global","games global ",
+      "igt ","igt gaming",
+      "aristocrat",
+      "playago"], "熱門廠商"),
     # 4. Technology (specific AI/blockchain/crypto terms only)
     (["artificial intelligence","ai-powered","ai prediction","blockchain",
       "cryptocurrency","crypto casino","nft ","metaverse","virtual reality",
-      "machine learning","chatgpt","generative ai","web3 "], "科技應用"),
+      "machine learning","chatgpt","generative ai","web3 ",
+      "responsible ai","gambling tech","igaming tech","platform innovation",
+      "data analytics","digital transformation","fintech gambling"], "科技應用"),
     # 5. Asia market — non-Philippines
     (["macau ","macao ","singapore casino","singapore integrated",
       "japan casino","japan ir","vietnam gambl","cambodia casino",
       "thailand casino","myanmar gambl","korea gambl","hong kong racing",
-      "malaysia casino","indonesia gambl"], "亞洲市場"),
+      "malaysia casino","indonesia gambl",
+      "asian market","asia pacific gaming","apac gaming",
+      "southeast asia","east asia gaming","china gambl"], "亞洲市場"),
     # 6. Global regulation — specific bodies/policies only
     (["gambling commission","ukgc","malta gaming authority"," mga ","alderney",
       "kahnawake","isle of man gambl","responsible gambling","harm prevention",
       "safer gambling","deposit limit","gambling act","betting levy",
       "financial intelligence centre","gaming control board",
-      "gaming authority"], "全球法規"),
+      "gaming authority","gaming licence","gaming license",
+      "gambling oversight","gambling regulation","gambling reform","gambling review",
+      "betting regulation","betting act","gaming regulator","regulated market",
+      "anti-money laundering","aml compliance",
+      "self-exclusion","problem gambling","player protection"], "全球法規"),
     # 7. Industry events and major deals
     (["sigma ","igb live","g2e ","ice london","ice barcelona","sbc summit",
       "casinobeats summit","igb affiliate","acquisition ","acquires ",
       "merger ","takeover","joint venture","ipo ","gaming award",
-      "industry award","billion dollar deal"], "業界大事"),
+      "industry award","billion dollar deal",
+      "strategic partnership","landmark deal","exclusive agreement",
+      "record revenue","record breaking","market leader",
+      "enters into agreement","signs deal","signs agreement",
+      "sign agreement","sign a deal","forms alliance","inks deal",
+      "enters deal","new partnership","partnership agreement",
+      "global expansion","new market entry","enters market"], "業界大事"),
     # 8. WG Platform
     (["wg包網","wg baowang","wgbaowang","wg platform","wg遊戲","wg api"], "平台動態"),
 ]
 
 VENDOR_MAP = {
+    # ── 主要亞洲廠商 ──
     "PG Soft": ["pg soft","pgsoft","pocket games soft"],
-    "JILI Games": ["jili"],
-    "JDB Gaming": ["jdb"],
-    "MG（Microgaming）": ["microgaming"],
-    "Playtech（PT）": ["playtech"],
-    "CQ9 Gaming": ["cq9"],
-    "Fa Chai Gaming（FG）": ["fa chai","fachai"],
-    "Evolution": ["evolution gaming","evolution live"],
-    "Pragmatic Play": ["pragmatic play"],
-    "NetEnt": ["netent"],
-    "PAGCOR": ["pagcor"],
-    "WG包網": ["wg包網","wg baowang","wgbaowang","wg platform"],
-    "SiGMA": ["sigma"],
-    "Hacksaw Gaming": ["hacksaw"],
-    "Nolimit City": ["nolimit city"],
+    "JILI Games": ["jili games","jili "],
+    "JDB Gaming": ["jdb gaming","jdb "],
+    "CQ9 Gaming": ["cq9 gaming","cq9 "],
+    "Fa Chai Gaming (FG)": ["fa chai","fachai","fa-chai"],
+    "SA Gaming": ["sa gaming","sa live casino"],
+    "WM Casino": ["wm casino","wm live","wm gaming"],
+    "Spade Gaming (SG)": ["spade gaming","spadegaming"],
+    "Skywind (SW)": ["skywind group","skywind gaming","skywind "],
+    "Tada Gaming": ["tada gaming","tadagaming"],
+    "GPK / TopPlay (TP)": ["gpk platform","gpk gaming"," gpk ","topplay","top play gaming"],
+    # ── 主要歐美廠商 ──
+    "Microgaming (MG)": ["microgaming","micro gaming"],
+    "Playtech (PT)": ["playtech","play tech"],
+    "Evolution (EVO)": ["evolution gaming","evolution live","evo gaming"],
+    "Pragmatic Play (PP)": ["pragmatic play","pragmatic live"],
+    "NetEnt": ["netent","net ent"],
+    "Hacksaw Gaming": ["hacksaw gaming","hacksaw "],
+    "Nolimit City": ["nolimit city","no limit city"],
     "Yggdrasil": ["yggdrasil"],
-    "Play'n GO": ["play'n go","playngo"],
-    "Red Tiger": ["red tiger"],
+    "Play'n GO": ["play'n go","playngo","play n go"],
+    "Red Tiger": ["red tiger","red tiger gaming"],
     "Wazdan": ["wazdan"],
     "Spinomenal": ["spinomenal"],
-    "BGaming": ["bgaming"],
+    "BGaming (BG)": ["bgaming","b-gaming"],
     "Betsoft": ["betsoft"],
     "Relax Gaming": ["relax gaming"],
+    "Thunderkick": ["thunderkick"],
+    "Push Gaming": ["push gaming"],
+    "Blueprint Gaming": ["blueprint gaming"],
+    "Quickspin": ["quickspin"],
+    "Booming Games": ["booming games"],
+    "Habanero": ["habanero systems","habanero "],
+    "Endorphina": ["endorphina"],
+    "iSoftBet": ["isoftbet","isoft bet"],
+    "3 Oaks Gaming": ["3 oaks gaming"],
+    "Games Global": ["games global"],
+    # ── 其他機構 ──
+    "PAGCOR": ["pagcor"],
+    "WG包網": ["wg包網","wg baowang","wgbaowang","wg platform"],
+    "SiGMA": ["sigma "],
 }
 
 HIGH_WORDS = ["launch","launches","record","ban","banned","regulation","billion","major","first","exclusive","new law","merger","acquisition","deal","partnership","approved","license","jackpot","milestone","breakthrough","surge","growth"]
 LOW_WORDS = ["reminder","minor","opinion","column","analysis","roundup","preview"]
+
+# Relevance filter — keeps only iGaming-related articles
+IGAMING_TERMS_EN = [
+    # Core product terms
+    "casino","slot","gaming","gambl","bet ","poker","lottery","wagering",
+    "igaming","i-gaming","sportsbook","sportbook","online game",
+    "jackpot","roulette","blackjack","baccarat","live dealer","live casino",
+    # Regulatory bodies
+    "pagcor","ceza","mga ","ukgc","gambling commission",
+    "gaming authority","gaming control","gaming regulator",
+    # Major vendors (appear in partnership/launch news without "slot")
+    "pragmatic play","pg soft","pgsoft","playtech","microgaming","evolution ",
+    "jili ","jdb ","cq9 ","netent","yggdrasil","hacksaw","nolimit city",
+    "spinomenal","thunderkick","wazdan","bgaming","betsoft","spade gaming",
+    "sa gaming","wm casino","skywind","tada gaming","relax gaming",
+    "ela games","ainsworth","zitro ","igt ","aristocrat","light & wonder",
+    "scientific games","konami gaming",
+    # Major operators / media companies
+    "draftkings","fanduel","flutter","entain","888 ","evoke plc","betmgm",
+    "william hill","ladbrokes","betfair","paddy power","bet365","pointsbet",
+    "hard rock casino","mgm resort","wynn resort","las vegas sands",
+    "melco resort","galaxy entertainment","sands corp",
+    # Prediction markets (gambling-adjacent)
+    "kalshi","prediction market","polymarket",
+    # Industry media / events / trade terms
+    "igb ","egr ","sbc ","sigma ","casinobeats","agbrief","calvinayre",
+    "gross gaming revenue","ggr ","ngr ","handle ","revenue gambling",
+    "iGaming affiliate","sports betting","online betting","online wagering",
+    "operator revenue","casino revenue","gaming revenue","gaming market",
+]
+IGAMING_TERMS_ZH = [
+    "遊戲", "賭場", "老虎機", "娛樂城", "彩票", "博彩", "廠商", "電子遊藝",
+    "運動彩券", "彩券", "博奕", "賭博", "押注", "賠率",
+]
+
+def is_relevant(title_en, summary_en="", summary_zh=""):
+    """Check if an article is iGaming-related using English + Chinese text."""
+    en = (title_en + " " + summary_en).lower()
+    if any(t in en for t in IGAMING_TERMS_EN):
+        return True
+    if any(t in summary_zh for t in IGAMING_TERMS_ZH):
+        return True
+    return False
 
 
 def is_english(text):
@@ -168,10 +302,13 @@ def guess_category(text):
 
 
 def reclassify_all(records):
-    """Re-run category classification on all existing records."""
+    """Re-run category classification using English fields (rules are English keywords)."""
     updated = 0
     for r in records:
-        text = (r.get("game_en") or r.get("game", "")) + " " + r.get("summary", "")
+        # Prefer English fields so keyword rules match correctly
+        en_title = r.get("game_en") or r.get("game", "")
+        en_summary = r.get("summary_en") or ""  # may be empty for legacy records
+        text = en_title + " " + en_summary
         new_cat = guess_category(text)
         if new_cat != r.get("cat"):
             r["cat"] = new_cat
@@ -242,6 +379,10 @@ def scrape_rss(feed_url, existing_ids):
             if not title_raw or not url or len(title_raw) < 10:
                 continue
 
+            # Skip articles with no iGaming relevance
+            if not is_relevant(title_raw, desc_raw):
+                continue
+
             item_uid = uid(url, title_raw)
             if item_uid in existing_ids:
                 continue
@@ -263,6 +404,7 @@ def scrape_rss(feed_url, existing_ids):
                 "game": title_zh,
                 "game_en": title_raw,
                 "summary": summary_zh,
+                "summary_en": summary_raw,  # keep English for future reclassification
                 "stars": guess_importance(title_raw + " " + summary_raw, cat),
                 "url": url,
             })
@@ -314,6 +456,7 @@ def scrape_vendor_html(source, existing_ids):
                 "game": title_zh,
                 "game_en": title_raw,
                 "summary": summary_zh,
+                "summary_en": desc_raw,
                 "stars": guess_importance(title_raw + " " + summary_raw, cat),
                 "url": href,
             })
@@ -397,6 +540,20 @@ def translate_existing(records):
     return updated
 
 
+def purge_irrelevant(records):
+    """Remove records with no iGaming relevance (checks English title + summary + Chinese summary)."""
+    before = len(records)
+    cleaned = []
+    for r in records:
+        if is_relevant(
+            r.get("game_en") or r.get("game", ""),
+            r.get("summary_en") or "",
+            r.get("summary") or "",
+        ):
+            cleaned.append(r)
+    return cleaned, before - len(cleaned)
+
+
 def run():
     today = date.today().isoformat()
     print(f"[{datetime.now().strftime('%H:%M:%S')}] iGaming 爬蟲啟動 — {today}")
@@ -438,6 +595,11 @@ def run():
     all_records = existing + new_records
     reclassified = reclassify_all(all_records)
     print(f"  → 更新分類 {reclassified} 筆")
+
+    # Remove off-topic records (casino.org crime/sports articles etc.)
+    all_records, purged = purge_irrelevant(all_records)
+    if purged:
+        print(f"  → 移除非相關內容 {purged} 筆")
 
     all_records.sort(key=lambda r: r["date"], reverse=True)
     save_data(all_records)

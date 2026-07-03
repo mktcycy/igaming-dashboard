@@ -17,76 +17,93 @@ body {
 /* ── HEADER ── */
 header {
   position: sticky; top: 0; z-index: 200;
-  background: rgba(255,255,255,0.75);
+  background: rgba(255,255,255,0.82);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border-bottom: 1px solid rgba(255,255,255,0.9);
   box-shadow: 0 2px 20px rgba(100,120,200,0.1);
-  padding: 14px 24px;
+  padding: 12px 24px;
 }
 .header-inner {
-  max-width: 1500px; margin: 0 auto;
+  max-width: 1540px; margin: 0 auto;
   display: flex; align-items: center; gap: 16px; flex-wrap: wrap;
 }
-.logo { font-size: 1.3rem; font-weight: 800; letter-spacing: -0.5px; white-space: nowrap; }
+.logo { font-size: 1.25rem; font-weight: 800; letter-spacing: -0.5px; white-space: nowrap; }
 .logo .ig { color: #4f46e5; }
 .logo .mk { color: #0ea5e9; }
-.logo .daily { color: #64748b; font-weight: 500; font-size: 0.9rem; margin-left: 6px; }
+.logo .daily { color: #64748b; font-weight: 500; font-size: 0.88rem; margin-left: 6px; }
 
 .search-wrap { flex: 1; min-width: 220px; position: relative; }
 .search-wrap input {
-  width: 100%; padding: 9px 16px 9px 38px;
-  background: rgba(255,255,255,0.9); border: 1.5px solid rgba(148,163,184,0.4);
-  border-radius: 24px; font-size: 0.9rem; color: #1e2d3d; outline: none;
+  width: 100%; padding: 9px 36px 9px 38px;
+  background: rgba(255,255,255,0.9); border: 1.5px solid rgba(148,163,184,0.35);
+  border-radius: 24px; font-size: 0.88rem; color: #1e2d3d; outline: none;
   transition: border-color 0.2s, box-shadow 0.2s;
 }
 .search-wrap input:focus { border-color: #4f46e5; box-shadow: 0 0 0 3px rgba(79,70,229,0.1); }
-.search-wrap .icon { position: absolute; left: 12px; top: 50%; transform: translateY(-50%); color: #94a3b8; font-size: 1rem; pointer-events: none; }
+.search-wrap .s-icon { position: absolute; left: 12px; top: 50%; transform: translateY(-50%); color: #94a3b8; font-size: 1rem; pointer-events: none; }
+.search-clear {
+  position: absolute; right: 10px; top: 50%; transform: translateY(-50%);
+  background: none; border: none; cursor: pointer; color: #94a3b8; font-size: 1rem;
+  display: none; padding: 2px;
+}
+.search-clear.show { display: block; }
 
-.header-right { display: flex; gap: 10px; align-items: center; }
-.hdr-stat { text-align: center; background: rgba(79,70,229,0.07); border-radius: 10px; padding: 6px 14px; }
-.hdr-stat b { display: block; font-size: 1.1rem; font-weight: 700; color: #4f46e5; line-height: 1; }
-.hdr-stat span { font-size: 0.7rem; color: #64748b; }
+.header-stats { display: flex; gap: 8px; align-items: center; }
+.hdr-stat { text-align: center; background: rgba(79,70,229,0.07); border-radius: 10px; padding: 5px 12px; }
+.hdr-stat b { display: block; font-size: 1.05rem; font-weight: 700; color: #4f46e5; line-height: 1; }
+.hdr-stat span { font-size: 0.68rem; color: #64748b; }
+.hdr-stat.today-stat { background: rgba(239,68,68,0.08); }
+.hdr-stat.today-stat b { color: #dc2626; }
 
 /* ── LAYOUT ── */
 .layout {
-  max-width: 1500px; margin: 0 auto;
-  display: grid; grid-template-columns: 240px 1fr;
+  max-width: 1540px; margin: 0 auto;
+  display: grid; grid-template-columns: 250px 1fr;
   gap: 0; padding: 0;
   align-items: start;
 }
 
 /* ── SIDEBAR ── */
 .sidebar {
-  position: sticky; top: 70px;
-  padding: 20px 16px; height: calc(100vh - 70px);
+  position: sticky; top: 62px;
+  padding: 18px 14px; height: calc(100vh - 62px);
   overflow-y: auto; scrollbar-width: thin;
+  scrollbar-color: rgba(148,163,184,0.3) transparent;
 }
-.sidebar-section { margin-bottom: 24px; }
+.sidebar-section { margin-bottom: 22px; }
 .sidebar-title {
-  font-size: 0.72rem; font-weight: 700; letter-spacing: 1.5px;
-  text-transform: uppercase; color: #94a3b8; margin-bottom: 8px;
+  font-size: 0.7rem; font-weight: 700; letter-spacing: 1.5px;
+  text-transform: uppercase; color: #94a3b8; margin-bottom: 6px;
   padding-left: 4px;
 }
 
 /* Category buttons */
 .cat-btn {
-  display: flex; align-items: center; gap: 10px; width: 100%;
-  padding: 9px 12px; border-radius: 10px; border: none; cursor: pointer;
-  font-size: 0.88rem; font-weight: 500; color: #475569;
+  display: flex; align-items: center; gap: 9px; width: 100%;
+  padding: 8px 10px; border-radius: 10px; border: none; cursor: pointer;
+  font-size: 0.86rem; font-weight: 500; color: #475569;
   background: transparent; text-align: left; transition: all 0.15s;
-  margin-bottom: 3px;
+  margin-bottom: 2px;
 }
-.cat-btn:hover { background: rgba(255,255,255,0.8); color: #1e2d3d; }
-.cat-btn.active { background: rgba(255,255,255,0.95); color: #1e2d3d; font-weight: 600;
-  box-shadow: 0 2px 10px rgba(100,120,200,0.12); }
-.cat-btn .cat-icon { font-size: 1.1rem; width: 28px; height: 28px; border-radius: 8px;
-  display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
-.cat-btn .cat-count { margin-left: auto; font-size: 0.72rem; background: rgba(148,163,184,0.2);
-  border-radius: 20px; padding: 2px 8px; color: #64748b; }
+.cat-btn:hover { background: rgba(255,255,255,0.75); color: #1e2d3d; }
+.cat-btn.active {
+  background: rgba(255,255,255,0.95); color: #1e2d3d; font-weight: 600;
+  box-shadow: 0 2px 10px rgba(100,120,200,0.12);
+}
+.cat-btn .cat-icon {
+  font-size: 1rem; width: 26px; height: 26px; border-radius: 7px;
+  display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+}
+.cat-btn .cat-label { flex: 1; }
+.cat-btn .cat-count {
+  font-size: 0.7rem; background: rgba(148,163,184,0.18);
+  border-radius: 20px; padding: 2px 7px; color: #64748b; min-width: 26px; text-align: center;
+}
 .cat-btn.active .cat-count { background: rgba(79,70,229,0.12); color: #4f46e5; }
+.cat-btn.dim .cat-count { color: #cbd5e1; }
 
-/* Active indicator per category */
+/* Active category icon backgrounds */
 .cat-btn[data-cat="新遊戲"].active .cat-icon      { background: #d1fae5; }
 .cat-btn[data-cat="熱門廠商"].active .cat-icon    { background: #dbeafe; }
 .cat-btn[data-cat="菲律賓市場"].active .cat-icon  { background: #fce7f3; }
@@ -100,8 +117,8 @@ header {
 /* Month group button */
 .month-btn {
   display: flex; align-items: center; gap: 6px; width: 100%;
-  padding: 7px 10px; border-radius: 8px; border: none; cursor: pointer;
-  font-size: 0.82rem; font-weight: 600; color: #475569;
+  padding: 6px 8px; border-radius: 8px; border: none; cursor: pointer;
+  font-size: 0.8rem; font-weight: 600; color: #475569;
   background: rgba(148,163,184,0.1); text-align: left;
   transition: all 0.15s; margin-bottom: 2px;
 }
@@ -109,41 +126,31 @@ header {
 .month-btn.open { background: rgba(79,70,229,0.09); color: #4f46e5; }
 .month-btn .m-label { flex: 1; }
 .month-btn .m-count {
-  font-size: 0.7rem; background: rgba(148,163,184,0.2);
-  border-radius: 20px; padding: 1px 7px; color: #64748b;
+  font-size: 0.68rem; background: rgba(148,163,184,0.2);
+  border-radius: 20px; padding: 1px 6px; color: #64748b;
 }
 .month-btn.open .m-count { background: rgba(79,70,229,0.12); color: #4f46e5; }
-.month-btn .m-arrow { font-size: 0.6rem; flex-shrink: 0; transition: transform 0.2s; }
+.month-btn .m-arrow { font-size: 0.55rem; flex-shrink: 0; transition: transform 0.2s; }
 .month-btn.open .m-arrow { transform: rotate(90deg); }
 
-/* Date sub-buttons container (collapsible) */
+/* Date sub-buttons */
 .date-sub-wrap { display: none; padding-left: 8px; margin-bottom: 4px; }
 .date-sub-wrap.open { display: block; }
 
-/* Date buttons */
 .date-btn {
-  display: block; width: 100%; padding: 6px 10px; border-radius: 7px;
-  border: none; cursor: pointer; font-size: 0.8rem; color: #475569;
+  display: block; width: 100%; padding: 5px 8px; border-radius: 7px;
+  border: none; cursor: pointer; font-size: 0.78rem; color: #475569;
   background: transparent; text-align: left; transition: all 0.15s; margin-bottom: 1px;
 }
 .date-btn:hover { background: rgba(255,255,255,0.8); color: #1e2d3d; }
 .date-btn.active { background: rgba(255,255,255,0.95); color: #4f46e5; font-weight: 600;
   box-shadow: 0 1px 6px rgba(100,120,200,0.1); }
 
-/* Demo / free-play link */
-.demo-link {
-  font-size: 0.74rem; color: #059669; text-decoration: none;
-  display: inline-flex; align-items: center; gap: 3px;
-  padding: 3px 8px; border-radius: 6px; background: rgba(5,150,105,0.08);
-  transition: background 0.15s; flex-shrink: 0;
-}
-.demo-link:hover { background: rgba(5,150,105,0.18); }
-
 /* Star filter */
-.star-btns { display: flex; flex-direction: column; gap: 3px; }
+.star-btns { display: flex; flex-direction: column; gap: 2px; }
 .star-btn {
-  padding: 7px 12px; border-radius: 8px; border: none; cursor: pointer;
-  font-size: 0.83rem; color: #475569; background: transparent;
+  padding: 6px 10px; border-radius: 8px; border: none; cursor: pointer;
+  font-size: 0.82rem; color: #475569; background: transparent;
   text-align: left; transition: all 0.15s;
 }
 .star-btn:hover { background: rgba(255,255,255,0.8); }
@@ -152,81 +159,88 @@ header {
 
 /* Sort select */
 .sort-select {
-  width: 100%; padding: 8px 10px; border-radius: 8px;
+  width: 100%; padding: 7px 10px; border-radius: 8px;
   border: 1.5px solid rgba(148,163,184,0.3); background: rgba(255,255,255,0.8);
-  font-size: 0.83rem; color: #475569; cursor: pointer; outline: none;
+  font-size: 0.82rem; color: #475569; cursor: pointer; outline: none;
 }
 .sort-select:focus { border-color: #4f46e5; }
 
 .reset-btn {
-  width: 100%; padding: 8px; border-radius: 8px; border: 1.5px dashed rgba(148,163,184,0.5);
-  background: transparent; color: #94a3b8; cursor: pointer; font-size: 0.82rem;
+  width: 100%; padding: 7px; border-radius: 8px; border: 1.5px dashed rgba(148,163,184,0.5);
+  background: transparent; color: #94a3b8; cursor: pointer; font-size: 0.8rem;
   transition: all 0.15s; margin-top: 4px;
 }
 .reset-btn:hover { border-color: #4f46e5; color: #4f46e5; background: rgba(79,70,229,0.05); }
 
-/* ── MAIN CONTENT ── */
-.main { padding: 20px 20px 40px 4px; min-height: calc(100vh - 70px); }
+/* ── MAIN ── */
+.main { padding: 18px 20px 40px 4px; min-height: calc(100vh - 62px); }
 
 /* Stats bar */
 .stats-bar {
-  display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 18px;
+  display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 16px; align-items: center;
 }
 .stat-chip {
   background: rgba(255,255,255,0.75); backdrop-filter: blur(10px);
   border: 1px solid rgba(255,255,255,0.9); border-radius: 10px;
-  padding: 8px 16px; font-size: 0.8rem; color: #64748b;
-  display: flex; align-items: center; gap: 6px;
+  padding: 6px 14px; font-size: 0.78rem; color: #64748b;
+  display: flex; align-items: center; gap: 5px;
 }
-.stat-chip b { color: #1e2d3d; font-size: 1rem; }
-.stat-chip.hi b { color: #4f46e5; }
+.stat-chip b { color: #1e2d3d; font-size: 0.95rem; }
+.stat-chip.accent b { color: #4f46e5; }
+.stat-chip.danger b { color: #dc2626; }
+.stat-chip.success b { color: #059669; }
 
 /* Date group header */
 .date-group-header {
   grid-column: 1/-1;
   display: flex; align-items: center; gap: 10px;
-  margin: 18px 0 10px; padding-bottom: 8px;
+  margin: 20px 0 10px; padding-bottom: 8px;
   border-bottom: 2px solid rgba(255,255,255,0.7);
 }
 .date-group-header .d-label {
-  font-size: 1rem; font-weight: 700; color: #1e2d3d;
+  font-size: 0.95rem; font-weight: 700; color: #1e2d3d;
   background: rgba(255,255,255,0.85); backdrop-filter: blur(8px);
   border-radius: 8px; padding: 4px 14px; border: 1px solid rgba(255,255,255,0.95);
 }
 .date-group-header .d-count {
-  font-size: 0.75rem; color: #64748b;
+  font-size: 0.72rem; color: #64748b;
   background: rgba(255,255,255,0.6); border-radius: 20px; padding: 2px 10px;
+}
+.date-group-header .d-today {
+  font-size: 0.68rem; font-weight: 700; color: #fff;
+  background: #ef4444; border-radius: 20px; padding: 2px 8px; letter-spacing: 0.3px;
 }
 
 /* Card grid */
-.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 14px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 13px; }
 
 /* Card */
 .card {
-  background: rgba(255,255,255,0.65);
+  background: rgba(255,255,255,0.68);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   border: 1px solid rgba(255,255,255,0.9);
-  border-radius: 16px; padding: 16px 18px;
-  display: flex; flex-direction: column; gap: 9px;
+  border-radius: 16px; padding: 15px 16px;
+  display: flex; flex-direction: column; gap: 0;
   box-shadow: 0 2px 12px rgba(100,120,200,0.06);
   transition: transform 0.15s, box-shadow 0.15s, border-color 0.15s;
   cursor: default;
 }
 .card:hover {
   transform: translateY(-3px);
-  box-shadow: 0 8px 28px rgba(79,70,229,0.12);
-  border-color: rgba(79,70,229,0.25);
-  background: rgba(255,255,255,0.85);
+  box-shadow: 0 8px 28px rgba(79,70,229,0.13);
+  border-color: rgba(79,70,229,0.22);
+  background: rgba(255,255,255,0.88);
 }
 
-.card-top { display: flex; justify-content: space-between; align-items: flex-start; }
-.tag-date-wrap { display: flex; flex-direction: column; gap: 4px; }
-
+/* Card header row */
+.card-head {
+  display: flex; align-items: center; gap: 6px; margin-bottom: 10px; flex-wrap: wrap;
+}
 .cat-tag {
-  display: inline-flex; align-items: center; gap: 4px;
-  font-size: 0.7rem; font-weight: 700; padding: 3px 9px;
-  border-radius: 20px; letter-spacing: 0.3px;
+  display: inline-flex; align-items: center; gap: 3px;
+  font-size: 0.68rem; font-weight: 700; padding: 3px 8px;
+  border-radius: 20px; letter-spacing: 0.3px; flex-shrink: 0;
 }
 .tag-game     { background: #d1fae5; color: #065f46; }
 .tag-vendor   { background: #dbeafe; color: #1d4ed8; }
@@ -239,45 +253,91 @@ header {
 .tag-platform { background: #e0f2fe; color: #0369a1; }
 .tag-default  { background: #f1f5f9; color: #475569; }
 
-.card-date { font-size: 0.73rem; color: #94a3b8; }
-
-.stars { font-size: 0.85rem; letter-spacing: 1px; }
+.today-badge {
+  font-size: 0.62rem; font-weight: 800; padding: 2px 7px;
+  border-radius: 20px; background: #ef4444; color: #fff;
+  letter-spacing: 0.4px; flex-shrink: 0;
+}
+.stars { font-size: 0.82rem; margin-left: auto; flex-shrink: 0; }
 .s5 { color: #f59e0b; }
 .s4 { color: #fbbf24; }
 .s3 { color: #d97706; }
 .s2 { color: #94a3b8; }
 .s1 { color: #cbd5e1; }
 
-.vendor { font-size: 0.88rem; font-weight: 700; color: #4f46e5; }
-.game   { font-size: 0.92rem; font-weight: 600; color: #1e2d3d; line-height: 1.4; }
-.summary { font-size: 0.82rem; color: #475569; line-height: 1.65; }
-
-.card-foot { display: flex; align-items: center; justify-content: space-between; margin-top: 2px; }
-.src-link {
-  font-size: 0.74rem; color: #4f46e5; text-decoration: none;
-  display: flex; align-items: center; gap: 4px; overflow: hidden;
-  max-width: 80%; white-space: nowrap; text-overflow: ellipsis;
-  padding: 3px 8px; border-radius: 6px; background: rgba(79,70,229,0.07);
-  transition: background 0.15s;
+/* Card title (game/article name) */
+.card-title {
+  font-size: 0.93rem; font-weight: 700; color: #1e2d3d;
+  line-height: 1.45; margin-bottom: 7px;
 }
-.src-link:hover { background: rgba(79,70,229,0.15); }
 
-/* Empty */
+/* Summary */
+.card-summary {
+  font-size: 0.81rem; color: #4b5563; line-height: 1.65;
+  display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical;
+  overflow: hidden; margin-bottom: 11px; flex: 1;
+}
+
+/* Footer */
+.card-foot {
+  display: flex; align-items: center; gap: 8px;
+  padding-top: 9px; border-top: 1px solid rgba(148,163,184,0.12);
+  flex-wrap: wrap;
+}
+.card-meta { display: flex; align-items: center; gap: 6px; flex: 1; min-width: 0; }
+.vendor-tag {
+  font-size: 0.72rem; font-weight: 700; color: #4f46e5;
+  background: rgba(79,70,229,0.07); border-radius: 6px;
+  padding: 2px 7px; white-space: nowrap; flex-shrink: 0;
+}
+.card-date { font-size: 0.7rem; color: #94a3b8; white-space: nowrap; }
+
+.src-link {
+  font-size: 0.72rem; color: #4f46e5; text-decoration: none;
+  display: flex; align-items: center; gap: 3px;
+  padding: 3px 8px; border-radius: 6px; background: rgba(79,70,229,0.07);
+  transition: background 0.15s; white-space: nowrap; flex-shrink: 0;
+}
+.src-link:hover { background: rgba(79,70,229,0.16); }
+
+.demo-link {
+  font-size: 0.72rem; color: #059669; text-decoration: none;
+  display: inline-flex; align-items: center; gap: 3px;
+  padding: 3px 8px; border-radius: 6px; background: rgba(5,150,105,0.08);
+  transition: background 0.15s; white-space: nowrap; flex-shrink: 0;
+}
+.demo-link:hover { background: rgba(5,150,105,0.18); }
+
+/* Empty state */
 .empty-state { text-align: center; padding: 60px 20px; color: #94a3b8; grid-column: 1/-1; }
 .empty-state .e-icon { font-size: 3rem; margin-bottom: 12px; }
-.empty-state p { font-size: 0.95rem; }
+.empty-state p { font-size: 0.92rem; }
+
+/* Skeleton loading */
+@keyframes skeleton-pulse {
+  0%, 100% { opacity: 0.55; }
+  50%       { opacity: 0.25; }
+}
+.skeleton-card {
+  background: rgba(255,255,255,0.55);
+  border-radius: 16px; height: 165px;
+  animation: skeleton-pulse 1.6s ease-in-out infinite;
+  border: 1px solid rgba(255,255,255,0.9);
+}
 
 /* Mobile */
 @media (max-width: 860px) {
   .layout { grid-template-columns: 1fr; }
-  .sidebar { position: static; height: auto; padding: 12px 16px 0; }
-  .sidebar-section { margin-bottom: 12px; }
-  .cat-btns-row { display: flex; flex-wrap: wrap; gap: 6px; }
-  .cat-btn { width: auto; padding: 6px 12px; }
+  .sidebar { position: static; height: auto; padding: 12px 16px 0; top: 0; }
+  .sidebar-section { margin-bottom: 10px; }
+  .cat-btns-row { display: flex; flex-wrap: wrap; gap: 5px; }
+  .cat-btn { width: auto; padding: 6px 10px; font-size: 0.82rem; }
   .cat-btn .cat-count { display: none; }
-  .date-btn { display: inline-block; width: auto; margin-right: 4px; }
-  .main { padding: 14px 16px 40px; }
-  .header-right { display: none; }
+  .date-btn { display: inline-block; width: auto; margin-right: 3px; margin-bottom: 3px; }
+  .date-sub-wrap.open { display: flex; flex-wrap: wrap; }
+  .main { padding: 12px 14px 40px; }
+  .header-stats { display: none; }
+  .grid { grid-template-columns: 1fr; }
 }
 </style>
 </head>
@@ -290,13 +350,14 @@ header {
       <span class="daily">每日動態</span>
     </div>
     <div class="search-wrap">
-      <span class="icon">🔍</span>
+      <span class="s-icon">🔍</span>
       <input type="text" id="search" placeholder="搜尋廠商、遊戲名稱、關鍵字...">
+      <button class="search-clear" id="searchClear" title="清除">✕</button>
     </div>
-    <div class="header-right">
-      <div class="hdr-stat"><b id="statTotal">0</b><span>則動態</span></div>
-      <div class="hdr-stat"><b id="statDates">0</b><span>個日期</span></div>
-      <div class="hdr-stat"><b id="statLatest">-</b><span>最新更新</span></div>
+    <div class="header-stats">
+      <div class="hdr-stat"><b id="statTotal">—</b><span>則動態</span></div>
+      <div class="hdr-stat"><b id="statDates">—</b><span>個日期</span></div>
+      <div class="hdr-stat today-stat"><b id="statToday">—</b><span>今日最新</span></div>
     </div>
   </div>
 </header>
@@ -309,43 +370,53 @@ header {
       <div class="sidebar-title">📂 新聞類別</div>
       <div id="catBtns">
         <button class="cat-btn active" data-cat="all">
-          <span class="cat-icon">📰</span> 全部新聞
+          <span class="cat-icon">📰</span>
+          <span class="cat-label">全部新聞</span>
           <span class="cat-count" id="cnt-all">0</span>
         </button>
         <button class="cat-btn" data-cat="新遊戲">
-          <span class="cat-icon">🎮</span> 新遊戲發布
+          <span class="cat-icon">🎮</span>
+          <span class="cat-label">新遊戲發布</span>
           <span class="cat-count" id="cnt-game">0</span>
         </button>
         <button class="cat-btn" data-cat="熱門廠商">
-          <span class="cat-icon">🏭</span> 熱門廠商
+          <span class="cat-icon">🏭</span>
+          <span class="cat-label">熱門廠商</span>
           <span class="cat-count" id="cnt-vendor">0</span>
         </button>
         <button class="cat-btn" data-cat="菲律賓市場">
-          <span class="cat-icon">🇵🇭</span> 菲律賓市場
+          <span class="cat-icon">🇵🇭</span>
+          <span class="cat-label">菲律賓市場</span>
           <span class="cat-count" id="cnt-ph">0</span>
         </button>
         <button class="cat-btn" data-cat="全球法規">
-          <span class="cat-icon">⚖️</span> 全球法規
+          <span class="cat-icon">⚖️</span>
+          <span class="cat-label">全球法規</span>
           <span class="cat-count" id="cnt-law">0</span>
         </button>
         <button class="cat-btn" data-cat="亞洲市場">
-          <span class="cat-icon">🌏</span> 亞洲市場
+          <span class="cat-icon">🌏</span>
+          <span class="cat-label">亞洲市場</span>
           <span class="cat-count" id="cnt-asia">0</span>
         </button>
         <button class="cat-btn" data-cat="科技應用">
-          <span class="cat-icon">💻</span> 科技應用
+          <span class="cat-icon">💻</span>
+          <span class="cat-label">科技應用</span>
           <span class="cat-count" id="cnt-tech">0</span>
         </button>
         <button class="cat-btn" data-cat="業界大事">
-          <span class="cat-icon">🎪</span> 業界大事
+          <span class="cat-icon">🎪</span>
+          <span class="cat-label">業界大事</span>
           <span class="cat-count" id="cnt-event">0</span>
         </button>
         <button class="cat-btn" data-cat="市場趨勢">
-          <span class="cat-icon">📈</span> 市場趨勢
+          <span class="cat-icon">📈</span>
+          <span class="cat-label">市場趨勢</span>
           <span class="cat-count" id="cnt-trend">0</span>
         </button>
         <button class="cat-btn" data-cat="平台動態">
-          <span class="cat-icon">🖥️</span> 平台動態
+          <span class="cat-icon">🖥️</span>
+          <span class="cat-label">平台動態</span>
           <span class="cat-count" id="cnt-platform">0</span>
         </button>
       </div>
@@ -383,13 +454,23 @@ header {
   <!-- MAIN -->
   <main class="main">
     <div class="stats-bar" id="statsBar"></div>
-    <div id="contentArea"></div>
+    <div id="contentArea">
+      <!-- Skeleton shown while loading -->
+      <div class="grid" id="skeletonGrid">
+        <div class="skeleton-card"></div>
+        <div class="skeleton-card"></div>
+        <div class="skeleton-card"></div>
+        <div class="skeleton-card"></div>
+        <div class="skeleton-card"></div>
+        <div class="skeleton-card"></div>
+      </div>
+    </div>
   </main>
 </div>
 
 <script>
+const TODAY = new Date().toISOString().slice(0, 10);
 let raw = [];
-// State
 let selCat = 'all', selDate = 'all', selStar = 0;
 
 function tagClass(cat) {
@@ -397,7 +478,7 @@ function tagClass(cat) {
     '新遊戲':'tag-game','熱門廠商':'tag-vendor','菲律賓市場':'tag-ph',
     '全球法規':'tag-law','亞洲市場':'tag-asia','科技應用':'tag-tech',
     '業界大事':'tag-event','市場趨勢':'tag-trend','平台動態':'tag-platform',
-    // legacy names (from old data)
+    // Legacy names
     '業界趨勢':'tag-trend','菲律賓法規':'tag-ph','全球科技應用':'tag-tech',
   };
   return m[cat] || 'tag-default';
@@ -419,7 +500,7 @@ function getFiltered() {
     if (selDate !== 'all' && r.date !== selDate) return false;
     if (selCat !== 'all' && r.cat !== selCat) return false;
     if (r.stars < selStar) return false;
-    if (q && !`${r.vendor} ${r.game} ${r.summary} ${r.cat}`.toLowerCase().includes(q)) return false;
+    if (q && !`${r.vendor} ${r.game} ${r.game_en || ''} ${r.summary} ${r.cat}`.toLowerCase().includes(q)) return false;
     return true;
   });
   if (sort === 'date-asc') data.sort((a,b) => a.date.localeCompare(b.date));
@@ -428,15 +509,27 @@ function getFiltered() {
   return data;
 }
 
+// Counts respect current date/star/search filters (but not cat filter, so you see cross-cat counts)
 function updateCounts() {
-  document.getElementById('cnt-all').textContent = raw.length;
+  const q = document.getElementById('search').value.toLowerCase();
+  const subset = raw.filter(r => {
+    if (selDate !== 'all' && r.date !== selDate) return false;
+    if (r.stars < selStar) return false;
+    if (q && !`${r.vendor} ${r.game} ${r.game_en || ''} ${r.summary} ${r.cat}`.toLowerCase().includes(q)) return false;
+    return true;
+  });
+  document.getElementById('cnt-all').textContent = subset.length;
   const cats = {
     '新遊戲':'cnt-game','熱門廠商':'cnt-vendor','菲律賓市場':'cnt-ph',
     '全球法規':'cnt-law','亞洲市場':'cnt-asia','科技應用':'cnt-tech',
     '業界大事':'cnt-event','市場趨勢':'cnt-trend','平台動態':'cnt-platform',
   };
   for (const [cat, id] of Object.entries(cats)) {
-    document.getElementById(id).textContent = raw.filter(r => r.cat === cat).length;
+    const cnt = subset.filter(r => r.cat === cat).length;
+    document.getElementById(id).textContent = cnt;
+    // Dim if zero under current filter
+    const btn = document.querySelector(`.cat-btn[data-cat="${cat}"]`);
+    if (btn) btn.classList.toggle('dim', cnt === 0);
   }
 }
 
@@ -448,7 +541,6 @@ function buildDateBtns() {
   const dateCnt = {};
   raw.forEach(r => { dateCnt[r.date] = (dateCnt[r.date] || 0) + 1; });
 
-  // Group dates by YYYY-MM
   const monthMap = {};
   dates.forEach(d => {
     const m = d.slice(0, 7);
@@ -476,27 +568,68 @@ function buildDateBtns() {
 
     monthMap[month].forEach(d => {
       const btn = document.createElement('button');
-      btn.className = 'date-btn';
+      btn.className = 'date-btn' + (d === TODAY ? ' date-today' : '');
       btn.dataset.date = d;
-      btn.textContent = `${d.slice(5)} （${dateCnt[d] || 0}則）`;
+      const todayMark = d === TODAY ? ' 🆕' : '';
+      btn.textContent = `${d.slice(5)}${todayMark} （${dateCnt[d] || 0}則）`;
       subWrap.appendChild(btn);
     });
     wrap.appendChild(subWrap);
   });
 }
 
+function getDemoLink(r) {
+  if (r.cat !== '新遊戲') return '';
+  const gameTitle = (r.game_en || r.game || '').replace(/[：:].*/,'').trim().slice(0, 70);
+  if (!gameTitle || gameTitle.length < 4) return '';
+  return `https://www.askgamblers.com/slot-machines/search/?q=${encodeURIComponent(gameTitle)}`;
+}
+
+function makeCard(r) {
+  const isToday = r.date === TODAY;
+  const demoUrl = getDemoLink(r);
+  const vendorDisplay = (r.vendor && r.vendor !== '市場動態') ? r.vendor : '';
+
+  const c = document.createElement('div');
+  c.className = 'card';
+  c.innerHTML = `
+    <div class="card-head">
+      <span class="cat-tag ${tagClass(r.cat)}">${r.cat}</span>
+      ${isToday ? '<span class="today-badge">今日</span>' : ''}
+      ${starsEl(r.stars)}
+    </div>
+    <div class="card-title">${r.game}</div>
+    <div class="card-summary">${r.summary}</div>
+    <div class="card-foot">
+      <div class="card-meta">
+        ${vendorDisplay ? `<span class="vendor-tag">${vendorDisplay}</span>` : ''}
+        <span class="card-date">${r.date}</span>
+      </div>
+      <a class="src-link" href="${r.url}" target="_blank" rel="noopener">🔗 ${host(r.url)}</a>
+      ${demoUrl ? `<a class="demo-link" href="${demoUrl}" target="_blank" rel="noopener">🎮 試玩</a>` : ''}
+    </div>
+  `;
+  return c;
+}
+
 function render() {
   const data = getFiltered();
   const sort = document.getElementById('sortBy').value;
+  const todayAll = raw.filter(r => r.date === TODAY).length;
+  const fiveS = data.filter(r => r.stars === 5).length;
+  const todayFiltered = data.filter(r => r.date === TODAY).length;
 
   // Stats bar
-  const fiveS = data.filter(r => r.stars === 5).length;
   document.getElementById('statsBar').innerHTML = `
-    <div class="stat-chip"><b>${data.length}</b> 則動態</div>
-    <div class="stat-chip hi"><b>${fiveS}</b> 最高重要度</div>
-    <div class="stat-chip"><b>${selDate === 'all' ? '全部日期' : selDate}</b> 日期篩選</div>
-    <div class="stat-chip"><b>${selCat === 'all' ? '全類別' : selCat}</b> 類別篩選</div>
+    <div class="stat-chip accent"><b>${data.length}</b> 則動態</div>
+    <div class="stat-chip"><b>${fiveS}</b> 則 ⭐ 最高重要</div>
+    ${todayFiltered > 0 ? `<div class="stat-chip danger"><b>${todayFiltered}</b> 則今日最新</div>` : ''}
+    ${selCat !== 'all' ? `<div class="stat-chip success"><b>${selCat}</b> 篩選中</div>` : ''}
+    ${selDate !== 'all' ? `<div class="stat-chip"><b>${selDate}</b> 日期篩選</div>` : ''}
   `;
+
+  // Update dynamic category counts
+  updateCounts();
 
   const area = document.getElementById('contentArea');
   area.innerHTML = '';
@@ -513,11 +646,16 @@ function render() {
   if (groupByDate) {
     const groups = {};
     data.forEach(r => { (groups[r.date] = groups[r.date]||[]).push(r); });
-    const sortedDates = Object.keys(groups).sort((a,b) => sort === 'date-asc' ? a.localeCompare(b) : b.localeCompare(a));
+    const sortedDates = Object.keys(groups).sort((a,b) =>
+      sort === 'date-asc' ? a.localeCompare(b) : b.localeCompare(a));
     sortedDates.forEach(date => {
+      const isDateToday = date === TODAY;
       const hdr = document.createElement('div');
       hdr.className = 'date-group-header';
-      hdr.innerHTML = `<div class="d-label">📅 ${date}</div><div class="d-count">${groups[date].length} 則</div>`;
+      hdr.innerHTML =
+        `<div class="d-label">📅 ${date}</div>` +
+        `<div class="d-count">${groups[date].length} 則</div>` +
+        (isDateToday ? `<div class="d-today">今日</div>` : '');
       grid.appendChild(hdr);
       groups[date].forEach(r => grid.appendChild(makeCard(r)));
     });
@@ -528,49 +666,30 @@ function render() {
   area.appendChild(grid);
 }
 
-function getDemoLink(r) {
-  if (r.vendor === '市場動態') return '';
-  const text = ((r.game_en || r.game || '') + ' ' + (r.summary || '')).toLowerCase();
-  const isLaunch = /launch|launches|new\s*(slot|game|title|release)|unveil|reveal|debut|新遊戲|上市|推出|發布/.test(text);
-  if (!isLaunch) return '';
-  // Use the English title for best search results; strip everything after colon/dash
-  const raw = (r.game_en || r.game || '').replace(/[：:].*/,'').trim().slice(0, 70);
-  const q = encodeURIComponent(raw);
-  // AskGamblers has working demo play buttons for most major slots
-  return `https://www.askgamblers.com/slot-machines/search/?q=${q}`;
-}
-
-function makeCard(r) {
-  const c = document.createElement('div');
-  c.className = 'card';
-  c.innerHTML = `
-    <div class="card-top">
-      <div class="tag-date-wrap">
-        <span class="cat-tag ${tagClass(r.cat)}">${r.cat}</span>
-        <span class="card-date">${r.date}</span>
-      </div>
-      ${starsEl(r.stars)}
-    </div>
-    <div class="vendor">${r.vendor}</div>
-    <div class="game">${r.game}</div>
-    <div class="summary">${r.summary}</div>
-    <div class="card-foot">
-      <a class="src-link" href="${r.url}" target="_blank" rel="noopener">🔗 ${host(r.url)}</a>
-      ${getDemoLink(r) ? `<a class="demo-link" href="${getDemoLink(r)}" target="_blank" rel="noopener">🎮 試玩</a>` : ''}
-    </div>
-  `;
-  return c;
-}
-
 function updateStats() {
   const dates = [...new Set(raw.map(r => r.date))].sort().reverse();
+  const todayCount = raw.filter(r => r.date === TODAY).length;
   document.getElementById('statTotal').textContent = raw.length;
   document.getElementById('statDates').textContent = dates.length;
-  document.getElementById('statLatest').textContent = dates[0] || '-';
+  document.getElementById('statToday').textContent = todayCount;
 }
 
-// Event wiring
-document.getElementById('search').addEventListener('input', render);
+// ── Event wiring ──
+
+let searchTimer;
+document.getElementById('search').addEventListener('input', e => {
+  const clear = document.getElementById('searchClear');
+  clear.classList.toggle('show', e.target.value.length > 0);
+  clearTimeout(searchTimer);
+  searchTimer = setTimeout(render, 200);
+});
+
+document.getElementById('searchClear').addEventListener('click', () => {
+  document.getElementById('search').value = '';
+  document.getElementById('searchClear').classList.remove('show');
+  render();
+});
+
 document.getElementById('sortBy').addEventListener('change', render);
 
 document.getElementById('catBtns').addEventListener('click', e => {
@@ -582,7 +701,6 @@ document.getElementById('catBtns').addEventListener('click', e => {
 });
 
 document.getElementById('dateBtns').addEventListener('click', e => {
-  // Month button: toggle expand/collapse
   const mBtn = e.target.closest('.month-btn');
   if (mBtn) {
     mBtn.classList.toggle('open');
@@ -590,12 +708,10 @@ document.getElementById('dateBtns').addEventListener('click', e => {
     if (sub) sub.classList.toggle('open');
     return;
   }
-  // Date button: filter
   const btn = e.target.closest('.date-btn');
   if (!btn) return;
   selDate = btn.dataset.date;
   document.querySelectorAll('.date-btn').forEach(b => b.classList.toggle('active', b.dataset.date === selDate));
-  // Expand the month that contains the selected date
   if (selDate !== 'all') {
     const m = selDate.slice(0, 7);
     document.querySelectorAll('.month-btn').forEach(mb => {
@@ -619,11 +735,11 @@ document.querySelectorAll('.star-btn').forEach(btn => {
 document.getElementById('resetBtn').addEventListener('click', () => {
   selCat = 'all'; selDate = 'all'; selStar = 0;
   document.getElementById('search').value = '';
+  document.getElementById('searchClear').classList.remove('show');
   document.getElementById('sortBy').value = 'date-desc';
   document.querySelectorAll('.cat-btn').forEach(b => b.classList.toggle('active', b.dataset.cat === 'all'));
   document.querySelectorAll('.date-btn').forEach(b => b.classList.toggle('active', b.dataset.date === 'all'));
   document.querySelectorAll('.star-btn').forEach(b => b.classList.toggle('active', b.dataset.star === '0'));
-  // Collapse all months except the first
   document.querySelectorAll('.month-btn').forEach((mb, i) => {
     mb.classList.toggle('open', i === 0);
     const sub = document.getElementById('month-' + mb.dataset.month);
@@ -632,10 +748,24 @@ document.getElementById('resetBtn').addEventListener('click', () => {
   render();
 });
 
-// Init
+// Keyboard: Esc clears search
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape' && document.getElementById('search').value) {
+    document.getElementById('search').value = '';
+    document.getElementById('searchClear').classList.remove('show');
+    render();
+  }
+});
+
+// ── Init ──
 fetch('data.json')
   .then(r => r.json())
-  .then(data => { raw = data; buildDateBtns(); updateCounts(); updateStats(); render(); })
+  .then(data => {
+    raw = data;
+    buildDateBtns();
+    updateStats();
+    render();
+  })
   .catch(() => {
     document.getElementById('contentArea').innerHTML =
       '<div class="empty-state"><div class="e-icon">⚠️</div><p>資料載入失敗，請重新整理頁面</p></div>';

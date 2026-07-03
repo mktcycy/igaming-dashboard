@@ -42,8 +42,15 @@ RSS_SOURCES = [
     "https://casinobeats.com/feed/",
     # iGB (iGaming Business sister brand)
     "https://igamingbusiness.com/igaming/feed/",
-    # Pragmatic Play official news
+    # Pragmatic Play official news (game launch announcements)
     "https://pragmaticplay.com/en/feed/",
+    "https://pragmaticplay.com/en/news/rss/",
+    # Thunderkick (new game releases)
+    "https://www.thunderkick.com/feed/",
+    # Spinomenal (new game & partnership news)
+    "https://spinomenal.com/feed/",
+    # BonusFinder (casino & game news)
+    "https://www.bonusfinder.com/feed",
 ]
 
 # Sites to monitor for page-content changes (no RSS available)
@@ -59,10 +66,40 @@ PAGE_MONITORS = [
 ]
 
 CAT_RULES = [
-    (["pagcor","philippines","philippine","pogo","kyc","aml","anti-money","regulation","law","license","compliance","licensing"], "菲律賓法規"),
-    (["ai ","artificial intelligence","blockchain","crypto","nft","vr ","ar ","metaverse","5g","technology","tech","machine learning","chatgpt"], "全球科技應用"),
-    (["pg soft","pgsoft","jili","jdb","playtech","microgaming","cq9","fa chai","fachai","evolution","pragmatic","netent","hacksaw","nolimit","push gaming","relax gaming","blueprint","yggdrasil","play'n go","playngo","red tiger","elk studios","nolimit city","spinomenal","wazdan","bgaming","betsoft"], "熱門廠商"),
-    (["sigma","igb live","g2e","ice barcelona","sbc summit","casinobeats","event","summit","expo","conference","award","igb affiliate"], "業界大事"),
+    # 1. Philippines — ONLY with explicit PH entities
+    (["pagcor","pogo ","philippine ","philippines ","pcso ","ceza "], "菲律賓市場"),
+    # 2. New game releases — specific launch keywords
+    (["new slot","new game","new title","launches new","new casino game",
+      "unleashes","unearths","new release","slot launch","new addition to portfolio",
+      "launches a ","new instant","new scratchcard"], "新遊戲"),
+    # 3. Named game suppliers (business/partnership/expansion news)
+    (["pg soft","pgsoft","jili ","jdb gaming","playtech","microgaming",
+      "cq9 ","fa chai","fachai","evolution gaming","pragmatic play","netent",
+      "hacksaw gaming","nolimit city","wazdan","spinomenal","thunderkick",
+      "yggdrasil","play'n go","playngo","relax gaming","push gaming",
+      "bgaming","betsoft","blueprint gaming","quickspin","iron dog studio",
+      "red tiger","elk studios","3 oaks gaming","kalamba"], "熱門廠商"),
+    # 4. Technology (specific AI/blockchain/crypto terms only)
+    (["artificial intelligence","ai-powered","ai prediction","blockchain",
+      "cryptocurrency","crypto casino","nft ","metaverse","virtual reality",
+      "machine learning","chatgpt","generative ai","web3 "], "科技應用"),
+    # 5. Asia market — non-Philippines
+    (["macau ","macao ","singapore casino","singapore integrated",
+      "japan casino","japan ir","vietnam gambl","cambodia casino",
+      "thailand casino","myanmar gambl","korea gambl","hong kong racing",
+      "malaysia casino","indonesia gambl"], "亞洲市場"),
+    # 6. Global regulation — specific bodies/policies only
+    (["gambling commission","ukgc","malta gaming authority"," mga ","alderney",
+      "kahnawake","isle of man gambl","responsible gambling","harm prevention",
+      "safer gambling","deposit limit","gambling act","betting levy",
+      "financial intelligence centre","gaming control board",
+      "gaming authority"], "全球法規"),
+    # 7. Industry events and major deals
+    (["sigma ","igb live","g2e ","ice london","ice barcelona","sbc summit",
+      "casinobeats summit","igb affiliate","acquisition ","acquires ",
+      "merger ","takeover","joint venture","ipo ","gaming award",
+      "industry award","billion dollar deal"], "業界大事"),
+    # 8. WG Platform
     (["wg包網","wg baowang","wgbaowang","wg platform","wg遊戲","wg api"], "平台動態"),
 ]
 
@@ -123,11 +160,23 @@ def translate_zh(text, max_len=500):
 
 
 def guess_category(text):
-    t = text.lower()
+    t = " " + text.lower() + " "
     for keywords, cat in CAT_RULES:
         if any(k in t for k in keywords):
             return cat
-    return "業界趨勢"
+    return "市場趨勢"
+
+
+def reclassify_all(records):
+    """Re-run category classification on all existing records."""
+    updated = 0
+    for r in records:
+        text = (r.get("game_en") or r.get("game", "")) + " " + r.get("summary", "")
+        new_cat = guess_category(text)
+        if new_cat != r.get("cat"):
+            r["cat"] = new_cat
+            updated += 1
+    return updated
 
 
 def guess_importance(text, cat):
@@ -139,7 +188,7 @@ def guess_importance(text, cat):
     for w in LOW_WORDS:
         if w in t:
             score = max(1, score - 1)
-    if cat in ("菲律賓法規", "業界大事"):
+    if cat in ("菲律賓市場", "業界大事", "全球法規", "新遊戲"):
         score = min(5, score + 1)
     return score
 
@@ -384,11 +433,15 @@ def run():
         updated = translate_existing(existing)
         print(f"  → 翻譯 {updated} 筆舊資料")
 
-    if new_records or True:  # always save to persist translations
-        all_records = existing + new_records
-        all_records.sort(key=lambda r: r["date"], reverse=True)
-        save_data(all_records)
-        print(f"\n✅ 新增 {len(new_records)} 筆，資料庫共 {len(all_records)} 筆")
+    # Re-classify ALL records with updated rules
+    print("\n重新分類所有資料...")
+    all_records = existing + new_records
+    reclassified = reclassify_all(all_records)
+    print(f"  → 更新分類 {reclassified} 筆")
+
+    all_records.sort(key=lambda r: r["date"], reverse=True)
+    save_data(all_records)
+    print(f"\n✅ 新增 {len(new_records)} 筆，資料庫共 {len(all_records)} 筆")
 
     return len(new_records)
 

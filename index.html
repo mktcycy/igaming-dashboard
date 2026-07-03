@@ -87,11 +87,15 @@ header {
 .cat-btn.active .cat-count { background: rgba(79,70,229,0.12); color: #4f46e5; }
 
 /* Active indicator per category */
-.cat-btn[data-cat="熱門廠商"].active .cat-icon { background: #dbeafe; }
-.cat-btn[data-cat="業界趨勢"].active .cat-icon { background: #dcfce7; }
-.cat-btn[data-cat="菲律賓法規"].active .cat-icon { background: #fee2e2; }
-.cat-btn[data-cat="全球科技應用"].active .cat-icon { background: #f3e8ff; }
-.cat-btn[data-cat="業界大事"].active .cat-icon { background: #fef9c3; }
+.cat-btn[data-cat="新遊戲"].active .cat-icon      { background: #d1fae5; }
+.cat-btn[data-cat="熱門廠商"].active .cat-icon    { background: #dbeafe; }
+.cat-btn[data-cat="菲律賓市場"].active .cat-icon  { background: #fce7f3; }
+.cat-btn[data-cat="全球法規"].active .cat-icon    { background: #fee2e2; }
+.cat-btn[data-cat="亞洲市場"].active .cat-icon    { background: #ffedd5; }
+.cat-btn[data-cat="科技應用"].active .cat-icon    { background: #f3e8ff; }
+.cat-btn[data-cat="業界大事"].active .cat-icon    { background: #fef9c3; }
+.cat-btn[data-cat="市場趨勢"].active .cat-icon    { background: #dcfce7; }
+.cat-btn[data-cat="平台動態"].active .cat-icon    { background: #e0f2fe; }
 
 /* Month group button */
 .month-btn {
@@ -224,13 +228,16 @@ header {
   font-size: 0.7rem; font-weight: 700; padding: 3px 9px;
   border-radius: 20px; letter-spacing: 0.3px;
 }
-.tag-vendor  { background: #dbeafe; color: #1d4ed8; }
-.tag-trend   { background: #dcfce7; color: #15803d; }
-.tag-reg     { background: #fee2e2; color: #b91c1c; }
-.tag-tech    { background: #f3e8ff; color: #7e22ce; }
-.tag-event   { background: #fef9c3; color: #92400e; }
+.tag-game     { background: #d1fae5; color: #065f46; }
+.tag-vendor   { background: #dbeafe; color: #1d4ed8; }
+.tag-ph       { background: #fce7f3; color: #9d174d; }
+.tag-law      { background: #fee2e2; color: #b91c1c; }
+.tag-asia     { background: #ffedd5; color: #9a3412; }
+.tag-tech     { background: #f3e8ff; color: #7e22ce; }
+.tag-event    { background: #fef9c3; color: #92400e; }
+.tag-trend    { background: #dcfce7; color: #15803d; }
 .tag-platform { background: #e0f2fe; color: #0369a1; }
-.tag-default { background: #f1f5f9; color: #475569; }
+.tag-default  { background: #f1f5f9; color: #475569; }
 
 .card-date { font-size: 0.73rem; color: #94a3b8; }
 
@@ -305,25 +312,37 @@ header {
           <span class="cat-icon">📰</span> 全部新聞
           <span class="cat-count" id="cnt-all">0</span>
         </button>
+        <button class="cat-btn" data-cat="新遊戲">
+          <span class="cat-icon">🎮</span> 新遊戲發布
+          <span class="cat-count" id="cnt-game">0</span>
+        </button>
         <button class="cat-btn" data-cat="熱門廠商">
           <span class="cat-icon">🏭</span> 熱門廠商
           <span class="cat-count" id="cnt-vendor">0</span>
         </button>
-        <button class="cat-btn" data-cat="業界趨勢">
-          <span class="cat-icon">📈</span> 業界趨勢
-          <span class="cat-count" id="cnt-trend">0</span>
+        <button class="cat-btn" data-cat="菲律賓市場">
+          <span class="cat-icon">🇵🇭</span> 菲律賓市場
+          <span class="cat-count" id="cnt-ph">0</span>
         </button>
-        <button class="cat-btn" data-cat="菲律賓法規">
-          <span class="cat-icon">⚖️</span> 菲律賓法規
-          <span class="cat-count" id="cnt-reg">0</span>
+        <button class="cat-btn" data-cat="全球法規">
+          <span class="cat-icon">⚖️</span> 全球法規
+          <span class="cat-count" id="cnt-law">0</span>
         </button>
-        <button class="cat-btn" data-cat="全球科技應用">
-          <span class="cat-icon">💻</span> 全球科技
+        <button class="cat-btn" data-cat="亞洲市場">
+          <span class="cat-icon">🌏</span> 亞洲市場
+          <span class="cat-count" id="cnt-asia">0</span>
+        </button>
+        <button class="cat-btn" data-cat="科技應用">
+          <span class="cat-icon">💻</span> 科技應用
           <span class="cat-count" id="cnt-tech">0</span>
         </button>
         <button class="cat-btn" data-cat="業界大事">
           <span class="cat-icon">🎪</span> 業界大事
           <span class="cat-count" id="cnt-event">0</span>
+        </button>
+        <button class="cat-btn" data-cat="市場趨勢">
+          <span class="cat-icon">📈</span> 市場趨勢
+          <span class="cat-count" id="cnt-trend">0</span>
         </button>
         <button class="cat-btn" data-cat="平台動態">
           <span class="cat-icon">🖥️</span> 平台動態
@@ -374,13 +393,14 @@ let raw = [];
 let selCat = 'all', selDate = 'all', selStar = 0;
 
 function tagClass(cat) {
-  if (cat.includes('廠商')) return 'tag-vendor';
-  if (cat.includes('趨勢')) return 'tag-trend';
-  if (cat.includes('法規') || cat.includes('菲律賓')) return 'tag-reg';
-  if (cat.includes('科技')) return 'tag-tech';
-  if (cat.includes('大事')) return 'tag-event';
-  if (cat.includes('平台')) return 'tag-platform';
-  return 'tag-default';
+  const m = {
+    '新遊戲':'tag-game','熱門廠商':'tag-vendor','菲律賓市場':'tag-ph',
+    '全球法規':'tag-law','亞洲市場':'tag-asia','科技應用':'tag-tech',
+    '業界大事':'tag-event','市場趨勢':'tag-trend','平台動態':'tag-platform',
+    // legacy names (from old data)
+    '業界趨勢':'tag-trend','菲律賓法規':'tag-ph','全球科技應用':'tag-tech',
+  };
+  return m[cat] || 'tag-default';
 }
 
 function starsEl(n) {
@@ -410,7 +430,11 @@ function getFiltered() {
 
 function updateCounts() {
   document.getElementById('cnt-all').textContent = raw.length;
-  const cats = { '熱門廠商':'cnt-vendor','業界趨勢':'cnt-trend','菲律賓法規':'cnt-reg','全球科技應用':'cnt-tech','業界大事':'cnt-event','平台動態':'cnt-platform' };
+  const cats = {
+    '新遊戲':'cnt-game','熱門廠商':'cnt-vendor','菲律賓市場':'cnt-ph',
+    '全球法規':'cnt-law','亞洲市場':'cnt-asia','科技應用':'cnt-tech',
+    '業界大事':'cnt-event','市場趨勢':'cnt-trend','平台動態':'cnt-platform',
+  };
   for (const [cat, id] of Object.entries(cats)) {
     document.getElementById(id).textContent = raw.filter(r => r.cat === cat).length;
   }
@@ -509,8 +533,11 @@ function getDemoLink(r) {
   const text = ((r.game_en || r.game || '') + ' ' + (r.summary || '')).toLowerCase();
   const isLaunch = /launch|launches|new\s*(slot|game|title|release)|unveil|reveal|debut|新遊戲|上市|推出|發布/.test(text);
   if (!isLaunch) return '';
-  const q = encodeURIComponent(((r.game_en || r.game || '').split(':')[0]).trim().slice(0, 60));
-  return `https://slotcatalog.com/en/search/?q=${q}`;
+  // Use the English title for best search results; strip everything after colon/dash
+  const raw = (r.game_en || r.game || '').replace(/[：:].*/,'').trim().slice(0, 70);
+  const q = encodeURIComponent(raw);
+  // AskGamblers has working demo play buttons for most major slots
+  return `https://www.askgamblers.com/slot-machines/search/?q=${q}`;
 }
 
 function makeCard(r) {

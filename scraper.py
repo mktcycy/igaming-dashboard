@@ -16,7 +16,9 @@ except ImportError:
     print("deep_translator not installed, skipping translation")
 
 HEADERS = {"User-Agent": "Mozilla/5.0 (compatible; iGaming-Monitor/1.0; RSS reader)"}
-TIMEOUT = 15
+TIMEOUT = 20
+TIMEOUT_SLOW = 30   # for vendor RSS feeds that are slow to respond
+MAX_AGE_DAYS = 180  # ignore articles older than 6 months
 BASE = os.path.dirname(os.path.abspath(__file__))
 DATA_FILE = os.path.join(BASE, "data.json")
 
@@ -42,21 +44,22 @@ RSS_SOURCES = [
     "https://casinobeats.com/feed/",
     # iGB (iGaming Business sister brand)
     "https://igamingbusiness.com/igaming/feed/",
-    # Pragmatic Play official news (game launch announcements)
+    # Pragmatic Play official news (game launch announcements) — slow, uses extended timeout
     "https://pragmaticplay.com/en/feed/",
-    "https://pragmaticplay.com/en/news/rss/",
     # Thunderkick (new game releases)
     "https://www.thunderkick.com/feed/",
     # Spinomenal (new game & partnership news)
     "https://spinomenal.com/feed/",
     # BonusFinder (casino & game news)
     "https://www.bonusfinder.com/feed",
-    # Calvin Ayre — strong Asia/Philippines iGaming coverage
-    "https://calvinayre.com/feed/",
     # European Gaming — covers vendor product releases across all major suppliers
     "https://europeangaming.eu/portal/feed/",
-    # Casino Guru news — tracks new slot releases and industry news
-    "https://casino.guru/news/feed/rss",
+    # European Gaming SLOT TAG — specifically tagged slot/game release articles
+    "https://europeangaming.eu/portal/tag/slot/feed/",
+    # iGB Affiliate — covers game launches and provider partnerships
+    "https://www.igbaffiliate.com/feed/",
+    # AffPapa — B2B iGaming deals and partnerships
+    "https://www.affpapa.com/feed/",
 ]
 
 # Sites to monitor for page-content changes (no RSS available)
@@ -87,7 +90,13 @@ CAT_RULES = [
       "new jackpot slot","world premiere","global launch","soft launch",
       "has released","has launched","studio releases","provider releases",
       "releases its latest","launches its","presents its","unveils its",
-      "new fish game","new arcade","new crash game","new live dealer"], "新遊戲"),
+      "new fish game","new arcade","new crash game","new live dealer",
+      # Single-verb release patterns (almost always game launches in iGaming context)
+      " releases "," unveils "," introduces "," premieres ",
+      "drops its ","drops a ","expands portfolio","adds to portfolio",
+      "portfolio with new","collaboration launch","week slot games",
+      "game of the week","slot games releases","casino game release",
+      "powered by onetouch","exclusive release"], "新遊戲"),
     # 3. Named game suppliers (vendor-specific business/partnership/expansion news)
     (["pg soft","pgsoft","pocket games soft",
       "jili ","jili games",
@@ -359,8 +368,10 @@ def parse_rss_date(date_str):
 
 def scrape_rss(feed_url, existing_ids):
     articles = []
+    # Use extended timeout for known slow vendor feeds
+    timeout = TIMEOUT_SLOW if "pragmaticplay.com" in feed_url else TIMEOUT
     try:
-        r = requests.get(feed_url, headers=HEADERS, timeout=TIMEOUT)
+        r = requests.get(feed_url, headers=HEADERS, timeout=timeout)
         r.raise_for_status()
         soup = BeautifulSoup(r.content, "xml")
         items = soup.find_all("item")
@@ -382,6 +393,15 @@ def scrape_rss(feed_url, existing_ids):
             # Skip articles with no iGaming relevance
             if not is_relevant(title_raw, desc_raw):
                 continue
+
+            # Skip articles older than MAX_AGE_DAYS
+            try:
+                from datetime import timedelta
+                cutoff = (date.today() - timedelta(days=MAX_AGE_DAYS)).isoformat()
+                if art_date < cutoff:
+                    continue
+            except Exception:
+                pass
 
             item_uid = uid(url, title_raw)
             if item_uid in existing_ids:

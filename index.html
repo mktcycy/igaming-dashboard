@@ -582,7 +582,8 @@ function getDemoLink(r) {
   if (r.cat !== '新遊戲') return '';
   const gameTitle = (r.game_en || r.game || '').replace(/[：:].*/,'').trim().slice(0, 70);
   if (!gameTitle || gameTitle.length < 4) return '';
-  return `https://www.askgamblers.com/slot-machines/search/?q=${encodeURIComponent(gameTitle)}`;
+  // SlotCatalog has working demos for Asian providers (JILI, JDB, CQ9, FG, PG Soft etc.)
+  return `https://slotcatalog.com/en/slots?search=${encodeURIComponent(gameTitle)}`;
 }
 
 function makeCard(r) {
@@ -606,7 +607,7 @@ function makeCard(r) {
         <span class="card-date">${r.date}</span>
       </div>
       <a class="src-link" href="${r.url}" target="_blank" rel="noopener">🔗 ${host(r.url)}</a>
-      ${demoUrl ? `<a class="demo-link" href="${demoUrl}" target="_blank" rel="noopener">🎮 試玩</a>` : ''}
+      ${demoUrl ? `<a class="demo-link" href="${demoUrl}" target="_blank" rel="noopener" title="前往 SlotCatalog 試玩">🎮 試玩 Demo</a>` : ''}
     </div>
   `;
   return c;

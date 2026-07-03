@@ -109,18 +109,19 @@ def scrape_rss(feed_url):
 
             if not title_text or not url or len(title_text) < 10: continue
 
-            summary = desc if desc else title_text
-            cat = guess_category(title_text + " " + summary)
-            vendor = extract_vendor(title_text + " " + summary)
+            summary = re.sub(r'\s+', ' ', desc if desc else title_text).strip()
+            title_clean = re.sub(r'\s+', ' ', title_text).strip()
+            cat = guess_category(title_clean + " " + summary)
+            vendor = extract_vendor(title_clean + " " + summary)
 
             articles.append({
-                "id": uid(url, title_text),
+                "id": uid(url, title_clean),
                 "date": art_date,
                 "cat": cat,
                 "vendor": vendor,
-                "game": title_text,
+                "game": title_clean,
                 "summary": summary[:300],
-                "stars": guess_importance(title_text + " " + summary, cat),
+                "stars": guess_importance(title_clean + " " + summary, cat),
                 "url": url,
             })
     except Exception as e:

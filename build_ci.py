@@ -1,21 +1,23 @@
 #!/usr/bin/env python3
-"""CI version: rebuild index.html embedding data.json inline (no external fetch needed)"""
+"""CI: clean data.json strings only — index.html loads data via fetch(), no injection needed."""
 import json, os, re
-from datetime import datetime
 
 BASE = os.path.dirname(os.path.abspath(__file__))
+DATA_FILE = os.path.join(BASE, "data.json")
 
-with open(os.path.join(BASE, "data.json"), "r", encoding="utf-8") as f:
+with open(DATA_FILE, "r", encoding="utf-8") as f:
     data = json.load(f)
 
-with open(os.path.join(BASE, "index.html"), "r", encoding="utf-8") as f:
-    html = f.read()
+cleaned = 0
+for r in data:
+    for k in ("game", "summary", "vendor", "cat"):
+        if k in r and isinstance(r[k], str):
+            orig = r[k]
+            r[k] = re.sub(r'\s+', ' ', r[k]).strip()
+            if r[k] != orig:
+                cleaned += 1
 
-data_js = json.dumps(data, ensure_ascii=False, separators=(',', ':'))
-html = re.sub(r'const raw = \[.*?\];', f'const raw = {data_js};', html, flags=re.DOTALL)
-html = re.sub(r'最新更新.*?<\/b>', f'最新更新 <b id="statLatest">{data[0]["date"] if data else "-"}</b>', html)
+with open(DATA_FILE, "w", encoding="utf-8") as f:
+    json.dump(data, f, ensure_ascii=False, indent=2)
 
-with open(os.path.join(BASE, "index.html"), "w", encoding="utf-8") as f:
-    f.write(html)
-
-print(f"Built index.html with {len(data)} records, latest: {data[0]['date'] if data else 'N/A'}")
+print(f"data.json cleaned ({cleaned} fields fixed), {len(data)} records, latest: {data[0]['date'] if data else 'N/A'}")

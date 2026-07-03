@@ -229,6 +229,7 @@ header {
 .tag-reg     { background: #fee2e2; color: #b91c1c; }
 .tag-tech    { background: #f3e8ff; color: #7e22ce; }
 .tag-event   { background: #fef9c3; color: #92400e; }
+.tag-platform { background: #e0f2fe; color: #0369a1; }
 .tag-default { background: #f1f5f9; color: #475569; }
 
 .card-date { font-size: 0.73rem; color: #94a3b8; }
@@ -324,6 +325,10 @@ header {
           <span class="cat-icon">🎪</span> 業界大事
           <span class="cat-count" id="cnt-event">0</span>
         </button>
+        <button class="cat-btn" data-cat="平台動態">
+          <span class="cat-icon">🖥️</span> 平台動態
+          <span class="cat-count" id="cnt-platform">0</span>
+        </button>
       </div>
     </div>
 
@@ -374,6 +379,7 @@ function tagClass(cat) {
   if (cat.includes('法規') || cat.includes('菲律賓')) return 'tag-reg';
   if (cat.includes('科技')) return 'tag-tech';
   if (cat.includes('大事')) return 'tag-event';
+  if (cat.includes('平台')) return 'tag-platform';
   return 'tag-default';
 }
 
@@ -404,7 +410,7 @@ function getFiltered() {
 
 function updateCounts() {
   document.getElementById('cnt-all').textContent = raw.length;
-  const cats = { '熱門廠商':'cnt-vendor','業界趨勢':'cnt-trend','菲律賓法規':'cnt-reg','全球科技應用':'cnt-tech','業界大事':'cnt-event' };
+  const cats = { '熱門廠商':'cnt-vendor','業界趨勢':'cnt-trend','菲律賓法規':'cnt-reg','全球科技應用':'cnt-tech','業界大事':'cnt-event','平台動態':'cnt-platform' };
   for (const [cat, id] of Object.entries(cats)) {
     document.getElementById(id).textContent = raw.filter(r => r.cat === cat).length;
   }

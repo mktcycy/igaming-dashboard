@@ -46,13 +46,24 @@ RSS_SOURCES = [
     "https://pragmaticplay.com/en/feed/",
 ]
 
-VENDOR_HTML_SOURCES = []  # vendor sites block scraping; covered via RSS industry news
+# Sites to monitor for page-content changes (no RSS available)
+PAGE_MONITORS = [
+    {
+        "id": "wg-baowang",
+        "name": "WG包網官網",
+        "url": "https://www.wgbaowang.net/zh-TW.html",
+        "vendor": "WG包網",
+        "cat": "平台動態",
+        "hash_file": "wg_page_hash.txt",
+    },
+]
 
 CAT_RULES = [
     (["pagcor","philippines","philippine","pogo","kyc","aml","anti-money","regulation","law","license","compliance","licensing"], "菲律賓法規"),
     (["ai ","artificial intelligence","blockchain","crypto","nft","vr ","ar ","metaverse","5g","technology","tech","machine learning","chatgpt"], "全球科技應用"),
     (["pg soft","pgsoft","jili","jdb","playtech","microgaming","cq9","fa chai","fachai","evolution","pragmatic","netent","hacksaw","nolimit","push gaming","relax gaming","blueprint","yggdrasil","play'n go","playngo","red tiger","elk studios","nolimit city","spinomenal","wazdan","bgaming","betsoft"], "熱門廠商"),
     (["sigma","igb live","g2e","ice barcelona","sbc summit","casinobeats","event","summit","expo","conference","award","igb affiliate"], "業界大事"),
+    (["wg包網","wg baowang","wgbaowang","wg platform","wg遊戲","wg api"], "平台動態"),
 ]
 
 VENDOR_MAP = {
@@ -67,6 +78,7 @@ VENDOR_MAP = {
     "Pragmatic Play": ["pragmatic play"],
     "NetEnt": ["netent"],
     "PAGCOR": ["pagcor"],
+    "WG包網": ["wg包網","wg baowang","wgbaowang","wg platform"],
     "SiGMA": ["sigma"],
     "Hacksaw Gaming": ["hacksaw"],
     "Nolimit City": ["nolimit city"],
@@ -261,6 +273,52 @@ def scrape_vendor_html(source, existing_ids):
     return articles
 
 
+def monitor_page(source, existing_ids):
+    """Detect content changes on a static page with no RSS."""
+    results = []
+    hash_path = os.path.join(BASE, source["hash_file"])
+    try:
+        r = requests.get(source["url"], headers=HEADERS, timeout=TIMEOUT)
+        r.raise_for_status()
+        soup = BeautifulSoup(r.content, "lxml")
+        # Extract main text content (strip scripts/styles)
+        for tag in soup(["script", "style", "meta", "head"]):
+            tag.decompose()
+        text = clean(soup.get_text())
+        content_hash = hashlib.md5(text.encode()).hexdigest()
+
+        prev_hash = ""
+        if os.path.exists(hash_path):
+            with open(hash_path) as f:
+                prev_hash = f.read().strip()
+
+        with open(hash_path, "w") as f:
+            f.write(content_hash)
+
+        if prev_hash and content_hash != prev_hash:
+            today = date.today().isoformat()
+            title = f"{source['name']} 內容有更新"
+            item_uid = uid(source["url"], today + content_hash[:6])
+            if item_uid not in existing_ids:
+                summary_zh = f"{source['name']}官網於 {today} 偵測到頁面內容變動，請前往確認最新資訊。"
+                results.append({
+                    "id": item_uid,
+                    "date": today,
+                    "cat": source["cat"],
+                    "vendor": source["vendor"],
+                    "game": title,
+                    "game_en": title,
+                    "summary": summary_zh,
+                    "stars": 4,
+                    "url": source["url"],
+                })
+        elif not prev_hash:
+            print(f"    → 首次紀錄 {source['name']} 基準值")
+    except Exception as e:
+        print(f"  ✗ {source['name']}: {e}")
+    return results
+
+
 def load_existing():
     if not os.path.exists(DATA_FILE):
         return []
@@ -309,14 +367,15 @@ def run():
         print(f"    → {len(arts)} 新筆")
         time.sleep(0.5)
 
-    # Vendor HTML sources
-    for src in VENDOR_HTML_SOURCES:
-        print(f"  HTML: {src['name']}")
-        arts = scrape_vendor_html(src, existing_ids)
+    # Page change monitors (sites without RSS)
+    for src in PAGE_MONITORS:
+        print(f"  監控: {src['name']}")
+        arts = monitor_page(src, existing_ids)
         for a in arts:
             new_records.append(a)
             existing_ids.add(a["id"])
-        print(f"    → {len(arts)} 新筆")
+        if arts:
+            print(f"    → ⚠️  偵測到頁面變動！")
         time.sleep(1)
 
     # Back-translate existing English records

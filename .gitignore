@@ -4,3 +4,4 @@ __pycache__/
 *.log
 index_template.html
 .env
+*_page_hash.txt

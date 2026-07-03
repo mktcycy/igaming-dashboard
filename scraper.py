@@ -15,10 +15,15 @@ DATA_FILE = os.path.join(BASE, "data.json")
 
 RSS_SOURCES = [
     "https://igamingbusiness.com/feed/",
+    "https://igamingbusiness.com/asia/feed/",
+    "https://igamingbusiness.com/legal-compliance/feed/",
+    "https://igamingbusiness.com/casino-games/feed/",
     "https://igamingfuture.com/feed/",
     "https://agbrief.com/feed/",
     "https://www.yogonet.com/international/rss.xml",
-    "https://www.igamingbusiness.com/casino-games/feed/",
+    "https://calvinayre.com/feed/",
+    "https://casino.org/news/feed/",
+    "https://egr.global/feed/",
 ]
 
 CAT_RULES = [

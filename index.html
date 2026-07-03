@@ -93,15 +93,47 @@ header {
 .cat-btn[data-cat="全球科技應用"].active .cat-icon { background: #f3e8ff; }
 .cat-btn[data-cat="業界大事"].active .cat-icon { background: #fef9c3; }
 
+/* Month group button */
+.month-btn {
+  display: flex; align-items: center; gap: 6px; width: 100%;
+  padding: 7px 10px; border-radius: 8px; border: none; cursor: pointer;
+  font-size: 0.82rem; font-weight: 600; color: #475569;
+  background: rgba(148,163,184,0.1); text-align: left;
+  transition: all 0.15s; margin-bottom: 2px;
+}
+.month-btn:hover { background: rgba(255,255,255,0.75); color: #1e2d3d; }
+.month-btn.open { background: rgba(79,70,229,0.09); color: #4f46e5; }
+.month-btn .m-label { flex: 1; }
+.month-btn .m-count {
+  font-size: 0.7rem; background: rgba(148,163,184,0.2);
+  border-radius: 20px; padding: 1px 7px; color: #64748b;
+}
+.month-btn.open .m-count { background: rgba(79,70,229,0.12); color: #4f46e5; }
+.month-btn .m-arrow { font-size: 0.6rem; flex-shrink: 0; transition: transform 0.2s; }
+.month-btn.open .m-arrow { transform: rotate(90deg); }
+
+/* Date sub-buttons container (collapsible) */
+.date-sub-wrap { display: none; padding-left: 8px; margin-bottom: 4px; }
+.date-sub-wrap.open { display: block; }
+
 /* Date buttons */
 .date-btn {
-  display: block; width: 100%; padding: 7px 12px; border-radius: 8px;
-  border: none; cursor: pointer; font-size: 0.83rem; color: #475569;
-  background: transparent; text-align: left; transition: all 0.15s; margin-bottom: 2px;
+  display: block; width: 100%; padding: 6px 10px; border-radius: 7px;
+  border: none; cursor: pointer; font-size: 0.8rem; color: #475569;
+  background: transparent; text-align: left; transition: all 0.15s; margin-bottom: 1px;
 }
 .date-btn:hover { background: rgba(255,255,255,0.8); color: #1e2d3d; }
 .date-btn.active { background: rgba(255,255,255,0.95); color: #4f46e5; font-weight: 600;
   box-shadow: 0 1px 6px rgba(100,120,200,0.1); }
+
+/* Demo / free-play link */
+.demo-link {
+  font-size: 0.74rem; color: #059669; text-decoration: none;
+  display: inline-flex; align-items: center; gap: 3px;
+  padding: 3px 8px; border-radius: 6px; background: rgba(5,150,105,0.08);
+  transition: background 0.15s; flex-shrink: 0;
+}
+.demo-link:hover { background: rgba(5,150,105,0.18); }
 
 /* Star filter */
 .star-btns { display: flex; flex-direction: column; gap: 3px; }
@@ -380,13 +412,46 @@ function updateCounts() {
 
 function buildDateBtns() {
   const wrap = document.getElementById('dateBtns');
+  wrap.innerHTML = '<button class="date-btn active" data-date="all">🗓 全部日期</button>';
+
   const dates = [...new Set(raw.map(r => r.date))].sort().reverse();
+  const dateCnt = {};
+  raw.forEach(r => { dateCnt[r.date] = (dateCnt[r.date] || 0) + 1; });
+
+  // Group dates by YYYY-MM
+  const monthMap = {};
   dates.forEach(d => {
-    const btn = document.createElement('button');
-    btn.className = 'date-btn';
-    btn.dataset.date = d;
-    btn.textContent = '📅 ' + d;
-    wrap.appendChild(btn);
+    const m = d.slice(0, 7);
+    (monthMap[m] = monthMap[m] || []).push(d);
+  });
+  const sortedMonths = Object.keys(monthMap).sort().reverse();
+
+  sortedMonths.forEach((month, idx) => {
+    const [y, mo] = month.split('-');
+    const total = monthMap[month].reduce((s, d) => s + (dateCnt[d] || 0), 0);
+    const isFirst = idx === 0;
+
+    const mBtn = document.createElement('button');
+    mBtn.className = 'month-btn' + (isFirst ? ' open' : '');
+    mBtn.dataset.month = month;
+    mBtn.innerHTML =
+      `<span class="m-label">📅 ${y}年${parseInt(mo)}月</span>` +
+      `<span class="m-count">${total}</span>` +
+      `<span class="m-arrow">▶</span>`;
+    wrap.appendChild(mBtn);
+
+    const subWrap = document.createElement('div');
+    subWrap.className = 'date-sub-wrap' + (isFirst ? ' open' : '');
+    subWrap.id = 'month-' + month;
+
+    monthMap[month].forEach(d => {
+      const btn = document.createElement('button');
+      btn.className = 'date-btn';
+      btn.dataset.date = d;
+      btn.textContent = `${d.slice(5)} （${dateCnt[d] || 0}則）`;
+      subWrap.appendChild(btn);
+    });
+    wrap.appendChild(subWrap);
   });
 }
 
@@ -433,6 +498,15 @@ function render() {
   area.appendChild(grid);
 }
 
+function getDemoLink(r) {
+  if (r.vendor === '市場動態') return '';
+  const text = ((r.game_en || r.game || '') + ' ' + (r.summary || '')).toLowerCase();
+  const isLaunch = /launch|launches|new\s*(slot|game|title|release)|unveil|reveal|debut|新遊戲|上市|推出|發布/.test(text);
+  if (!isLaunch) return '';
+  const q = encodeURIComponent(((r.game_en || r.game || '').split(':')[0]).trim().slice(0, 60));
+  return `https://slotcatalog.com/en/search/?q=${q}`;
+}
+
 function makeCard(r) {
   const c = document.createElement('div');
   c.className = 'card';
@@ -449,6 +523,7 @@ function makeCard(r) {
     <div class="summary">${r.summary}</div>
     <div class="card-foot">
       <a class="src-link" href="${r.url}" target="_blank" rel="noopener">🔗 ${host(r.url)}</a>
+      ${getDemoLink(r) ? `<a class="demo-link" href="${getDemoLink(r)}" target="_blank" rel="noopener">🎮 試玩</a>` : ''}
     </div>
   `;
   return c;
@@ -474,10 +549,29 @@ document.getElementById('catBtns').addEventListener('click', e => {
 });
 
 document.getElementById('dateBtns').addEventListener('click', e => {
+  // Month button: toggle expand/collapse
+  const mBtn = e.target.closest('.month-btn');
+  if (mBtn) {
+    mBtn.classList.toggle('open');
+    const sub = document.getElementById('month-' + mBtn.dataset.month);
+    if (sub) sub.classList.toggle('open');
+    return;
+  }
+  // Date button: filter
   const btn = e.target.closest('.date-btn');
   if (!btn) return;
   selDate = btn.dataset.date;
   document.querySelectorAll('.date-btn').forEach(b => b.classList.toggle('active', b.dataset.date === selDate));
+  // Expand the month that contains the selected date
+  if (selDate !== 'all') {
+    const m = selDate.slice(0, 7);
+    document.querySelectorAll('.month-btn').forEach(mb => {
+      const isMatch = mb.dataset.month === m;
+      mb.classList.toggle('open', isMatch);
+      const sub = document.getElementById('month-' + mb.dataset.month);
+      if (sub) sub.classList.toggle('open', isMatch);
+    });
+  }
   render();
 });
 
@@ -496,6 +590,12 @@ document.getElementById('resetBtn').addEventListener('click', () => {
   document.querySelectorAll('.cat-btn').forEach(b => b.classList.toggle('active', b.dataset.cat === 'all'));
   document.querySelectorAll('.date-btn').forEach(b => b.classList.toggle('active', b.dataset.date === 'all'));
   document.querySelectorAll('.star-btn').forEach(b => b.classList.toggle('active', b.dataset.star === '0'));
+  // Collapse all months except the first
+  document.querySelectorAll('.month-btn').forEach((mb, i) => {
+    mb.classList.toggle('open', i === 0);
+    const sub = document.getElementById('month-' + mb.dataset.month);
+    if (sub) sub.classList.toggle('open', i === 0);
+  });
   render();
 });
 

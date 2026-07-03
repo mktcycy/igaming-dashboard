@@ -100,7 +100,12 @@ def translate_zh(text, max_len=500):
     try:
         chunk = text[:max_len]
         result = GoogleTranslator(source='auto', target='zh-TW').translate(chunk)
-        return result.strip() if result else text
+        if not result:
+            return text
+        # Discard if translation looks like an error page
+        if result.strip().startswith('Error') or '500' in result[:30]:
+            return text
+        return result.strip()
     except Exception:
         return text
 

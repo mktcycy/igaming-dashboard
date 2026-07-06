@@ -39,7 +39,12 @@ RSS_SOURCES = [
     "https://asgam.com/feed/",
     # Gambling Insider — 全球 B2B，含亞洲廠商/市場動態
     "https://www.gamblinginsider.com/feed",
-    # Yogonet International
+    # ── 新產品追蹤 / 全球產業（亞洲到歐美洲） ──
+    # SlotBeats — 專注 slot/遊戲新品發布（各家廠商新產品追蹤主力）
+    "https://slotbeats.com/feed/",
+    # G3 Newswire — 全球博彩產業（含亞洲/拉美/歐洲新品與合作）
+    "https://g3newswire.com/feed/",
+    # Yogonet International（拉丁美洲/全球，Americas 覆蓋主力）
     "https://www.yogonet.com/international/rss.xml",
     # Casino.org
     "https://casino.org/news/feed/",
@@ -362,8 +367,11 @@ def is_relevant(title_en, summary_en="", summary_zh=""):
 
 
 def is_english(text):
-    """Simple heuristic: >65% ASCII chars = likely English."""
+    """判斷是否仍為未翻譯英文。含任何中日韓文字即視為已翻譯（避免被品牌/人名等
+    大量拉丁字母的『已翻譯標題』誤判為英文而重複翻譯）。"""
     if not text:
+        return False
+    if re.search(r'[一-鿿぀-ヿ]', text):
         return False
     ascii_count = sum(1 for c in text if ord(c) < 128)
     return ascii_count / len(text) > 0.65
@@ -375,15 +383,17 @@ def translate_zh(text, max_len=500):
     if not is_english(text):
         return text
     chunk = text[:max_len]
-    # 重試兩次，避免偶發網路/限流造成整批未翻譯
-    for attempt in range(2):
+    # 重試三次並拉長退避，避免整批被 Google 限流造成大量未翻譯
+    for attempt in range(3):
         try:
             result = GoogleTranslator(source='auto', target='zh-TW').translate(chunk)
-            if result and not (result.strip().startswith('Error') or '500' in result[:30]):
+            # 只在明確錯誤字串時才拒收（避免翻譯結果內含數字 500 被誤判為 HTTP 500）
+            low = (result or "").strip().lower()
+            if result and not low.startswith('error') and not low.startswith('<'):
                 return result.strip()
         except Exception:
             pass
-        time.sleep(0.4 * (attempt + 1))
+        time.sleep(0.6 * (attempt + 1))
     return text
 
 
@@ -436,6 +446,27 @@ def extract_vendor(text):
         if any(k in t for k in kws):
             return vendor
     return "市場動態"
+
+
+# 合法 vendor 標籤集合：VENDOR_MAP 正式名稱 + 特殊爬蟲設定值
+_VALID_VENDORS = set(VENDOR_MAP.keys()) | {"市場動態"}
+
+
+def normalize_vendors(records):
+    """修正 vendor 欄位：舊資料殘留亂七八糟的標籤（如「反洗錢法」「AI應用」「市場規模」）
+    重新以英文原文比對 VENDOR_MAP 正規化；比對不到就歸「市場動態」。
+    已由官方爬蟲明確標記的（SA Gaming/WG包網）本就是合法值，會保留。"""
+    fixed = 0
+    for r in records:
+        cur = r.get("vendor") or ""
+        if cur in _VALID_VENDORS:
+            continue
+        text = (r.get("game_en") or r.get("game", "")) + " " + (r.get("summary_en") or "")
+        new_vendor = extract_vendor(text)
+        if new_vendor != cur:
+            r["vendor"] = new_vendor
+            fixed += 1
+    return fixed
 
 
 def uid(url, title):
@@ -894,6 +925,10 @@ def run():
     print("\n重新分類所有資料...")
     reclassified = reclassify_all(all_records)
     print(f"  → 更新分類 {reclassified} 筆")
+
+    vendors_fixed = normalize_vendors(all_records)
+    if vendors_fixed:
+        print(f"  → 修正廠商標籤 {vendors_fixed} 筆")
 
     # Remove off-topic records (crime/tabloid/disaster/prediction-market noise)
     all_records, purged = purge_irrelevant(all_records)

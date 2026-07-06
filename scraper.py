@@ -323,6 +323,8 @@ EXCLUDE_TERMS_EN = [
     "on trial over", "goes on trial", "stands trial", "trial over",
     "obituary", "died aged", "passed away", "dies at",
     "sex scandal", "epstein", "sexual misconduct", "plead guilty",
+    # 個人刑案花邊（高精準詞，避免誤傷「業者面臨刑責」類法規新聞）
+    "embezzl", "sextortion", "blackmail", "ponzi", "monk",
     # 天災 / 意外事故
     "earthquake", "hurricane", "wildfire", "tsunami", "plane crash",
     "typhoon", "landslide",
@@ -332,6 +334,8 @@ EXCLUDE_TERMS_EN = [
 EXCLUDE_TERMS_ZH = [
     "謀殺", "兇殺", "命案", "性侵", "槍擊", "槍殺", "綁架", "自殺",
     "遺體", "屍體", "受審", "判刑", "入獄", "地震", "颱風", "海嘯", "山崩",
+    # 個人刑案花邊（高精準詞；不放「入獄/監禁/判刑」等會誤傷法規新聞的泛詞）
+    "性勒索", "僧侶", "僧人",
 ]
 
 def is_excluded(title_en, summary_en="", text_zh=""):
@@ -815,10 +819,12 @@ def purge_irrelevant(records):
     before = len(records)
     cleaned = []
     for r in records:
+        # 中文檢查同時涵蓋標題與摘要（雜訊詞常只出現在標題）
+        zh_text = (r.get("game") or "") + " " + (r.get("summary") or "")
         if is_relevant(
             r.get("game_en") or r.get("game", ""),
             r.get("summary_en") or "",
-            r.get("summary") or "",
+            zh_text,
         ):
             cleaned.append(r)
     return cleaned, before - len(cleaned)

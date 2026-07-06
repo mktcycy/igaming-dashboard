@@ -2,7 +2,7 @@
 """iGaming daily market news scraper — RSS feeds + translation to Traditional Chinese"""
 
 import json, os, time, hashlib, re
-from datetime import datetime, date, timezone
+from datetime import datetime, date, timezone, timedelta
 from email.utils import parsedate_to_datetime
 
 import requests
@@ -329,7 +329,8 @@ EXCLUDE_TERMS_EN = [
     "obituary", "died aged", "passed away", "dies at",
     "sex scandal", "epstein", "sexual misconduct", "plead guilty",
     # 個人刑案花邊（高精準詞，避免誤傷「業者面臨刑責」類法規新聞）
-    "embezzl", "sextortion", "blackmail", "ponzi", "monk",
+    # 註：不用「monk」會誤傷 Monkeys/Monkey 遊戲名；僧侶案已由 僧侶/性勒索/sextortion 涵蓋
+    "embezzl", "sextortion", "blackmail", "ponzi",
     # 天災 / 意外事故
     "earthquake", "hurricane", "wildfire", "tsunami", "plane crash",
     "typhoon", "landslide",
@@ -405,7 +406,9 @@ def guess_category(text):
     return "市場趨勢"
 
 
-_AUTHORITATIVE_CAT_DOMAINS = ["cq9gaming.com"]
+# 這些來源的分類由爬蟲權威決定，reclassify 不覆蓋
+# （CQ9 用 category_id；PG Soft /games/ 頁本質即新遊戲）
+_AUTHORITATIVE_CAT_DOMAINS = ["cq9gaming.com", "pgsoft.com/games/"]
 
 
 def reclassify_all(records):
@@ -733,6 +736,111 @@ def scrape_sa_gaming(existing_ids):
     return articles
 
 
+def _nuxt_field(blob, key):
+    """從 Nuxt 內嵌物件 window.__NUXT__（key 未加引號）抓取字串欄位值。"""
+    m = re.search(r'[,{]' + key + r':"((?:[^"\\]|\\.)*)"', blob)
+    return m.group(1) if m else ""
+
+
+def scrape_pgsoft(existing_ids):
+    """PG Soft 官網（Nuxt.js SSR）：sitemap 取最新 /games/ 與 /news/，
+    直接解析頁面內嵌的 window.__NUXT__ 物件抓標題/日期/說明（靜態可讀，無需瀏覽器）。
+
+    方案 B 試點：PG 官網雖為 JS 框架（Nuxt），但 SSR 已把資料嵌在 __NUXT__，
+    且無 Cloudflare 阻擋，故可靜態抓取，免用 Playwright。
+    """
+    articles = []
+    BASE_URL = "https://www.pgsoft.com"
+    cutoff = (date.today() - timedelta(days=MAX_AGE_DAYS)).isoformat()
+    try:
+        r = requests.get(f"{BASE_URL}/sitemap.xml", headers=HEADERS, timeout=TIMEOUT)
+        r.raise_for_status()
+        soup = BeautifulSoup(r.content, "xml")
+        games, news = [], []
+        for u in soup.find_all("url"):
+            loc = clean(u.loc.get_text()) if u.loc else ""
+            lastmod = clean(u.lastmod.get_text()) if u.lastmod else ""
+            if re.search(r"/games/\d+/?$", loc):
+                games.append((loc, lastmod))
+            elif re.search(r"/news/\d+/?$", loc):
+                news.append((loc, lastmod))
+        # 依 lastmod 由新到舊，各取最新一批（新品/新聞追蹤重點在最新）
+        games.sort(key=lambda x: x[1], reverse=True)
+        news.sort(key=lambda x: x[1], reverse=True)
+
+        def fetch(loc):
+            pr = requests.get(loc, headers=HEADERS, timeout=TIMEOUT)
+            pr.raise_for_status()
+            m = re.search(r'window\.__NUXT__=(.*?)</script>', pr.text, re.S)
+            return m.group(1) if m else ""
+
+        # 新遊戲（結構化：名稱 + RTP + 最大倍數 + 說明）
+        for loc, _ in games[:18]:
+            item_uid = uid(loc, "pg")
+            if item_uid in existing_ids:
+                continue
+            try:
+                blob = fetch(loc)
+            except Exception:
+                continue
+            name = _nuxt_field(blob, "n") or _nuxt_field(blob, "t")
+            ct = _nuxt_field(blob, "ct")[:10]
+            if not name or not ct or ct < cutoff:
+                continue
+            ld = _nuxt_field(blob, "ld")[:300]
+            rtp = _nuxt_field(blob, "rtp")
+            me = _nuxt_field(blob, "me")
+            spec = " ".join(x for x in [f"RTP {rtp}" if rtp else "",
+                                        f"最大 {me}" if me else ""] if x)
+            summary_en = (ld or name) + (f" ({spec})" if spec else "")
+            articles.append({
+                "id": item_uid,
+                "date": ct,
+                "cat": "新遊戲",
+                "vendor": "PG Soft",
+                "game": translate_zh(name),
+                "game_en": name,
+                "summary": (translate_zh(ld) if ld else translate_zh(name)) + (f"（{spec}）" if spec else ""),
+                "summary_en": summary_en,
+                "stars": guess_importance(name + " " + summary_en, "新遊戲"),
+                "url": loc,
+            })
+            time.sleep(0.1)
+
+        # 官網新聞（新品公告/活動）
+        for loc, _ in news[:12]:
+            item_uid = uid(loc, "pg")
+            if item_uid in existing_ids:
+                continue
+            try:
+                blob = fetch(loc)
+            except Exception:
+                continue
+            title = _nuxt_field(blob, "t")
+            ct = _nuxt_field(blob, "ct")[:10]
+            if not title or not ct or ct < cutoff:
+                continue
+            # summary_en 帶入廠商名，讓後續 reclassify_all 也能判為「熱門廠商」而非落入 catch-all
+            summary_en = "PG Soft — " + title
+            cat = guess_category(summary_en)
+            articles.append({
+                "id": item_uid,
+                "date": ct,
+                "cat": cat,
+                "vendor": "PG Soft",
+                "game": translate_zh(title),
+                "game_en": title,
+                "summary": translate_zh(title),
+                "summary_en": summary_en,
+                "stars": guess_importance(title, cat),
+                "url": loc,
+            })
+            time.sleep(0.1)
+    except Exception as e:
+        print(f"  ✗ PG Soft: {e}")
+    return articles
+
+
 def monitor_page(source, existing_ids):
     """Detect content changes on a static page with no RSS."""
     results = []
@@ -845,6 +953,11 @@ def dedupe_records(records):
     return out
 
 
+# 第一方廠商爬蟲（官網直取）內容，定義上即為 iGaming，免關鍵字相關性測試，
+# 但仍過濾刑案/天災花邊（is_excluded）
+_FIRSTPARTY_VENDORS = {"PG Soft", "CQ9 Gaming", "SA Gaming", "WG包網"}
+
+
 def purge_irrelevant(records):
     """Remove records with no iGaming relevance (checks English title + summary + Chinese summary)."""
     before = len(records)
@@ -852,11 +965,14 @@ def purge_irrelevant(records):
     for r in records:
         # 中文檢查同時涵蓋標題與摘要（雜訊詞常只出現在標題）
         zh_text = (r.get("game") or "") + " " + (r.get("summary") or "")
-        if is_relevant(
-            r.get("game_en") or r.get("game", ""),
-            r.get("summary_en") or "",
-            zh_text,
-        ):
+        en_title = r.get("game_en") or r.get("game", "")
+        en_summary = r.get("summary_en") or ""
+        # 第一方廠商內容：只擋花邊，不要求含通用博彩關鍵字（遊戲名常無關鍵字）
+        if r.get("vendor") in _FIRSTPARTY_VENDORS:
+            if not is_excluded(en_title, en_summary, zh_text):
+                cleaned.append(r)
+            continue
+        if is_relevant(en_title, en_summary, zh_text):
             cleaned.append(r)
     return cleaned, before - len(cleaned)
 
@@ -895,6 +1011,14 @@ def run():
         new_records.append(a)
         existing_ids.add(a["id"])
     print(f"    → {len(sa_arts)} 新筆")
+
+    # PG Soft 官網（方案 B 試點：Nuxt SSR，新遊戲 + 新聞）
+    print("  HTML: PG Soft (Nuxt)")
+    pg_arts = scrape_pgsoft(existing_ids)
+    for a in pg_arts:
+        new_records.append(a)
+        existing_ids.add(a["id"])
+    print(f"    → {len(pg_arts)} 新筆")
 
     # Page change monitors (sites without RSS)
     for src in PAGE_MONITORS:

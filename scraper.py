@@ -214,7 +214,21 @@ CAT_RULES = [
       "ambassador","global ambassador","brand ambassador",
       "sponsorship","title sponsor","kit partner","shirt sponsor",
       "training wear","sleeve sponsor","official partner of",
-      "fan experience","fan engagement","fan activation"], "行銷科技"),
+      "fan experience","fan engagement","fan activation",
+      # 科技新知：實用 AI/設計工具（月報「科技新知」方向）
+      "ai agent","agentic ","openai","anthropic","claude ","gemini","copilot",
+      "midjourney","stable diffusion","dall-e","runway ","sora ","ai image",
+      "ai video","ai-generated","text-to-image","text-to-video","llm ",
+      "large language model","prompt engineering","ai automation","ai workflow",
+      "no-code","low-code","figma","photoshop","adobe ","canva","design tool",
+      "生成式","AI 代理","智能代理","大型語言模型","提示詞","無程式碼","AI 工具",
+      "AI 繪圖","AI 影片","AI 設計","設計工具",
+      # 新行銷方式（月報「行銷聲浪」方向）
+      "influencer marketing","short-form video","short video","tiktok marketing",
+      "live commerce","live streaming","social commerce","community marketing",
+      "viral marketing","growth hacking","creator economy","private domain",
+      "短影音","短視頻","直播帶貨","網紅行銷","社群行銷","社群經營",
+      "病毒行銷","成長駭客","私域流量","導流","精準投放","創作者經濟"], "行銷科技"),
     # 5. Asia market — non-Philippines
     (["macau ","macao ","singapore casino","singapore integrated",
       "japan casino","japan ir","vietnam gambl","cambodia casino",
@@ -342,9 +356,49 @@ IGAMING_TERMS_EN = [
     "operator revenue","casino revenue","gaming revenue","gaming market",
 ]
 IGAMING_TERMS_ZH = [
-    "遊戲", "賭場", "老虎機", "娛樂城", "彩票", "博彩", "廠商", "電子遊藝",
-    "運動彩券", "彩券", "博奕", "賭博", "押注", "賠率",
+    # 註：不放單獨「廠商」——太泛，會誤收半導體/製造業「廠商」新聞；
+    #     博彩廠商新聞本就含「遊戲/博彩/娛樂城」等詞可被涵蓋
+    "遊戲", "賭場", "老虎機", "娛樂城", "彩票", "博彩", "電子遊藝",
+    "運動彩券", "彩券", "博奕", "賭博", "押注", "賠率", "博彩廠商", "遊戲廠商",
 ]
+
+# 科技新知／新行銷方式白名單（月報「科技新知」「行銷聲浪」方向）。
+# 僅對指定的科技/商務媒體（TECH_SOURCES）放行，避免一般科技創投雜訊灌入。
+TECH_TERMS_EN = [
+    # 實用 AI 工具
+    "generative ai", "genai", "ai agent", "ai agents", "agentic ",
+    "chatgpt", "openai", "anthropic", "claude ", "gemini", "copilot",
+    "midjourney", "stable diffusion", "dall-e", "runway ", "sora ",
+    "ai image", "ai video", "ai-generated", "text-to-image", "text-to-video",
+    "large language model", " llm ", "prompt engineering", "ai automation",
+    "ai workflow", "no-code", "low-code", "automation tool",
+    # 設計工具
+    "figma", "photoshop", "adobe ", "canva", "illustrator", "after effects",
+    "3d design", "design tool", "ui/ux",
+    # 新行銷方式
+    "influencer marketing", " kol ", " ugc ", "short-form video",
+    "short video", "tiktok marketing", "live commerce", "live streaming",
+    "social commerce", "community marketing", "viral marketing",
+    "growth hacking", "creator economy", "referral program",
+    "telegram marketing", "discord community", "private domain",
+]
+TECH_TERMS_ZH = [
+    # 實用 AI 工具（中文科技媒體用詞；注意 is_relevant 對中文不轉小寫）
+    "生成式", "生成式 AI", "AI 代理", "智能代理", "代理程式", "大型語言模型",
+    "提示詞", "提示工程", "無程式碼", "低程式碼", "自動化工具", "AI 工具",
+    "AI 繪圖", "AI 影片", "AI 生成", "AI 設計", "Figma", "Photoshop", "Canva",
+    "3D 設計", "設計工具",
+    # 新行銷方式
+    "短影音", "短視頻", "直播帶貨", "網紅行銷", "社群行銷", "社群經營",
+    "病毒行銷", "成長駭客", "私域流量", "導流", "精準投放", "創作者經濟",
+]
+
+# 只有這些科技/商務媒體才套用 TECH 白名單放行（其餘來源仍需博彩關鍵字）
+TECH_SOURCES = {
+    "https://fc.bnext.com.tw/rss",
+    "https://buzzorange.com/techorange/feed/",
+    "https://technews.tw/feed/",
+}
 
 # 排除詞：社會/刑案/天災/花邊等「不是產業情報」的雜訊。
 # 即使文章含博彩關鍵字（如提到某賭場），只要命中這些詞就當作雜訊剔除。
@@ -382,8 +436,9 @@ def is_excluded(title_en, summary_en="", text_zh=""):
     return False
 
 
-def is_relevant(title_en, summary_en="", summary_zh=""):
-    """Check if an article is iGaming-related using English + Chinese text."""
+def is_relevant(title_en, summary_en="", summary_zh="", allow_tech=False):
+    """Check if an article is iGaming-related using English + Chinese text.
+    allow_tech=True 時，額外放行「科技新知／新行銷方式」白名單（僅供 TECH_SOURCES 使用）。"""
     # 先剔除雜訊：即使含博彩關鍵字，命中排除詞就不算相關
     if is_excluded(title_en, summary_en, summary_zh):
         return False
@@ -392,6 +447,11 @@ def is_relevant(title_en, summary_en="", summary_zh=""):
         return True
     if any(t in summary_zh for t in IGAMING_TERMS_ZH):
         return True
+    if allow_tech:
+        if any(t in en for t in TECH_TERMS_EN):
+            return True
+        if any(t in summary_zh for t in TECH_TERMS_ZH):
+            return True
     return False
 
 
@@ -545,11 +605,13 @@ def scrape_rss(feed_url, existing_ids):
 
             # Skip articles with no iGaming relevance
             # For Chinese articles, pass text as summary_zh so ZH keywords are checked
+            # 科技/商務媒體額外放行「科技新知/新行銷方式」白名單
+            allow_tech = feed_url in TECH_SOURCES
             if is_english(title_raw):
-                if not is_relevant(title_raw, desc_raw):
+                if not is_relevant(title_raw, desc_raw, allow_tech=allow_tech):
                     continue
             else:
-                if not is_relevant("", "", title_raw + " " + desc_raw):
+                if not is_relevant("", "", title_raw + " " + desc_raw, allow_tech=allow_tech):
                     continue
 
             # Skip articles older than MAX_AGE_DAYS
@@ -985,6 +1047,9 @@ def dedupe_records(records):
 # 但仍過濾刑案/天災花邊（is_excluded）
 _FIRSTPARTY_VENDORS = {"PG Soft", "CQ9 Gaming", "SA Gaming", "WG包網"}
 
+# 科技/商務媒體網域（purge 時據此沿用 TECH 白名單）
+_TECH_SOURCE_DOMAINS = ["bnext.com.tw", "buzzorange.com", "technews.tw"]
+
 
 def purge_irrelevant(records):
     """Remove records with no iGaming relevance (checks English title + summary + Chinese summary)."""
@@ -1000,7 +1065,9 @@ def purge_irrelevant(records):
             if not is_excluded(en_title, en_summary, zh_text):
                 cleaned.append(r)
             continue
-        if is_relevant(en_title, en_summary, zh_text):
+        # 科技/商務媒體來源：沿用進站時的科技/行銷白名單，避免被誤刪
+        allow_tech = any(dom in r.get("url", "") for dom in _TECH_SOURCE_DOMAINS)
+        if is_relevant(en_title, en_summary, zh_text, allow_tech=allow_tech):
             cleaned.append(r)
     return cleaned, before - len(cleaned)
 

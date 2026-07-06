@@ -336,18 +336,6 @@
     "url": "https://techorange.com/2026/07/06/mind-children-robotics/?utm_source=rss&utm_medium=feed&utm_campaign=techorange_rss"
   },
   {
-    "id": "46c06c023ffc",
-    "date": "2026-07-06",
-    "cat": "市場趨勢",
-    "vendor": "市場動態",
-    "game": "美國檢測新制轉單大爆發！耕興第二季營收 12.42 億元創三年新高",
-    "game_en": "美國檢測新制轉單大爆發！耕興第二季營收 12.42 億元創三年新高",
-    "summary": "高階檢測領導廠商耕興今日公布 6 月營收 4.17 億元，月增 0.5%，年增 12.7%；累計第二季營收 1 […]",
-    "summary_en": "高階檢測領導廠商耕興今日公布 6 月營收 4.17 億元，月增 0.5%，年增 12.7%；累計第二季營收 1 […]",
-    "stars": 3,
-    "url": "https://finance.technews.tw/2026/07/06/order-transfer/"
-  },
-  {
     "id": "426759e5b308",
     "date": "2026-07-06",
     "cat": "熱門廠商",
@@ -516,30 +504,6 @@
     "url": "https://affpapa.com/affpapa-launches-collaboration-with-bahisbet/"
   },
   {
-    "id": "91fefabdf7ab",
-    "date": "2026-07-06",
-    "cat": "市場趨勢",
-    "vendor": "市場動態",
-    "game": "首個 AI Agent 端到端勒索攻擊案例曝光：JadePuffer 給 CISO 的 3 大警訊",
-    "game_en": "首個 AI Agent 端到端勒索攻擊案例曝光：JadePuffer 給 CISO 的 3 大警訊",
-    "summary": "資安廠商 Sysdig 的威脅研究團隊（TRT）近日揭露首個公開記錄的 AI 代理人勒索軟體（Agentic Ransomware）案例，並將該攻擊行動命名為「JadePuffer」。這是一場完全由大型語言模型（LLM）端到端驅動的完整勒索行動，打破過去勒索軟體背後必須有「人類在鍵盤前操縱」或手動撰寫腳本的常規。因此，研究人員將這類新型威脅定義為「代理型威脅行為者（Agentic Threat Actor, ATA）」，意即其攻擊能力是完全由自主 AI 代理人交付與執行，而非人類操作的工具包。 這場由 AI 代理人主導的攻擊行動，展現出高度系統化且具備即時自我修正能力的自適應手段，並為企業敲響",
-    "summary_en": "資安廠商 Sysdig 的威脅研究團隊（TRT）近日揭露首個公開記錄的 AI 代理人勒索軟體（Agentic Ransomware）案例，並將該攻擊行動命名為「JadePuffer」。這是一場完全由大型語言模型（LLM）端到端驅動的完整勒索行動，打破過去勒索軟體背後必須有「人類在鍵盤前操縱」或手動撰寫腳本的常規。因此，研究人員將這類新型威脅定義為「代理型威脅行為者（Agentic Threat Actor, ATA）」，意即其攻擊能力是完全由自主 AI 代理人交付與執行，而非人類操作的工具包。 這場由 AI 代理人主導的攻擊行動，展現出高度系統化且具備即時自我修正能力的自適應手段，並為企業敲響",
-    "stars": 3,
-    "url": "https://techorange.com/2026/07/06/jadepuffer-agentic-ransomware/?utm_source=rss&utm_medium=feed&utm_campaign=techorange_rss"
-  },
-  {
-    "id": "60bfbb52c570",
-    "date": "2026-07-06",
-    "cat": "市場趨勢",
-    "vendor": "市場動態",
-    "game": "穎崴 6 月營收年增 287.9%，上半年營收較 2025 年同期增加逾 7 成",
-    "game_en": "穎崴 6 月營收年增 287.9%，上半年營收較 2025 年同期增加逾 7 成",
-    "summary": "半導體測試介面解決方案廠商穎崴科技公告2026年6月份自結營收，單月合併營收達新台幣14.6億元，較上月增加3 […]",
-    "summary_en": "半導體測試介面解決方案廠商穎崴科技公告2026年6月份自結營收，單月合併營收達新台幣14.6億元，較上月增加3 […]",
-    "stars": 3,
-    "url": "https://finance.technews.tw/2026/07/06/winways-june-revenue-increased-by-287-9-year-on-year/"
-  },
-  {
     "id": "ebded8e8b504",
     "date": "2026-07-06",
     "cat": "市場趨勢",
@@ -610,6 +574,54 @@
     "summary_en": "Provider teams up with award-winning GameTech company to bring an exciting new catalogue of slots to players via the Stoiximan platform Swintt, the in-demand software developer celebrated for its engaging mix of creative themes and exciting bonus mechanics, has announced that a range of Elysium Stud",
     "stars": 4,
     "url": "https://g3newswire.com/swintt-secures-new-greek-market-partnership-with-kaizen-gaming/"
+  },
+  {
+    "id": "8b16704d694c",
+    "date": "2026-07-06",
+    "cat": "市場趨勢",
+    "vendor": "市場動態",
+    "game": "10bet 同意埃利斯公園體育場冠名權交易",
+    "game_en": "10bet Agrees Ellis Park Stadium Naming Rights Deal",
+    "summary": "10bet 與南非約翰內斯堡的埃利斯公園體育場簽訂了為期五年的冠名協議。根據合作夥伴關係，該場館將...閱讀更多...",
+    "summary_en": "10bet has entered a five-year naming rights agreement with Ellis Park Stadium in Johannesburg, South Africa. Under the partnership, the venue will...Read More...",
+    "stars": 5,
+    "url": "https://igamingfuture.com/10bet-agrees-ellis-park-stadium-naming-rights-deal/"
+  },
+  {
+    "id": "fcfb0de8d01b",
+    "date": "2026-07-06",
+    "cat": "市場趨勢",
+    "vendor": "市場動態",
+    "game": "1spin4win：慶祝快速成長五年",
+    "game_en": "1spin4win: Celebrating Five Years Of Rapid Growth",
+    "summary": "勞倫哈里森 (Lauren Harrison) 寫道，很少有新創公司能在競爭激烈、競爭激烈且飽和的 iGaming 世界中脫穎而出。擁有數百家內容供應商...閱讀更多...",
+    "summary_en": "Few start-ups make it in the cut-throat, highly competitive and saturated world of iGaming, writes Lauren Harrison. With hundreds of content suppliers...Read More...",
+    "stars": 4,
+    "url": "https://igamingfuture.com/1spin4win-celebrating-five-years-of-rapid-growth/"
+  },
+  {
+    "id": "9ef9893a0d96",
+    "date": "2026-07-06",
+    "cat": "市場趨勢",
+    "vendor": "市場動態",
+    "game": "Merkur 賭場舉辦週年紀念之旅，慶祝北萊茵-威斯特法倫州賭場成立 50 週年",
+    "game_en": "Merkur casinos celebrates 50 years of casinos in North Rhine-Westphalia with anniversary tour",
+    "summary": "亞琛為慶祝北萊茵-威斯特法倫州賭場成立 50 週年而啟動全州遊戲展巡演 為期三天的大型週末在知名嘉賓和精彩的遊戲展之夜在亞琛 Merkur Spielbank 拉開帷幕。這也標誌著3月全州週年慶巡演的開始。",
+    "summary_en": "Aachen kicks-off state-wide game show tour for the 50th anniversary of casinos in North Rhine-Westphalia With prominent guests and a spectacular game show evening, the three-day mega weekend started on at the Merkur Spielbank Aachen. This also marked the start of a state-wide anniversary tour to mar",
+    "stars": 4,
+    "url": "https://g3newswire.com/merkur-casinos-celebrates-50-years-of-casinos-in-north-rhine-westphalia-with-anniversary-tour/"
+  },
+  {
+    "id": "63918013641b",
+    "date": "2026-07-06",
+    "cat": "行銷科技",
+    "vendor": "市場動態",
+    "game": "首例 AI Agent 自主執行勒索軟體攻擊，資安公司揭 JADEPUFFER 行動",
+    "game_en": "首例 AI Agent 自主執行勒索軟體攻擊，資安公司揭 JADEPUFFER 行動",
+    "summary": "雲端安全平台 Sysdig 的研究人員發現「JADEPUFFER」，是完全由大型語言模型驅動的 AI Agen […]",
+    "summary_en": "雲端安全平台 Sysdig 的研究人員發現「JADEPUFFER」，是完全由大型語言模型驅動的 AI Agen […]",
+    "stars": 3,
+    "url": "https://infosecu.technews.tw/2026/07/06/jadepuffer-ransomware-used-ai-agent-to-automate-entire-attack/"
   },
   {
     "id": "abf7a7cb41f7",
@@ -826,6 +838,18 @@
     "summary_en": "The European Casino Association has warned that the illegal online gambling market targeting EU consumers reached €91.6bn in 2025, an increase of around 14 per cent year-on-year, with governments across the bloc estimated to have lost €22.9bn in tax revenue. The figures were unveiled during a high-l",
     "stars": 3,
     "url": "https://g3newswire.com/illegal-online-gambling-costs-eu-member-states-e22-9bn-in-lost-tax-revenue/"
+  },
+  {
+    "id": "c416f25344ee",
+    "date": "2026-07-04",
+    "cat": "新遊戲",
+    "vendor": "市場動態",
+    "game": "納利表示，艾伯塔省政府預計第一年 iGaming 發薪日將達到 7,600 萬美元",
+    "game_en": "Alberta Government Expects $76M iGaming Payday in First Year, Nally Says",
+    "summary": "部長 Dale Nally 向《埃德蒙頓日報》透露，阿爾伯塔省新監管的 iGaming 市場預計僅第一年就將產生 7,600 萬加元的收入。新市場將於7月13日上線。根據省監管機構Alberta Gaming, Liquor & Cannabis的數據，截至6月26日，已有47家業者",
+    "summary_en": "Alberta’s newly regulated iGaming market is projected to generate CAD $76 million in its first year alone, Minister Dale Nally revealed to the Edmonton Journal. The new market goes live on July 13. According to Alberta Gaming, Liquor & Cannabis, the provincial regulator, as of June 26, 47 operators ",
+    "stars": 5,
+    "url": "https://www.casino.org/news/canadian-gaming-alberta-76m-in-first-year-igaming-revenue/"
   },
   {
     "id": "c565b8286ebb",
@@ -1837,7 +1861,7 @@
   {
     "id": "2d91624b74d5",
     "date": "2026-07-03",
-    "cat": "市場趨勢",
+    "cat": "行銷科技",
     "vendor": "市場動態",
     "game": "DAZN 押注加拿大高層：直播是我們在安大略省擁擠市場的優勢",
     "game_en": "DAZN Bet Canada Exec: Live Streaming Is Our Edge in Ontario’s Crowded Market",

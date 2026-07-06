@@ -1,36 +1,12 @@
 [
   {
-    "id": "e7ed777f51be",
-    "date": "2026-07-06",
-    "cat": "市場趨勢",
-    "vendor": "市場動態",
-    "game": "前德晉董事因涉嫌 3.13 億美元世界盃投注團夥在台灣被捕",
-    "game_en": "Former Tak Chun director arrested in Taiwan over $313M World Cup betting ring",
-    "summary": "前德晉董事蘇應平是因涉嫌價值 3.13 億美元的世界盃博彩團夥而在台灣被捕的 8 名嫌疑人之一。前德晉董事因涉嫌 3.13 億美元世界盃投注團夥在台灣被捕，該帖子首次出現在《亞洲博彩新聞》上 | AGB - 亞洲博彩簡報。",
-    "summary_en": "Former Tak Chun director Sou Ieng Peng was among 8 suspects arrested in Taiwan over an alleged World Cup betting ring worth $313 million. The post Former Tak Chun director arrested in Taiwan over $313M World Cup betting ring first appeared on Asia Gaming News | AGB - Asia Gaming Brief.",
-    "stars": 4,
-    "url": "https://agbrief.com/news/taiwan/06/07/2026/former-tak-chun-director-arrested-in-taiwan-over-313m-world-cup-betting-ring/"
-  },
-  {
-    "id": "215d28e872ad",
-    "date": "2026-07-06",
-    "cat": "市場趨勢",
-    "vendor": "市場動態",
-    "game": "與 Juroszek 相關的投資者敦促 DigiPlus 優先考慮回購而非陸基投資",
-    "game_en": "Juroszek-linked investors urge DigiPlus to prioritize buyback over land-based investments",
-    "summary": "與 Juroszek 相關的投資者敦促 DigiPlus 進行大規模回購，認為其 3.25 億美元的現金儲備比新的陸上支出更能得到更好的利用。 AGB - 亞洲博弈布里",
-    "summary_en": "Juroszek-linked investor urges DigiPlus to launch a major buyback, arguing its $325 million cash pile is better used than new land-based spend The post Juroszek-linked investors urge DigiPlus to prioritize buyback over land-based investments first appeared on Asia Gaming News | AGB - Asia Gaming Bri",
-    "stars": 5,
-    "url": "https://agbrief.com/news/philippines/06/07/2026/digiplus-urged-to-prioritize-buyback-over-new-land-based-investments/"
-  },
-  {
     "id": "3d138339b5b4",
     "date": "2026-07-06",
     "cat": "新遊戲",
     "vendor": "市場動態",
     "game": "亞洲博弈電子簡報：新加坡推出大聖淘沙總體規劃以促進旅遊業",
     "game_en": "Asia Gaming eBrief: Singapore unveils Greater Sentosa Master Plan to boost tourism",
-    "summary": "新加坡正在重新規劃其島嶼遊樂場。聖淘沙發展公司宣布了一項為期二十年的總體規劃，將鄰近的布拉尼（Brani）納入度假勝地，旨在使聖淘沙名勝世界周圍的遊客數量增加一倍。耗資 50 億美元的 RWS 2.0 擴建為管道奠定了基礎，這是一個及時的舉措",
+    "summary": "新加坡正在重新規劃其島嶼遊樂場。聖淘沙發展公司宣布了一項為期二十年的總體規劃，將鄰近的布拉尼 (Brani) 納入度假勝地，旨在使聖淘沙名勝世界周圍的遊客數量增加一倍。耗資 50 億美元的 RWS 2.0 擴建為管道奠定了基礎，這是一個及時的舉措",
     "summary_en": "Singapore is reimagining its island playground. Sentosa Development Corporation has unveiled a two-decade master plan folding neighboring Brani into the resort destination, aiming to double visitor numbers around Resorts World Sentosa. The $5 billion RWS 2.0 expansion anchors the pipeline, a timely ",
     "stars": 5,
     "url": "https://agbrief.com/news/06/07/2026/singapore-unveils-greater-sentosa-master-plan/"
@@ -46,6 +22,114 @@
     "summary_en": "A former senior Thai Buddhist monk has been sentenced to 12 years in prison for embezzling the equivalent of around US$92,000 in charitable donations intended for the development of a religious college. Phra Thepwatcharasitthimethi, now known by his lay name, Wirach, was convicted by Thailand’s Cent",
     "stars": 3,
     "url": "https://www.casino.org/news/buddhist-monk-gets-12-years-after-gambling-fueled-sextortion-scandal/"
+  },
+  {
+    "id": "215d28e872ad",
+    "date": "2026-07-06",
+    "cat": "市場趨勢",
+    "vendor": "市場動態",
+    "game": "與 Juroszek 相關的投資者敦促 DigiPlus 優先考慮回購而非陸基投資",
+    "game_en": "Juroszek-linked investors urge DigiPlus to prioritize buyback over land-based investments",
+    "summary": "與 Juroszek 相關的投資者敦促 DigiPlus 進行大規模回購，認為其 3.25 億美元的現金儲備比新的陸上支出更能得到更好的利用。 AGB - 亞洲博弈布里",
+    "summary_en": "Juroszek-linked investor urges DigiPlus to launch a major buyback, arguing its $325 million cash pile is better used than new land-based spend The post Juroszek-linked investors urge DigiPlus to prioritize buyback over land-based investments first appeared on Asia Gaming News | AGB - Asia Gaming Bri",
+    "stars": 5,
+    "url": "https://agbrief.com/news/philippines/06/07/2026/digiplus-urged-to-prioritize-buyback-over-new-land-based-investments/"
+  },
+  {
+    "id": "7e98e16f7aba",
+    "date": "2026-07-06",
+    "cat": "市場趨勢",
+    "vendor": "市場動態",
+    "game": "拉丁美洲 iGaming 與運動博彩成長的未來",
+    "game_en": "The Future of iGaming & Sportsbook Growth in Latam",
+    "summary": "不可否認，拉丁美洲對於雄心勃勃的博彩運營商來說有大量的成長機會，特別是在墨西哥、秘魯等關鍵市場…閱讀更多...",
+    "summary_en": "There’s no denying the abundance of growth opportunities in LatAm for ambitious betting operators, especially in key markets such as Mexico, Peru,...Read More...",
+    "stars": 4,
+    "url": "https://igamingfuture.com/the-future-of-igaming-sportsbook-growth-in-latam/"
+  },
+  {
+    "id": "ede6d5976860",
+    "date": "2026-07-06",
+    "cat": "市場趨勢",
+    "vendor": "市場動態",
+    "game": "Australian pension fund sells 15M SkyCity shares, cuts stake below 7%",
+    "game_en": "Australian pension fund sells 15M SkyCity shares, cuts stake below 7%",
+    "summary": "在兩週內出售了紐西蘭賭場營運商 SkyCity Entertainment Group 超過 1,500 萬股股票後，AustralianSuper 將其在 SkyCity Entertainment Group 的持股比例減少至 6.95%。 […] 澳洲退休基金出售 1,500 萬股 SkyCity 股票，將持股降至 7% 以下",
+    "summary_en": "AustralianSuper has reduced its substantial holding in SkyCity Entertainment Group to 6.95 percent after selling more than 15 million shares in the New Zealand casino operator over a two-week period. […] The post Australian pension fund sells 15M SkyCity shares, cuts stake below 7% first appeared on",
+    "stars": 4,
+    "url": "https://agbrief.com/news/new-zealand/06/07/2026/australian-pension-fund-sells-15m-skycity-shares-cuts-stake-below-7/"
+  },
+  {
+    "id": "348c5949249a",
+    "date": "2026-07-06",
+    "cat": "市場趨勢",
+    "vendor": "市場動態",
+    "game": "澳洲聯邦法院對非法線上撲克服務處以 1,680 萬美元的罰款",
+    "game_en": "Australia’s Federal Court imposes $16.8M in penalties over illegal online poker services",
+    "summary": "澳洲聯邦法院對非法線上撲克服務的提供者和推廣者處以 1,680 萬美元的罰款。澳洲聯邦法院對非法線上撲克服務處以 1680 萬美元罰款的帖子首次出現在亞洲博彩新聞 | AGB - 亞洲博彩簡報。",
+    "summary_en": "Australia's Federal Court orders $16.8 million in penalties against providers and promoters of illegal online poker services. The post Australia’s Federal Court imposes $16.8M in penalties over illegal online poker services first appeared on Asia Gaming News | AGB - Asia Gaming Brief.",
+    "stars": 4,
+    "url": "https://agbrief.com/news/australia/06/07/2026/australias-federal-court-imposes-16-8m-in-penalties-over-illegal-online-poker-services/"
+  },
+  {
+    "id": "e7ed777f51be",
+    "date": "2026-07-06",
+    "cat": "市場趨勢",
+    "vendor": "市場動態",
+    "game": "前德晉董事因涉嫌 3.13 億美元世界盃投注團夥在台灣被捕",
+    "game_en": "Former Tak Chun director arrested in Taiwan over $313M World Cup betting ring",
+    "summary": "前德晉董事蘇應平是因涉嫌價值 3.13 億美元的世界盃博彩團夥而在台灣被捕的 8 名嫌疑人之一。前德晉董事因涉嫌 3.13 億美元世界盃投注團夥在台灣被捕，該帖子首次出現在《亞洲博彩新聞》上 | AGB - 亞洲博彩簡報。",
+    "summary_en": "Former Tak Chun director Sou Ieng Peng was among 8 suspects arrested in Taiwan over an alleged World Cup betting ring worth $313 million. The post Former Tak Chun director arrested in Taiwan over $313M World Cup betting ring first appeared on Asia Gaming News | AGB - Asia Gaming Brief.",
+    "stars": 4,
+    "url": "https://agbrief.com/news/taiwan/06/07/2026/former-tak-chun-director-arrested-in-taiwan-over-313m-world-cup-betting-ring/"
+  },
+  {
+    "id": "707d86ce166f",
+    "date": "2026-07-06",
+    "cat": "市場趨勢",
+    "vendor": "市場動態",
+    "game": "大阪開放第二階段非博彩 RFP 流程以支援米高梅大阪",
+    "game_en": "Osaka opens RFP process for Phase 2 non-gaming to support MGM Osaka",
+    "summary": "日本大阪市當局於週五啟動了夢島二期非博彩設施的徵求建議書 (RFP) 流程。夢島是大阪灣的一個人工島（資料照片），將成為日本首個帶賭場的綜合度假村 (IR) 大阪米高梅 (MGM Osaka) 的所在地。土地面積",
+    "summary_en": "The authorities in Osaka city, Japan, opened on Friday a request-for-proposal (RFP) process for non-gaming facilities for Phase 2 of Yumeshima, an artificial island in Osaka Bay (pictured in a file photo) that will be home to MGM Osaka, Japan’s first integrated resort (IR) with casino. The land area",
+    "stars": 4,
+    "url": "https://www.ggrasia.com/osaka-opens-rfp-process-for-phase-2-non-gaming-to-support-mgm-osaka?utm_source=rss&utm_medium=rss&utm_campaign=osaka-opens-rfp-process-for-phase-2-non-gaming-to-support-mgm-osaka"
+  },
+  {
+    "id": "2fdbeb3c5817",
+    "date": "2026-07-06",
+    "cat": "菲律賓市場",
+    "vendor": "市場動態",
+    "game": "菲律賓 Hann 獲認可在新克拉克城計畫 Hann Reserve 中營運旅遊設施",
+    "game_en": "Hann Philippines recognised to run tourism facilities at New Clark City project Hann Reserve",
+    "summary": "瀚恩度假村品牌背後的賭場度假村開發商瀚恩菲律賓公司已與菲律賓經濟區管理局（PEZA）簽署了一份“註冊協議”，承認該公司為旅遊業的“PEZA生態區國內市場企業”。根據 PEZA 的更新，該協議使 H",
+    "summary_en": "Hann Philippines Inc, the casino resort developer behind the Hann Resorts brand, has signed a “registration agreement” with the Philippine Economic Zone Authority (PEZA) that recognises the company as a “PEZA ecozone domestic market enterprise” for tourism. Per a PEZA update, the agreement enables H",
+    "stars": 4,
+    "url": "https://www.ggrasia.com/hann-philippines-recognised-to-run-tourism-facilities-at-new-clark-city-project-hann-reserve?utm_source=rss&utm_medium=rss&utm_campaign=hann-philippines-recognised-to-run-tourism-facilities-at-new-clark-city-project-hann-reserve"
+  },
+  {
+    "id": "8e0b00cc0c91",
+    "date": "2026-07-06",
+    "cat": "亞洲市場",
+    "vendor": "市場動態",
+    "game": "金沙中國連續第六年入選道瓊 ESG 工作最佳指數",
+    "game_en": "Sands China says on Dow Jones Best-in-Class Indices for ESG work sixth year running",
+    "summary": "澳門賭場營運商金沙中國有限公司表示，該公司已連續第六年入選道瓊最佳指數。該獎項包括連續第五年入選道瓊最佳世界指數，以及連續第六年入選道瓊最佳亞太指數",
+    "summary_en": "Macau casino operator Sands China Ltd says it is featured for the sixth consecutive year in the Dow Jones Best-in-Class Indices. The recognition included being on the Dow Jones Best-in-Class World Index for the fifth consecutive year, and the Dow Jones Best-in-Class Asia Pacific Index for the sixth ",
+    "stars": 3,
+    "url": "https://www.ggrasia.com/sands-china-says-on-dow-jones-best-in-class-indices-for-esg-work-sixth-year-running?utm_source=rss&utm_medium=rss&utm_campaign=sands-china-says-on-dow-jones-best-in-class-indices-for-esg-work-sixth-year-running"
+  },
+  {
+    "id": "2aa35a819179",
+    "date": "2026-07-06",
+    "cat": "亞洲市場",
+    "vendor": "市場動態",
+    "game": "金沙中國「歡樂360月」新增人工智慧員工健康檢查工具",
+    "game_en": "AI health-check tools for staff added to Sands China’s ‘Happy 360 Month’",
+    "summary": "澳門賭場營運商金沙中國有限公司於 6 月舉辦了第六屆「快樂 360 月」活動，這是一項針對員工健康和福祉的年度活動。該公司表示，超過 7,000 名員工參加了在澳門威尼斯人、澳門巴黎人、澳門倫敦人和",
+    "summary_en": "Macau casino operator Sands China Ltd held during June the sixth edition of its ‘Happy 360 Month’, an annual initiative about health and well-being aimed at its staff. The firm said more than 7,000 workers took part in activities staged across its Venetian Macao, Parisian Macao, Londoner Macao, and ",
+    "stars": 3,
+    "url": "https://www.ggrasia.com/ai-health-check-tools-for-staff-added-to-sands-chinas-happy-360-month?utm_source=rss&utm_medium=rss&utm_campaign=ai-health-check-tools-for-staff-added-to-sands-chinas-happy-360-month"
   },
   {
     "id": "46fa182a6abe",
@@ -82,78 +166,6 @@
     "summary_en": "Betting and gaming operator Stake has renewed its partnership with the English Premier League club Everton FC, amending its previous agreement to move the front-of-shirt branding to the players’ shirt sleeves. Previously, Stake was Everton’s main partner for the last 4 years; now, as the club’s Offi",
     "stars": 4,
     "url": "https://affpapa.com/stake-extends-partnership-with-everton-fc/"
-  },
-  {
-    "id": "7e98e16f7aba",
-    "date": "2026-07-06",
-    "cat": "市場趨勢",
-    "vendor": "市場動態",
-    "game": "拉丁美洲 iGaming 與運動博彩成長的未來",
-    "game_en": "The Future of iGaming & Sportsbook Growth in Latam",
-    "summary": "不可否認，拉丁美洲對於雄心勃勃的博彩運營商來說有大量的成長機會，特別是在墨西哥、秘魯等關鍵市場…閱讀更多...",
-    "summary_en": "There’s no denying the abundance of growth opportunities in LatAm for ambitious betting operators, especially in key markets such as Mexico, Peru,...Read More...",
-    "stars": 4,
-    "url": "https://igamingfuture.com/the-future-of-igaming-sportsbook-growth-in-latam/"
-  },
-  {
-    "id": "348c5949249a",
-    "date": "2026-07-06",
-    "cat": "市場趨勢",
-    "vendor": "市場動態",
-    "game": "澳洲聯邦法院對非法線上撲克服務處以 1,680 萬美元的罰款",
-    "game_en": "Australia’s Federal Court imposes $16.8M in penalties over illegal online poker services",
-    "summary": "澳洲聯邦法院對非法線上撲克服務的提供者和推廣者處以 1,680 萬美元的罰款。澳洲聯邦法院對非法線上撲克服務處以 1680 萬美元罰款的貼文首次出現在亞洲博彩新聞 | AGB - 亞洲博彩簡報。",
-    "summary_en": "Australia's Federal Court orders $16.8 million in penalties against providers and promoters of illegal online poker services. The post Australia’s Federal Court imposes $16.8M in penalties over illegal online poker services first appeared on Asia Gaming News | AGB - Asia Gaming Brief.",
-    "stars": 4,
-    "url": "https://agbrief.com/news/australia/06/07/2026/australias-federal-court-imposes-16-8m-in-penalties-over-illegal-online-poker-services/"
-  },
-  {
-    "id": "707d86ce166f",
-    "date": "2026-07-06",
-    "cat": "市場趨勢",
-    "vendor": "市場動態",
-    "game": "大阪開放第二階段非博彩 RFP 流程以支援米高梅大阪",
-    "game_en": "Osaka opens RFP process for Phase 2 non-gaming to support MGM Osaka",
-    "summary": "日本大阪市當局於週五啟動了夢島二期非博彩設施的徵求建議書 (RFP) 流程。夢島是大阪灣的一個人工島（資料照片），將成為日本首個帶賭場的綜合度假村 (IR) 大阪米高梅 (MGM Osaka) 的所在地。土地面積",
-    "summary_en": "The authorities in Osaka city, Japan, opened on Friday a request-for-proposal (RFP) process for non-gaming facilities for Phase 2 of Yumeshima, an artificial island in Osaka Bay (pictured in a file photo) that will be home to MGM Osaka, Japan’s first integrated resort (IR) with casino. The land area",
-    "stars": 4,
-    "url": "https://www.ggrasia.com/osaka-opens-rfp-process-for-phase-2-non-gaming-to-support-mgm-osaka?utm_source=rss&utm_medium=rss&utm_campaign=osaka-opens-rfp-process-for-phase-2-non-gaming-to-support-mgm-osaka"
-  },
-  {
-    "id": "2fdbeb3c5817",
-    "date": "2026-07-06",
-    "cat": "菲律賓市場",
-    "vendor": "市場動態",
-    "game": "菲律賓 Hann 獲認可在新克拉克城計畫 Hann Reserve 中營運旅遊設施",
-    "game_en": "Hann Philippines recognised to run tourism facilities at New Clark City project Hann Reserve",
-    "summary": "瀚恩度假村品牌背后的赌场度假村开发商瀚恩菲律宾公司已与菲律宾经济区管理局（PEZA）签署了一份“注册协议”，承认该公司为旅游业的“PEZA生态区国内市场企业”。根據 PEZA 的更新，該協議使 H",
-    "summary_en": "Hann Philippines Inc, the casino resort developer behind the Hann Resorts brand, has signed a “registration agreement” with the Philippine Economic Zone Authority (PEZA) that recognises the company as a “PEZA ecozone domestic market enterprise” for tourism. Per a PEZA update, the agreement enables H",
-    "stars": 4,
-    "url": "https://www.ggrasia.com/hann-philippines-recognised-to-run-tourism-facilities-at-new-clark-city-project-hann-reserve?utm_source=rss&utm_medium=rss&utm_campaign=hann-philippines-recognised-to-run-tourism-facilities-at-new-clark-city-project-hann-reserve"
-  },
-  {
-    "id": "8e0b00cc0c91",
-    "date": "2026-07-06",
-    "cat": "亞洲市場",
-    "vendor": "市場動態",
-    "game": "金沙中國連續第六年入選道瓊 ESG 工作最佳指數",
-    "game_en": "Sands China says on Dow Jones Best-in-Class Indices for ESG work sixth year running",
-    "summary": "澳門賭場營運商金沙中國有限公司表示，該公司已連續第六年入選道瓊最佳指數。該獎項包括連續第五年入選道瓊最佳世界指數，以及連續第六年入選道瓊最佳亞太指數",
-    "summary_en": "Macau casino operator Sands China Ltd says it is featured for the sixth consecutive year in the Dow Jones Best-in-Class Indices. The recognition included being on the Dow Jones Best-in-Class World Index for the fifth consecutive year, and the Dow Jones Best-in-Class Asia Pacific Index for the sixth ",
-    "stars": 3,
-    "url": "https://www.ggrasia.com/sands-china-says-on-dow-jones-best-in-class-indices-for-esg-work-sixth-year-running?utm_source=rss&utm_medium=rss&utm_campaign=sands-china-says-on-dow-jones-best-in-class-indices-for-esg-work-sixth-year-running"
-  },
-  {
-    "id": "2aa35a819179",
-    "date": "2026-07-06",
-    "cat": "亞洲市場",
-    "vendor": "市場動態",
-    "game": "金沙中國「歡樂360月」新增人工智慧員工健康檢查工具",
-    "game_en": "AI health-check tools for staff added to Sands China’s ‘Happy 360 Month’",
-    "summary": "澳門賭場營運商金沙中國有限公司於 6 月舉辦了第六屆「快樂 360 月」活動，這是一項針對員工健康和福祉的年度活動。該公司表示，超過 7,000 名員工參加了在澳門威尼斯人、澳門巴黎人、澳門倫敦人和",
-    "summary_en": "Macau casino operator Sands China Ltd held during June the sixth edition of its ‘Happy 360 Month’, an annual initiative about health and well-being aimed at its staff. The firm said more than 7,000 workers took part in activities staged across its Venetian Macao, Parisian Macao, Londoner Macao, and ",
-    "stars": 3,
-    "url": "https://www.ggrasia.com/ai-health-check-tools-for-staff-added-to-sands-chinas-happy-360-month?utm_source=rss&utm_medium=rss&utm_campaign=ai-health-check-tools-for-staff-added-to-sands-chinas-happy-360-month"
   },
   {
     "id": "63dacb50a6d3",
@@ -306,7 +318,7 @@
     "vendor": "市場動態",
     "game": "新南威爾斯州執政黨承諾提高老虎機稅並在十年內削減老虎機數量",
     "game_en": "NSW ruling party commits to higher pokies taxes and 10-year cut to machine numbers",
-    "summary": "新州工黨承諾暫停老虎機牌照、提高俱樂部稅並在十年內減少全州老虎機數量。新南威爾斯州執政黨承諾提高老虎機稅並在 10 年內削減老虎機數量AGB - 亞洲博彩簡報。",
+    "summary": "新南威爾斯工黨承諾暫停老虎機牌照、提高俱樂部稅並在十年內減少全州老虎機數量。新南威爾斯州執政黨承諾提高老虎機稅並在 10 年內削減老虎機數量AGB - 亞洲博彩簡報。",
     "summary_en": "NSW Labor commits to a pokies license moratorium, higher club taxes and a 10-year reduction in machine numbers across the state. The post NSW ruling party commits to higher pokies taxes and 10-year cut to machine numbers first appeared on Asia Gaming News | AGB - Asia Gaming Brief.",
     "stars": 5,
     "url": "https://agbrief.com/news/australia/06/07/2026/nsw-ruling-party-commits-to-higher-pokies-taxes-and-10-year-cut-to-machine-numbers/"
@@ -370,6 +382,30 @@
     "summary_en": "Vietnam welcomed 12.3 million foreign visitors in the first half of 2026, up 14.9 percent and near half of its full-year target. The post Vietnam foreign arrivals reach 12.3M in first half, up 14.9% first appeared on Asia Gaming News | AGB - Asia Gaming Brief.",
     "stars": 4,
     "url": "https://agbrief.com/news/vietnam/05/07/2026/vietnam-foreign-arrivals-reach-12-3m-in-first-half-up-14-9/"
+  },
+  {
+    "id": "9faeef1c69b4",
+    "date": "2026-07-05",
+    "cat": "市場趨勢",
+    "vendor": "市場動態",
+    "game": "孟加拉將線上賭博定為刑事犯罪，最高可判處 10 年監禁",
+    "game_en": "Bangladesh criminalizes online gambling with up to 10 years’ jail",
+    "summary": "孟加拉新賭博法針對線上投注、加密連線網路和促銷活動，最高可判處 10 年監禁。孟加拉將線上賭博定為刑事犯罪並判處最高 10 年監禁的貼文首次出現在亞洲博彩新聞 | AGB - 亞洲博彩簡報。",
+    "summary_en": "Bangladesh’s new gambling law targets online betting, crypto-linked networks and promotions, with penalties of up to 10 years in prison. The post Bangladesh criminalizes online gambling with up to 10 years’ jail first appeared on Asia Gaming News | AGB - Asia Gaming Brief.",
+    "stars": 5,
+    "url": "https://agbrief.com/news/world/05/07/2026/bangladesh-criminalizes-online-gambling-with-up-to-10-years-jail/"
+  },
+  {
+    "id": "ce1d393e0324",
+    "date": "2026-07-05",
+    "cat": "亞洲市場",
+    "vendor": "市場動態",
+    "game": "珠澳主要口岸上半年旅客吞吐量突破6,400萬人次 成長6%",
+    "game_en": "Key Zhuhai-Macau border checkpoint tops 64M passenger trips in first half, up 6%",
+    "summary": "2026年上半年，拱北口岸旅客吞吐量突破6,400萬人次，較去年同期成長6%。珠澳口岸重要口岸上半年旅客人次突破 6,400 萬人次，成長 6% AGB - 亞洲博弈簡報。",
+    "summary_en": "Passenger traffic through the Gongbei checkpoint exceeded 64 million trips in the first half of 2026, up 6 percent year-on-year. The post Key Zhuhai-Macau border checkpoint tops 64M passenger trips in first half, up 6% first appeared on Asia Gaming News | AGB - Asia Gaming Brief.",
+    "stars": 4,
+    "url": "https://agbrief.com/news/macau/05/07/2026/key-zhuhai-macau-border-checkpoint-tops-64m-passenger-trips-in-first-half-up-6/"
   },
   {
     "id": "49fd3906962d",
@@ -694,54 +730,6 @@
     "url": "https://agbrief.com/news/world/03/07/2026/popok-gaming-extends-support-to-botswanas-tt-cup-challenge/"
   },
   {
-    "id": "759230f493f3",
-    "date": "2026-07-03",
-    "cat": "市場趨勢",
-    "vendor": "市場動態",
-    "game": "電競博彩見解：最新報告的主要要點",
-    "game_en": "Esports betting insights: Key takeaways from latest report",
-    "summary": "iGB 著眼於 Oddin.gg 最新電競博彩報告的關鍵要點以及垂直行業中新興的敘述。",
-    "summary_en": "iGB looks at the key takeaways from Oddin.gg's latest esports betting report and the emerging narratives within the vertical.",
-    "stars": 3,
-    "url": "https://igamingbusiness.com/esports/esports-betting-insights-key-takeaways-oddin-report/"
-  },
-  {
-    "id": "2138b0c9de0d",
-    "date": "2026-07-03",
-    "cat": "全球法規",
-    "vendor": "市場動態",
-    "game": "非洲賭博監管機構在倫敦推動非洲安全賭博週",
-    "game_en": "African gambling regulators advance Africa Safer Gambling Week in London",
-    "summary": "監管機構齊聚倫敦 iGB Live，討論永續發展、市場競爭力和通路參與者。",
-    "summary_en": "Regulators came together at iGB Live in London to discuss sustainability, market competitiveness and channel players.",
-    "stars": 4,
-    "url": "https://igamingbusiness.com/legal-compliance/african-gambling-regulators-convene-london-enhance-co-operation/"
-  },
-  {
-    "id": "4ead14f61e95",
-    "date": "2026-07-03",
-    "cat": "市場趨勢",
-    "vendor": "市場動態",
-    "game": "沙烏地阿拉伯收緊線上賭博存款手段測試的規定",
-    "game_en": "KSA tightens rules on online gambling deposit means testing",
-    "summary": "經濟狀況調查旨在確保玩家不會超出其經濟能力進行賭博。",
-    "summary_en": "The means test is intended to ensure players do not gamble beyond their financial capacity.",
-    "stars": 3,
-    "url": "https://igamingbusiness.com/legal-compliance/ksa-tightens-rules-online-gambling-deposit-means-tests/"
-  },
-  {
-    "id": "62d35ba16d27",
-    "date": "2026-07-03",
-    "cat": "市場趨勢",
-    "vendor": "市場動態",
-    "game": "巴西上半年博彩收入達 60 億雷亞爾",
-    "game_en": "Brazil gaming revenue hits BRL6 billion in H1",
-    "summary": "聯邦稅務局報告稱，巴西 iGaming 進入公共財政的金額比去年同期增加了 86%。",
-    "summary_en": "The Federal Revenue Service reported that Brazilian iGaming generated an 86% increase on the amount that went into public coffers during the same period last year.",
-    "stars": 4,
-    "url": "https://igamingbusiness.com/finance/brazil-gaming-revenue-hits-brl6-billion-in-h1/"
-  },
-  {
     "id": "1654df69d1fd",
     "date": "2026-07-03",
     "cat": "業界大事",
@@ -914,7 +902,7 @@
     "date": "2026-07-03",
     "cat": "行銷科技",
     "vendor": "市場動態",
-    "game": "永恆科技從遊戲化過載轉向更聰明的保留",
+    "game": "永恆科技從遊戲化過度轉向更聰明的保留",
     "game_en": "Timeless Tech on the shift from gamification overload to smarter retention",
     "summary": "在本文中，Timeless Tech 探討了為何 iGaming 營運商在 2026 年將從遊戲化過載轉向圍繞清晰度、目的和可持續玩家參與構建的更規範、個性化的保留系統。 2026年全球iGaming市場將變得更加分層，成長",
     "summary_en": "In this article, Timeless Tech examines why iGaming operators in 2026 are shifting from gamification overload toward more disciplined, personalized retention systems built around clarity, purpose, and sustainable player engagement. The global iGaming market in 2026 is becoming more layered, with gro",
@@ -1000,7 +988,7 @@
     "vendor": "市場動態",
     "game": "DAZN 押注加拿大高階主管：我們將建立您的長期信任",
     "game_en": "DAZN Bet Canada Exec: We’ll Build Your Long-Term Trust",
-    "summary": "國際體育串流媒體巨頭 DAZN 現在在安大略省擁有一個獲得許可的體育博彩和賭場數位平台，這是該公司所說的擴大加拿大足跡的第一步。從長遠來看，與客戶建立信任是營運商如何在競爭中脫穎而出的關鍵。",
+    "summary": "国际体育流媒体巨头 DAZN 现在在安大略省拥有一个获得许可的体育博彩和赌场数字平台，这是该公司所说的扩大加拿大足迹的第一步。從長遠來看，與客戶建立信任是營運商如何在競爭中脫穎而出的關鍵。",
     "summary_en": "International sports streaming giant DAZN now has a licensed sports betting and casino digital platform live in Ontario, the first step of what the company said will be an expanding Canadian footprint. Building trust with the customer over the long term is how an operator can differentiate itself fr",
     "stars": 5,
     "url": "https://www.casino.org/news/dazn-bet-canada-exec-well-build-your-long-term-trust/"
@@ -1110,7 +1098,7 @@
     "game_en": "Nederlandse Loterij names Ageeth Bakker as new CFRO",
     "summary": "Nederlandse Loterij 任命 Ageeth Bakker 為其新任財務與風險長 (CFRO)，以加強其內部財務結構。自 2026 年 11 月 1 日起，Bakker 將承擔責任，確保網路上最大的賭博營運商",
     "summary_en": "The Nederlandse Loterij has moved to strengthen its internal financial structures with the appointment of Ageeth Bakker as its new Chief Financial and Risk Officer (CFRO). Effective from 1 November 2026, Bakker will take on the responsibility of ensuring that the biggest gambling operator in the Net",
-    "stars": 4,
+    "stars": 3,
     "url": "https://sbcnews.co.uk/retail/2026/07/03/dutch-lottery-cfro/"
   },
   {
@@ -1244,6 +1232,54 @@
     "summary_en": "The invitation-only half-day event, held at Better Collective’s Copenhagen headquarters, sets the stage for a full annual conference… The post Gaming in the Nordics launch event in Copenhagen: Key highlights appeared first on European Gaming Industry News.",
     "stars": 5,
     "url": "https://europeangaming.eu/portal/press-releases/2026/07/03/208809/gaming-in-the-nordics-launch-event-in-copenhagen-key-highlights/"
+  },
+  {
+    "id": "759230f493f3",
+    "date": "2026-07-03",
+    "cat": "市場趨勢",
+    "vendor": "市場動態",
+    "game": "電競博彩見解：最新報告的主要要點",
+    "game_en": "Esports betting insights: Key takeaways from latest report",
+    "summary": "iGB 著眼於 Oddin.gg 最新電競博彩報告的關鍵要點以及垂直行業中新興的敘述。",
+    "summary_en": "iGB looks at the key takeaways from Oddin.gg's latest esports betting report and the emerging narratives within the vertical.",
+    "stars": 3,
+    "url": "https://igamingbusiness.com/esports/esports-betting-insights-key-takeaways-oddin-report/"
+  },
+  {
+    "id": "2138b0c9de0d",
+    "date": "2026-07-03",
+    "cat": "全球法規",
+    "vendor": "市場動態",
+    "game": "非洲賭博監管機構在倫敦推動非洲安全賭博週",
+    "game_en": "African gambling regulators advance Africa Safer Gambling Week in London",
+    "summary": "監管機構齊聚倫敦 iGB Live，討論永續發展、市場競爭力和通路參與者。",
+    "summary_en": "Regulators came together at iGB Live in London to discuss sustainability, market competitiveness and channel players.",
+    "stars": 4,
+    "url": "https://igamingbusiness.com/legal-compliance/african-gambling-regulators-convene-london-enhance-co-operation/"
+  },
+  {
+    "id": "4ead14f61e95",
+    "date": "2026-07-03",
+    "cat": "市場趨勢",
+    "vendor": "市場動態",
+    "game": "沙烏地阿拉伯收緊線上賭博存款手段測試的規定",
+    "game_en": "KSA tightens rules on online gambling deposit means testing",
+    "summary": "經濟狀況調查旨在確保玩家不會超出其經濟能力進行賭博。",
+    "summary_en": "The means test is intended to ensure players do not gamble beyond their financial capacity.",
+    "stars": 3,
+    "url": "https://igamingbusiness.com/legal-compliance/ksa-tightens-rules-online-gambling-deposit-means-tests/"
+  },
+  {
+    "id": "62d35ba16d27",
+    "date": "2026-07-03",
+    "cat": "市場趨勢",
+    "vendor": "市場動態",
+    "game": "巴西上半年博彩收入達 60 億雷亞爾",
+    "game_en": "Brazil gaming revenue hits BRL6 billion in H1",
+    "summary": "聯邦稅務局報告稱，巴西 iGaming 進入公共財政的金額比去年同期增加了 86%。",
+    "summary_en": "The Federal Revenue Service reported that Brazilian iGaming generated an 86% increase on the amount that went into public coffers during the same period last year.",
+    "stars": 4,
+    "url": "https://igamingbusiness.com/finance/brazil-gaming-revenue-hits-brl6-billion-in-h1/"
   },
   {
     "id": "855d98faa6ab",
@@ -2057,7 +2093,7 @@
     "game_en": "Betty CEO: Ontario Regulator’s Livestream Approval Validates Our iBingo Strategy",
     "summary": "該公司執行長表示，安大略省酒精和博彩委員會 (AGCO) 最近的監管轉變直接驗證了 Betty Canada 倡導的數位優先 iBingo 策略。 AGCO 6 月 23 日宣布，符合條件的運行媒體賓果遊戲的慈善組織可以",
     "summary_en": "A recent regulatory shift by the Alcohol and Gaming Commission of Ontario (AGCO) has directly validated the digital-first iBingo strategy pioneered by Betty Canada, according to the company’s chief executive. The AGCO announced June 23 that eligible charitable organizations running media bingo can n",
-    "stars": 5,
+    "stars": 4,
     "url": "https://www.casino.org/news/canadian-gaming-betty-ceo-agco-livestream-bingo/"
   },
   {
@@ -2091,7 +2127,7 @@
     "vendor": "市場動態",
     "game": "隨著營運商成本上升，UKGC 牌照費將從 10 月起上漲 25%",
     "game_en": "UKGC License Fees to Rise 25% From October as Costs Mount for Operators",
-    "summary": "從 10 月起，英國賭博業者將多付 25% 的費用才能獲得 UKGC 許可證，這給已經面臨更高賭博稅和法定徵稅的行業增加了另一項財務負擔，並呼籲進一步改革。英国博彩运营商将向英国博彩委员会 (UKGC) 的大部分费用增加 25%",
+    "summary": "從 10 月起，英國賭博業者將多付 25% 的費用才能獲得 UKGC 許可證，這給已經面臨更高賭博稅和法定徵稅的行業增加了另一項財務負擔，並呼籲進一步改革。英國博彩業者將向英國博彩委員會 (UKGC) 的大部分費用增加 25%",
     "summary_en": "U.K. gambling operators will pay 25% more to hold a UKGC license from October, adding another financial burden for an industry already facing higher gambling taxes, a statutory levy, and calls for further reform. Britain’s gambling operators will pay 25% more for most U.K. Gambling Commission (UKGC)",
     "stars": 5,
     "url": "https://www.gamblinginsider.com/news/169658/ukgc-licence-fees-rise-october-2026"

@@ -112,7 +112,8 @@ header {
 .cat-btn[data-cat="行銷科技"].active .cat-icon    { background: #f3e8ff; }
 .cat-btn[data-cat="業界大事"].active .cat-icon    { background: #fef9c3; }
 .cat-btn[data-cat="市場趨勢"].active .cat-icon    { background: #dcfce7; }
-.cat-btn[data-cat="平台動態"].active .cat-icon    { background: #e0f2fe; }
+.cat-btn[data-cat="包網平台"].active .cat-icon    { background: #e0f2fe; }
+.cat-btn[data-cat="金流支付"].active .cat-icon    { background: #cffafe; }
 
 /* Month group button */
 .month-btn {
@@ -414,10 +415,15 @@ header {
           <span class="cat-label">市場趨勢</span>
           <span class="cat-count" id="cnt-trend">0</span>
         </button>
-        <button class="cat-btn" data-cat="平台動態">
+        <button class="cat-btn" data-cat="包網平台">
           <span class="cat-icon">🖥️</span>
-          <span class="cat-label">平台動態</span>
+          <span class="cat-label">包網平台</span>
           <span class="cat-count" id="cnt-platform">0</span>
+        </button>
+        <button class="cat-btn" data-cat="金流支付">
+          <span class="cat-icon">💳</span>
+          <span class="cat-label">金流支付</span>
+          <span class="cat-count" id="cnt-pay">0</span>
         </button>
       </div>
     </div>
@@ -522,7 +528,8 @@ function updateCounts() {
   const cats = {
     '新遊戲':'cnt-game','熱門廠商':'cnt-vendor','菲律賓市場':'cnt-ph',
     '全球法規':'cnt-law','亞洲市場':'cnt-asia','行銷科技':'cnt-tech',
-    '業界大事':'cnt-event','市場趨勢':'cnt-trend','平台動態':'cnt-platform',
+    '業界大事':'cnt-event','市場趨勢':'cnt-trend','包網平台':'cnt-platform',
+    '金流支付':'cnt-pay',
   };
   for (const [cat, id] of Object.entries(cats)) {
     const cnt = subset.filter(r => r.cat === cat).length;

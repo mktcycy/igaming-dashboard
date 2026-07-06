@@ -44,6 +44,8 @@ RSS_SOURCES = [
     "https://slotbeats.com/feed/",
     # G3 Newswire — 全球博彩產業（含亞洲/拉美/歐洲新品與合作）
     "https://g3newswire.com/feed/",
+    # Payment Expert — 博彩金流/支付/加密貨幣出入款專業媒體（月報「金流」方向主力）
+    "https://paymentexpert.com/feed/",
     # Yogonet International（拉丁美洲/全球，Americas 覆蓋主力）
     "https://www.yogonet.com/international/rss.xml",
     # Casino.org
@@ -94,7 +96,7 @@ PAGE_MONITORS = [
         "name": "WG包網官網",
         "url": "https://www.wgbaowang.net/zh-TW.html",
         "vendor": "WG包網",
-        "cat": "平台動態",
+        "cat": "包網平台",
         "hash_file": "wg_page_hash.txt",
     },
 ]
@@ -122,7 +124,29 @@ CAT_RULES = [
       "portfolio with new","collaboration launch","week slot games",
       "game of the week","slot games releases","casino game release",
       "powered by onetouch","exclusive release"], "新遊戲"),
-    # 3. Named game suppliers (vendor-specific business/partnership/expansion news)
+    # 3. 包網平台 / 系統商（white label / turnkey / aggregator / PAM / 包網）
+    (["white label","white-label","whitelabel","turnkey","turn-key",
+      "platform provider","igaming platform","casino platform provider",
+      "sportsbook platform","betting platform provider","platform-as-a-service",
+      "player account management","pam platform"," pam ","game aggregat",
+      "content aggregat","aggregation platform","aggregator platform",
+      "b2b platform","managed service","plug-and-play","plug and play",
+      "no-code","no code platform","platform integration","turnkey solution",
+      "igaming solution","complete platform","full-service platform",
+      "turnkey casino","platform supplier","platform provider agreement",
+      "wg包網","wg baowang","wgbaowang","wg platform","wg遊戲","wg api",
+      "aggregator","game aggregator","content aggregator","qtech",
+      "包網","系統商","白標","聚合平台"], "包網平台"),
+    # 4. 金流支付 / 加密貨幣出入款
+    (["payment gateway","payment provider","payment solution","payment method",
+      "payment orchestration","payment partnership","payment processor"," psp ",
+      "e-wallet","ewallet","digital wallet","crypto payment","cryptocurrency payment",
+      "usdt","stablecoin","tether ","on-ramp","off-ramp","fiat on-ramp",
+      "cashier solution","deposit and withdrawal","withdrawal method","deposit method",
+      "open banking","instant payment","local payment method","embedded finance",
+      "gcash","pix payment"," upi ","apple pay","google pay","payment integration",
+      "出入款","加密貨幣","金流","第三方支付","電子錢包","支付方案"], "金流支付"),
+    # 5. Named game suppliers (vendor-specific business/partnership/expansion news)
     (["pg soft","pgsoft","pocket games soft",
       "jili ","jili games",
       "jdb gaming","jdb ",
@@ -213,6 +237,12 @@ CAT_RULES = [
       "fined","penalty","settlement","settle probe","regulator probe",
       "aml ","anti-money","fatf","new rules for","adds new rules",
       "gambling tax","betting tax","tax on gambling","licence fee",
+      # 立法 / 執法 / 非法查緝 / 稅制（月報「合規」方向）
+      "gambling law","gaming law","betting law","gambling bill","gaming bill",
+      "penalt","prohibit","lawmaker","criminali","illegal online","illegal gambl",
+      "illegal betting","illegal poker","unlicensed","crackdown","tighten gambl",
+      "court imposes","enforceable undertaking","money laundering","pokies tax",
+      "facial recognition","stake limit","advertising ban","ad ban",
       "compliance"], "全球法規"),
     # 7. Industry events and major deals
     (["sigma ","igb live","g2e ","ice london","ice barcelona","sbc summit",
@@ -234,8 +264,6 @@ CAT_RULES = [
       "expands presence","expands into","expands its presence",
       "market entry","goes public","stock exchange listing",
       "profit guidance","lifts guidance"], "業界大事"),
-    # 8. WG Platform
-    (["wg包網","wg baowang","wgbaowang","wg platform","wg遊戲","wg api"], "平台動態"),
 ]
 
 VENDOR_MAP = {

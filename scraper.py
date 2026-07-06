@@ -32,6 +32,13 @@ RSS_SOURCES = [
     "https://igamingfuture.com/feed/",
     # Asia Gaming Brief (Asia-focused, Philippines, Macau, Singapore)
     "https://agbrief.com/feed/",
+    # ── 亞洲博彩專業媒體（加強亞洲市場/廠商覆蓋） ──
+    # GGRAsia — 亞太博彩重量級媒體（澳門/菲律賓/日本/東南亞）
+    "https://www.ggrasia.com/feed/",
+    # Inside Asian Gaming (IAG) — 亞洲博彩產業深度報導
+    "https://asgam.com/feed/",
+    # Gambling Insider — 全球 B2B，含亞洲廠商/市場動態
+    "https://www.gamblinginsider.com/feed",
     # Yogonet International
     "https://www.yogonet.com/international/rss.xml",
     # Casino.org
@@ -62,6 +69,17 @@ RSS_SOURCES = [
     "https://www.igbaffiliate.com/feed/",
     # AffPapa — B2B iGaming deals and partnerships
     "https://www.affpapa.com/feed/",
+    # ── 中文科技媒體（含博彩/遊戲相關報導） ──
+    # 未來商務 — 數位時代旗下商務科技頻道
+    "https://fc.bnext.com.tw/rss",
+    # 科技報橘 TechOrange — 科技趨勢與新創報導
+    "https://buzzorange.com/techorange/feed/",
+    # TechNews 科技新報 — 科技與 AI 新聞
+    "https://technews.tw/feed/",
+    # IT之家 — 中國科技資訊媒體
+    "https://www.ithome.com/rss/",
+    # TechCrunch — 全球科技新創媒體
+    "https://techcrunch.com/feed/",
 ]
 
 # Sites to monitor for page-content changes (no RSS available)
@@ -162,7 +180,12 @@ CAT_RULES = [
       "gamification","user experience","ux design","conversion rate",
       "paid media","programmatic","email marketing","push notification",
       "media buy","media buying","media partnership",
-      "brand ambassador","sponsorship deal","esports sponsor"], "行銷科技"),
+      "brand ambassador","sponsorship deal","esports sponsor",
+      # 品牌代言 / 體育贊助（行銷性質）
+      "ambassador","global ambassador","brand ambassador",
+      "sponsorship","title sponsor","kit partner","shirt sponsor",
+      "training wear","sleeve sponsor","official partner of",
+      "fan experience","fan engagement","fan activation"], "行銷科技"),
     # 5. Asia market — non-Philippines
     (["macau ","macao ","singapore casino","singapore integrated",
       "japan casino","japan ir","vietnam gambl","cambodia casino",
@@ -179,7 +202,13 @@ CAT_RULES = [
       "gambling oversight","gambling regulation","gambling reform","gambling review",
       "betting regulation","betting act","gaming regulator","regulated market",
       "anti-money laundering","aml compliance",
-      "self-exclusion","problem gambling","player protection"], "全球法規"),
+      "self-exclusion","problem gambling","player protection",
+      # 監理處分 / 裁罰 / 稅務 / 新規（執法與法規動態）
+      "banned by","gambling regulator"," regulator ","regulatory",
+      "fined","penalty","settlement","settle probe","regulator probe",
+      "aml ","anti-money","fatf","new rules for","adds new rules",
+      "gambling tax","betting tax","tax on gambling","licence fee",
+      "compliance"], "全球法規"),
     # 7. Industry events and major deals
     (["sigma ","igb live","g2e ","ice london","ice barcelona","sbc summit",
       "casinobeats summit","igb affiliate","acquisition ","acquires ",
@@ -190,7 +219,16 @@ CAT_RULES = [
       "enters into agreement","signs deal","signs agreement",
       "sign agreement","sign a deal","forms alliance","inks deal",
       "enters deal","new partnership","partnership agreement",
-      "global expansion","new market entry","enters market"], "業界大事"),
+      "global expansion","new market entry","enters market",
+      # 併購 / 聯盟 / 人事 / 授權合作 / 市場擴張
+      "alliance","to acquire"," acquires ","acquired by","merges with",
+      "appoints","appointment","names new","new ceo","new chairman",
+      "new chair","takes chair","steps down","resigns","joins as",
+      "licensing deal","license deal","distribution deal","content deal",
+      "aggregation deal","secures license","secures licence",
+      "expands presence","expands into","expands its presence",
+      "market entry","goes public","stock exchange listing",
+      "profit guidance","lifts guidance"], "業界大事"),
     # 8. WG Platform
     (["wg包網","wg baowang","wgbaowang","wg platform","wg遊戲","wg api"], "平台動態"),
 ]
@@ -264,8 +302,6 @@ IGAMING_TERMS_EN = [
     "william hill","ladbrokes","betfair","paddy power","bet365","pointsbet",
     "hard rock casino","mgm resort","wynn resort","las vegas sands",
     "melco resort","galaxy entertainment","sands corp",
-    # Prediction markets (gambling-adjacent)
-    "kalshi","prediction market","polymarket",
     # Industry media / events / trade terms
     "igb ","egr ","sbc ","sigma ","casinobeats","agbrief","calvinayre",
     "gross gaming revenue","ggr ","ngr ","handle ","revenue gambling",
@@ -277,8 +313,42 @@ IGAMING_TERMS_ZH = [
     "運動彩券", "彩券", "博奕", "賭博", "押注", "賠率",
 ]
 
+# 排除詞：社會/刑案/天災/花邊等「不是產業情報」的雜訊。
+# 即使文章含博彩關鍵字（如提到某賭場），只要命中這些詞就當作雜訊剔除。
+EXCLUDE_TERMS_EN = [
+    # 兇殺 / 刑案 / 法庭社會新聞
+    "murder", "homicide", "manslaughter", " rape", "sexual assault",
+    "stabb", "shooting", "shot dead", "gunman", "gunmen", "kidnap",
+    "human traffick", "suicide", "overdose", "found dead", "body found",
+    "on trial over", "goes on trial", "stands trial", "trial over",
+    "obituary", "died aged", "passed away", "dies at",
+    "sex scandal", "epstein", "sexual misconduct", "plead guilty",
+    # 天災 / 意外事故
+    "earthquake", "hurricane", "wildfire", "tsunami", "plane crash",
+    "typhoon", "landslide",
+    # 純美國預測市場 / 金融話題（非博彩產業）
+    "kalshi", "polymarket", "prediction market",
+]
+EXCLUDE_TERMS_ZH = [
+    "謀殺", "兇殺", "命案", "性侵", "槍擊", "槍殺", "綁架", "自殺",
+    "遺體", "屍體", "受審", "判刑", "入獄", "地震", "颱風", "海嘯", "山崩",
+]
+
+def is_excluded(title_en, summary_en="", text_zh=""):
+    """命中排除詞（刑案/天災/花邊）即回傳 True，代表這篇是雜訊。"""
+    en = (title_en + " " + summary_en).lower()
+    if any(t in en for t in EXCLUDE_TERMS_EN):
+        return True
+    if any(t in text_zh for t in EXCLUDE_TERMS_ZH):
+        return True
+    return False
+
+
 def is_relevant(title_en, summary_en="", summary_zh=""):
     """Check if an article is iGaming-related using English + Chinese text."""
+    # 先剔除雜訊：即使含博彩關鍵字，命中排除詞就不算相關
+    if is_excluded(title_en, summary_en, summary_zh):
+        return False
     en = (title_en + " " + summary_en).lower()
     if any(t in en for t in IGAMING_TERMS_EN):
         return True
@@ -300,17 +370,17 @@ def translate_zh(text, max_len=500):
         return text
     if not is_english(text):
         return text
-    try:
-        chunk = text[:max_len]
-        result = GoogleTranslator(source='auto', target='zh-TW').translate(chunk)
-        if not result:
-            return text
-        # Discard if translation looks like an error page
-        if result.strip().startswith('Error') or '500' in result[:30]:
-            return text
-        return result.strip()
-    except Exception:
-        return text
+    chunk = text[:max_len]
+    # 重試兩次，避免偶發網路/限流造成整批未翻譯
+    for attempt in range(2):
+        try:
+            result = GoogleTranslator(source='auto', target='zh-TW').translate(chunk)
+            if result and not (result.strip().startswith('Error') or '500' in result[:30]):
+                return result.strip()
+        except Exception:
+            pass
+        time.sleep(0.4 * (attempt + 1))
+    return text
 
 
 def guess_category(text):
@@ -408,8 +478,13 @@ def scrape_rss(feed_url, existing_ids):
                 continue
 
             # Skip articles with no iGaming relevance
-            if not is_relevant(title_raw, desc_raw):
-                continue
+            # For Chinese articles, pass text as summary_zh so ZH keywords are checked
+            if is_english(title_raw):
+                if not is_relevant(title_raw, desc_raw):
+                    continue
+            else:
+                if not is_relevant("", "", title_raw + " " + desc_raw):
+                    continue
 
             # Skip articles older than MAX_AGE_DAYS
             try:
@@ -566,6 +641,63 @@ def scrape_cq9(existing_ids):
     return articles
 
 
+def _og(soup, prop):
+    tag = soup.find("meta", property=prop) or soup.find("meta", attrs={"name": prop})
+    return clean(tag.get("content", "")) if tag else ""
+
+
+def scrape_sa_gaming(existing_ids):
+    """SA Gaming 官網新聞稿：sitemap 取 /press/ 連結，逐頁抓 og:title（靜態可讀）。
+
+    PG/JILI/Tada 等官網為 JS SPA 靜態抓不到（保留方案 B）；SA 的新聞稿頁有
+    server-side og 標籤，故可直接爬取，作為亞洲廠商第一手來源之一。
+    """
+    articles = []
+    try:
+        r = requests.get("https://www.sa-gaming.com/sitemap.xml", headers=HEADERS, timeout=TIMEOUT)
+        r.raise_for_status()
+        soup = BeautifulSoup(r.content, "xml")
+        press_urls = [clean(loc.get_text()) for loc in soup.find_all("loc")
+                      if "/press/" in loc.get_text() or "/blog/" in loc.get_text()]
+        for art_url in press_urls[:20]:
+            title_slug = art_url.rstrip("/").split("/")[-1].replace("-", " ")
+            item_uid = uid(art_url, title_slug)
+            if item_uid in existing_ids:
+                continue
+            try:
+                pr = requests.get(art_url, headers=HEADERS, timeout=TIMEOUT)
+                pr.raise_for_status()
+                psoup = BeautifulSoup(pr.content, "lxml")
+                title_raw = _og(psoup, "og:title") or clean(psoup.title.get_text() if psoup.title else "")
+                desc_raw = _og(psoup, "og:description")[:300]
+            except Exception:
+                continue
+            # 去掉品牌前綴「SA Gaming | 」讓標題乾淨
+            title_raw = re.sub(r'^SA ?Gaming\s*[|｜:-]\s*', '', title_raw).strip()
+            if not title_raw or len(title_raw) < 6:
+                continue
+            summary_raw = desc_raw or title_raw
+            title_zh = translate_zh(title_raw)
+            summary_zh = translate_zh(summary_raw)
+            cat = guess_category("SA Gaming " + title_raw + " " + summary_raw)
+            articles.append({
+                "id": item_uid,
+                "date": date.today().isoformat(),
+                "cat": cat,
+                "vendor": "SA Gaming",
+                "game": title_zh,
+                "game_en": title_raw,
+                "summary": summary_zh,
+                "summary_en": summary_raw,
+                "stars": guess_importance(title_raw + " " + summary_raw, cat),
+                "url": art_url,
+            })
+            time.sleep(0.1)
+    except Exception as e:
+        print(f"  ✗ SA Gaming: {e}")
+    return articles
+
+
 def monitor_page(source, existing_ids):
     """Detect content changes on a static page with no RSS."""
     results = []
@@ -641,6 +773,43 @@ def translate_existing(records):
     return updated
 
 
+def fix_untranslated(records):
+    """修補：已抓進來但標題/摘要仍是英文（先前翻譯失敗）的記錄，重新翻譯。"""
+    fixed = 0
+    for r in records:
+        game = r.get("game", "")
+        if game and is_english(game):
+            # 確保保留英文原文供分類用
+            if not r.get("game_en"):
+                r["game_en"] = game
+            zh = translate_zh(game)
+            if zh and not is_english(zh):
+                r["game"] = zh
+                fixed += 1
+        summ = r.get("summary", "")
+        if summ and is_english(summ):
+            if not r.get("summary_en"):
+                r["summary_en"] = summ
+            zh = translate_zh(summ)
+            if zh and not is_english(zh):
+                r["summary"] = zh
+    return fixed
+
+
+def dedupe_records(records):
+    """移除重複標題（例：SA 官網 sitemap 的多語系同篇、跨來源轉載同一則）。
+    以英文原標題正規化為鍵，保留日期最新的一筆。"""
+    seen = set()
+    out = []
+    for r in sorted(records, key=lambda x: x.get("date", ""), reverse=True):
+        key = re.sub(r'\s+', ' ', (r.get("game_en") or r.get("game", "")).strip().lower())
+        if key and key in seen:
+            continue
+        seen.add(key)
+        out.append(r)
+    return out
+
+
 def purge_irrelevant(records):
     """Remove records with no iGaming relevance (checks English title + summary + Chinese summary)."""
     before = len(records)
@@ -682,6 +851,14 @@ def run():
         existing_ids.add(a["id"])
     print(f"    → {len(cq9_arts)} 新筆")
 
+    # SA Gaming press releases (亞洲廠商第一手，sitemap + og:title)
+    print("  HTML: SA Gaming Press")
+    sa_arts = scrape_sa_gaming(existing_ids)
+    for a in sa_arts:
+        new_records.append(a)
+        existing_ids.add(a["id"])
+    print(f"    → {len(sa_arts)} 新筆")
+
     # Page change monitors (sites without RSS)
     for src in PAGE_MONITORS:
         print(f"  監控: {src['name']}")
@@ -699,16 +876,28 @@ def run():
         updated = translate_existing(existing)
         print(f"  → 翻譯 {updated} 筆舊資料")
 
+    all_records = existing + new_records
+
+    # 修補先前翻譯失敗、仍是英文的記錄
+    if TRANSLATE:
+        print("\n修補未翻譯的英文記錄...")
+        fixed = fix_untranslated(all_records)
+        print(f"  → 補翻 {fixed} 筆")
+
     # Re-classify ALL records with updated rules
     print("\n重新分類所有資料...")
-    all_records = existing + new_records
     reclassified = reclassify_all(all_records)
     print(f"  → 更新分類 {reclassified} 筆")
 
-    # Remove off-topic records (casino.org crime/sports articles etc.)
+    # Remove off-topic records (crime/tabloid/disaster/prediction-market noise)
     all_records, purged = purge_irrelevant(all_records)
     if purged:
         print(f"  → 移除非相關內容 {purged} 筆")
+
+    before = len(all_records)
+    all_records = dedupe_records(all_records)
+    if before - len(all_records):
+        print(f"  → 移除重複標題 {before - len(all_records)} 筆")
 
     all_records.sort(key=lambda r: r["date"], reverse=True)
     save_data(all_records)

@@ -1,7 +1,19 @@
 [
   {
-    "id": "4578d64bdad1",
-    "date": "2026-07-11",
+    "id": "49a274fd482e",
+    "date": "2026-07-12",
+    "cat": "行銷科技",
+    "vendor": "市場動態",
+    "game": "AI 是不發脾氣的完美家教！11 歲男童靠 Copilot 克服讀寫障礙自製遊戲",
+    "game_en": "AI 是不發脾氣的完美家教！11 歲男童靠 Copilot 克服讀寫障礙自製遊戲",
+    "summary": "住在美國灣區、任職於 LinkedIn 的員工溝通業務夥伴 Michele Ragon，最近分享令她既驚喜又感 […]",
+    "summary_en": "住在美國灣區、任職於 LinkedIn 的員工溝通業務夥伴 Michele Ragon，最近分享令她既驚喜又感 […]",
+    "stars": 3,
+    "url": "https://technews.tw/2026/07/12/11-year-old-boy-overcomes-dyslexia-creates-game-copilot/"
+  },
+  {
+    "id": "3c31d7c8bd92",
+    "date": "2026-07-12",
     "cat": "市場趨勢",
     "vendor": "SA Gaming",
     "game": "本地化：賭場營運商取得全球成功的關鍵",
@@ -9,7 +21,67 @@
     "summary": "透過有效的在地化，在 iGaming 領域取得全球成功。探索提高玩家參與度和增加收入的策略。閱讀更多！",
     "summary_en": "Unlock global success in iGaming with effective localization. Discover strategies to enhance player engagement and boost revenue. Read more!",
     "stars": 3,
-    "url": "https://www.sagaming.com/blog/localization-is-the-key-to-unlocking-global-success-for-casino-operators%20"
+    "url": "https://www.sagaming.com/blog/localization-is-the-key-to-unlocking-global-success-for-casino-operators"
+  },
+  {
+    "id": "462c63b39a7f",
+    "date": "2026-07-11",
+    "cat": "菲律賓市場",
+    "vendor": "PAGCOR",
+    "game": "自從菲律賓從反洗錢灰名單中刪除以來，PAGCOR加強了廉潔檢查的力度",
+    "game_en": "PAGCOR has upped the ante in probity checks since Philippines was removed from AML grey list",
+    "summary": "自去年該國被從金融監管機構中除名以來，菲律賓博彩監管機構 PAGCOR 收緊了廉潔檢查規則 [...]",
+    "summary_en": "Philippine gaming regulator PAGCOR has tightened its probity check rules since the country was removed last year from the Financial […]",
+    "stars": 4,
+    "url": "https://asgam.com/2026/07/12/pagcor-has-upped-the-ante-in-probity-checks-since-philippines-was-removed-from-aml-grey-list/"
+  },
+  {
+    "id": "d0fa34c5be2e",
+    "date": "2026-07-11",
+    "cat": "業界大事",
+    "vendor": "市場動態",
+    "game": "米高梅討論迪勒收購要約，據報導成立特別委員會",
+    "game_en": "MGM Discussing Diller Takeover Offer, Reportedly Formed Special Committee",
+    "summary": "米高梅國際酒店集團（NYSE：MGM）的股價在周五盤後交易中上漲，有報導稱該賭場營運商正在與 Barry Diller's People Inc.（納斯達克股票代碼：PPLI）就其上個月提出的收購進行談判。 6月1日，持有米高梅26%股份的迪勒宣布",
+    "summary_en": "Shares of MGM Resorts International (NYSE: MGM) rallied in after-hours trading Friday amid reports that the casino operator is in progressing talks with Barry Diller’s People Inc. (NASDAQ: PPLI) regarding an acquisition he pitched last month. On June 1, Diller, who controls 26% of MGM shares, unveil",
+    "stars": 5,
+    "url": "https://www.casino.org/news/mgm-discussing-diller-takeover-offer-reportedly-formed-special-committee/"
+  },
+  {
+    "id": "cf85dcf10fd8",
+    "date": "2026-07-11",
+    "cat": "全球法規",
+    "vendor": "市場動態",
+    "game": "德州城未能追回在非法賭博調查中查獲的 72.1 萬美元",
+    "game_en": "Texas City Loses Bid to Recover $721K Seized in Illegal Gambling Investigation",
+    "summary": "一名聯邦法官裁定，德州希區考克市不能起訴加爾維斯頓縣或治安官辦公室，要求追回相當於其年度預算約 9% 的資金，當局稱這些資金與非法賭博有關。希區考克在警長吉米富倫的辦公室沒收了約 721,000 美元後提起訴訟。",
+    "summary_en": "The city of Hitchcock, Texas, cannot sue Galveston County or the sheriff’s office to recover funds equal to about 9% of its annual budget, which authorities allege are tied to illegal gambling, a federal judge has ruled. Hitchcock sued after Sheriff Jimmy Fullen’s office seized around $721,000 from ",
+    "stars": 4,
+    "url": "https://www.casino.org/news/texas-city-loses-bid-to-recover-721k-seized-in-illegal-gambling-investigation/"
+  },
+  {
+    "id": "7039387f006b",
+    "date": "2026-07-11",
+    "cat": "行銷科技",
+    "vendor": "市場動態",
+    "game": "AI 是救星還是毀滅創意？Epic 執行長與開發商對「生成式遊戲」態度兩極",
+    "game_en": "AI 是救星還是毀滅創意？Epic 執行長與開發商對「生成式遊戲」態度兩極",
+    "summary": "遊戲產業對於人工智慧（AI）的應用，正陷入兩極化的激烈辯論。Epic Games 執行長蒂姆·斯維尼 （Tim […]",
+    "summary_en": "遊戲產業對於人工智慧（AI）的應用，正陷入兩極化的激烈辯論。Epic Games 執行長蒂姆·斯維尼 （Tim […]",
+    "stars": 3,
+    "url": "https://technews.tw/2026/07/12/epic-ceo-ai-save-destiny-devs-worry-ai-kill-creative-soul/"
+  },
+  {
+    "id": "47c478ddcca6",
+    "date": "2026-07-11",
+    "cat": "市場趨勢",
+    "vendor": "市場動態",
+    "game": "「Academic Humanizer」問世，抹除 AI 寫作痕跡引發學界爭議",
+    "game_en": "「Academic Humanizer」問世，抹除 AI 寫作痕跡引發學界爭議",
+    "summary": "人工智慧（AI）在學術領域的應用日益普及，如何辨識與規範 AI 生成內容已成為熱門議題。近日新創公司 Morp […]",
+    "summary_en": "人工智慧（AI）在學術領域的應用日益普及，如何辨識與規範 AI 生成內容已成為熱門議題。近日新創公司 Morp […]",
+    "stars": 3,
+    "url": "https://technews.tw/2026/07/11/ai-papers-tool-academic-humanizer/"
   },
   {
     "id": "33ab8b437e7e",

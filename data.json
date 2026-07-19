@@ -1,7 +1,7 @@
 [
   {
-    "id": "3c31d7c8bd92",
-    "date": "2026-07-18",
+    "id": "4578d64bdad1",
+    "date": "2026-07-19",
     "cat": "市場趨勢",
     "vendor": "SA Gaming",
     "game": "本地化：賭場營運商取得全球成功的關鍵",
@@ -9,7 +9,55 @@
     "summary": "透過有效的在地化，在 iGaming 領域取得全球成功。探索提高玩家參與度和增加收入的策略。閱讀更多！",
     "summary_en": "Unlock global success in iGaming with effective localization. Discover strategies to enhance player engagement and boost revenue. Read more!",
     "stars": 3,
-    "url": "https://www.sagaming.com/blog/localization-is-the-key-to-unlocking-global-success-for-casino-operators"
+    "url": "https://www.sagaming.com/blog/localization-is-the-key-to-unlocking-global-success-for-casino-operators%20"
+  },
+  {
+    "id": "4beafd56b9c8",
+    "date": "2026-07-18",
+    "cat": "市場趨勢",
+    "vendor": "市場動態",
+    "game": "百麗宮賭場歡迎極為罕見的白化短吻鱷來到度假村棲息地",
+    "game_en": "Paragon Casino Welcomes Extremely Rare Albino Alligators to Resort Habitat",
+    "summary": "忘記最新的老虎機或最熱門的桌上遊戲。路易斯安那州百麗宮賭場度假村的最新景點是一對極為罕見的白化鱷魚。 Paragon 由路易斯安那州圖尼卡-比洛克西部落擁有和經營，其 Bayou Atrium 迎來了兩位新成員：罕見的白化病患者",
+    "summary_en": "Forget the newest slot machine or the hottest table game. The latest attraction at Louisiana’s Paragon Casino Resort is a pair of exceptionally rare albino alligators. Owned and operated by the Tunica-Biloxi Tribe of Louisiana, Paragon is welcoming two new members to its Bayou Atrium: rare albino al",
+    "stars": 3,
+    "url": "https://www.casino.org/news/paragon-casino-welcomes-extremely-rare-albino-alligators/"
+  },
+  {
+    "id": "7cbf4cf47969",
+    "date": "2026-07-18",
+    "cat": "市場趨勢",
+    "vendor": "市場動態",
+    "game": "邁克爾·伯里（Michael Burry）增加了 DraftKings 的股份，稱論文未改變",
+    "game_en": "Michael Burry Adds to DraftKings Stake, Says Thesis Unaltered",
+    "summary": "著名投資者 Michael Burry 週五表示，他最近增加了美國最大線上體育博彩營運商之一 DraftKings（納斯達克股票代碼：DKNG）的多頭部位。 Burry 在一篇內容廣泛的 Substack 貼文中告訴讀者，他在 DraftKings 中添加了 25 美元的產品。遊戲股收盤價為 24 美元",
+    "summary_en": "Famed investor Michael Burry on Friday noted he added to his recently initiated long position in DraftKings (NASDAQ: DKNG), one of the largest U.S. online sportsbook operators. In a wide-ranging Substack post, Burry told readers he added to DraftKings in the $25 range. The gaming stock closed at $24",
+    "stars": 3,
+    "url": "https://www.casino.org/news/michael-burry-adds-to-draftkings-stake-says-thesis-unaltered/"
+  },
+  {
+    "id": "87ae3a599606",
+    "date": "2026-07-18",
+    "cat": "市場趨勢",
+    "vendor": "市場動態",
+    "game": "法院發現丈夫在賭場花費了喪失行為能力的警官妻子的護理基金",
+    "game_en": "Court Finds Husband Spent Incapacitated Police Officer Wife’s Care Funds at Casinos",
+    "summary": "阿拉巴馬州的一名州法官去年同意檢察官的觀點，即一名前薩拉蘭警察在執行任務時中槍後喪失行為能力，他的丈夫把這對夫婦為照顧她而收到的大部分錢都賭光了。根據 NBC 15 News 最先報導的州法院記錄，",
+    "summary_en": "A state judge in Alabama agreed with prosecutors last year that the husband of a former Saraland Police officer, left incapacitated after being shot in the line of duty, gambled away much of the money the couple received for her care. According to state court records, first reported by NBC 15 News, ",
+    "stars": 5,
+    "url": "https://www.casino.org/news/court-husband-gambled-away-money-meant-for-wife-care/"
+  },
+  {
+    "id": "94c195617bf6",
+    "date": "2026-07-18",
+    "cat": "市場趨勢",
+    "vendor": "市場動態",
+    "game": "效率狂飆的副作用，AI 生成程式碼引爆「當責危機」與職場「AI 罰則」",
+    "game_en": "效率狂飆的副作用，AI 生成程式碼引爆「當責危機」與職場「AI 罰則」",
+    "summary": "隨著人工智慧（AI）逐步接管大量程式撰寫工作，企業內部被放大的早已不只是「開發效率」，還有一個更核心、更具挑戰 […]",
+    "summary_en": "隨著人工智慧（AI）逐步接管大量程式撰寫工作，企業內部被放大的早已不只是「開發效率」，還有一個更核心、更具挑戰 […]",
+    "stars": 3,
+    "url": "https://technews.tw/2026/07/18/ai-code-efficiency-side-effects-accountability-crisis/"
   },
   {
     "id": "07ee5a4fea27",
@@ -1030,6 +1078,66 @@
     "summary_en": "美國職棒大聯盟（MLB）近日祭出新規，明令禁止各球團於休息區的平板電腦使用生成式人工智慧（AI）介入比賽戰術。 […]",
     "stars": 3,
     "url": "https://technews.tw/2026/07/17/mlb-bans-ai-coach-decisions/"
+  },
+  {
+    "id": "d52650fcd1f1",
+    "date": "2026-07-17",
+    "cat": "市場趨勢",
+    "vendor": "市場動態",
+    "game": "隨著誠信案件成為焦點，NBA的西爾弗支持美國運動博彩沙皇的提議",
+    "game_en": "NBA’s Silver backs proposal for US sports betting czar as integrity cases take centre stage",
+    "summary": "NBA 總裁 Adam Silver 本週表示，聯盟與獨立專員之間的聯盟等積極措施可能會改善體育博彩的弊病。",
+    "summary_en": "Proactive measures such as a coalition between leagues and an independent commissioner could ameliorate the ills of sports betting, NBA Commissioner Adam Silver suggested this week.",
+    "stars": 3,
+    "url": "https://igamingbusiness.com/sustainable-gambling/sports-integrity/silver-backs-proposal-for-us-sports-betting-czar/"
+  },
+  {
+    "id": "2f3c548c343f",
+    "date": "2026-07-17",
+    "cat": "市場趨勢",
+    "vendor": "市場動態",
+    "game": "Entain在全球裁員500人，但強調這並不是對英國加稅的反應",
+    "game_en": "Entain to cut 500 roles globally but stresses it’s not a reaction to UK tax hike",
+    "summary": "該營運商表示，裁員將在很大程度上影響其人員和財務部門以及產品和技術部門等營運職能部門。",
+    "summary_en": "The operator said the cuts would largely impact operational functions like its people and finance departments, as well as those in product and tech.",
+    "stars": 3,
+    "url": "https://igamingbusiness.com/gaming/entain-cut-500-roles-globally-stresses-not-uk-tax-hike/"
+  },
+  {
+    "id": "befa9234ae40",
+    "date": "2026-07-17",
+    "cat": "全球法規",
+    "vendor": "市場動態",
+    "game": "隨著自由化進程的推進，紐西蘭開放了 iGaming 授權的意向書 (EOI) 流程",
+    "game_en": "New Zealand opens EOI process for iGaming licences as liberalisation process gathers steam",
+    "summary": "這是三個部分流程的第一階段，首先是意向書 (EOI)，然後是 9 月的拍賣，最後是 10 月的申請提交截止日期。",
+    "summary_en": "This is the first stage of a three-part process, beginning with an EOI, followed by an auction in September and concluding with an application submissions deadline of October.",
+    "stars": 5,
+    "url": "https://igamingbusiness.com/legal-compliance/new-zealand-opens-eoi-process-licences-under-igaming-rollout/"
+  },
+  {
+    "id": "443e4af79f57",
+    "date": "2026-07-17",
+    "cat": "全球法規",
+    "vendor": "市場動態",
+    "game": "賭博委員會和解後，Evolution UK 的運作不會改變",
+    "game_en": "Evolution UK operations won’t change following Gambling Commission settlement",
+    "summary": "Evolution 執行長 Martin Carlesund 表示，在本週稍早與英國博彩委員會達成監管和解後，該供應商不會改變其在英國的策略。",
+    "summary_en": "Evolution CEO Martin Carlesund says the supplier won’t change its strategy in the UK, after reaching a regulatory settlement with the UK Gambling Commission earlier this week.",
+    "stars": 4,
+    "url": "https://igamingbusiness.com/finance/evolution-uk-gambling-commission-settlement-q2/"
+  },
+  {
+    "id": "a150a33197bf",
+    "date": "2026-07-17",
+    "cat": "市場趨勢",
+    "vendor": "市場動態",
+    "game": "隨著南非的推出步伐加快，Virgin Bet 的目標是擴大市場份額",
+    "game_en": "Virgin Bet targeting market share gains as South Africa launch gathers pace",
+    "summary": "Gail Odgers 於 7 月 1 日開始擔任 Virgin Bet 南非總經理。她向 iGB 講述了她如何將豐富的行銷經驗融入到該職位中，以及為什麼該運營商在南非的推出迄今為止超出了預期。",
+    "summary_en": "Gail Odgers started her new role as Virgin Bet’s South Africa general manager on 1 July. She tells iGB how she’s incorporating her extensive marketing experience to the position, and why the operator's launch in South Africa has so far exceeded expectations.",
+    "stars": 4,
+    "url": "https://igamingbusiness.com/strategy/virgin-bet-targeting-market-share-gains-south-africa-gail-odgers/"
   },
   {
     "id": "2592b94c15d3",

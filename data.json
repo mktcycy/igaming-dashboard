@@ -108,6 +108,66 @@
     "url": "https://www.sagaming.com/blog/localization-is-the-key-to-unlocking-global-success-for-casino-operators%20"
   },
   {
+    "id": "3b43080eecfd",
+    "date": "2026-07-23",
+    "cat": "市場趨勢",
+    "vendor": "市場動態",
+    "game": "摩根士丹利：金沙中國銷售成長未能阻止利潤率壓縮",
+    "game_en": "Sands China volume gains fail to prevent margin compression: Morgan Stanley",
+    "summary": "摩根士丹利表示，金沙中國強勁的博彩業務量未能抵消再投資增加、成本上升和 EBITDA 利潤率下降的影響。金沙中國後銷售成長未能阻止利潤率壓縮：摩根士丹利首次出現在《亞洲博彩新聞》| AGB - 亞洲博彩簡報。",
+    "summary_en": "Morgan Stanley says Sands China’s strong gaming volumes failed to offset higher reinvestment, rising costs and weaker EBITDA margins. The post Sands China volume gains fail to prevent margin compression: Morgan Stanley first appeared on Asia Gaming News | AGB - Asia Gaming Brief.",
+    "stars": 4,
+    "url": "https://agbrief.com/news/macau/23/07/2026/sands-china-volume-gains-fail-to-prevent-margin-compression-morgan-stanley/"
+  },
+  {
+    "id": "440585e59f93",
+    "date": "2026-07-23",
+    "cat": "市場趨勢",
+    "vendor": "市場動態",
+    "game": "STDM 控制的 Estoril Sol 2025 年應佔虧損 2,880 萬美元",
+    "game_en": "STDM-controlled Estoril Sol posts $28.8M attributable loss in 2025",
+    "summary": "儘管 STDM 控股集團的線上業務有所成長，但 Estoril Sol 的應佔虧損到 2025 年仍擴大至 2,880 萬美元。 STDM 控制後的 Estoril Sol 公佈 2025 年歸屬虧損 2,880 萬美元，首次出現在亞洲博彩新聞 | AGB - 亞洲博彩簡報。",
+    "summary_en": "Estoril Sol’s attributable loss widened to $28.8 million in 2025 despite growth from the STDM-controlled group’s online business. The post STDM-controlled Estoril Sol posts $28.8M attributable loss in 2025 first appeared on Asia Gaming News | AGB - Asia Gaming Brief.",
+    "stars": 5,
+    "url": "https://agbrief.com/news/macau/23/07/2026/stdm-controlled-estoril-sol-posts-28-8m-attributable-loss-in-2025/"
+  },
+  {
+    "id": "d6414a9bf260",
+    "date": "2026-07-23",
+    "cat": "全球法規",
+    "vendor": "市場動態",
+    "game": "韓國賭場協會反對提高旅遊稅和許可證更新制度的提議",
+    "game_en": "Korea Casino Association opposes proposed higher tourism levy, licence renewal system",
+    "summary": "韓國賭場協會敦促韓國文化體育和旅遊部重新考慮對該國賭場監管框架的擬議改革。它警告說，更高的旅遊稅和引入許可證更新制度將削弱該行業的競爭力。",
+    "summary_en": "The Korea Casino Association has urged South Korea’s Ministry of Culture, Sports and Tourism to reconsider proposed reforms to the country’s casino regulatory framework. It warned that a higher tourism levy and the introduction of a licence renewal system would undermine the industry’s competitivene",
+    "stars": 4,
+    "url": "https://www.ggrasia.com/korea-casino-association-opposes-proposed-higher-tourism-levy-licence-renewal-system?utm_source=rss&utm_medium=rss&utm_campaign=korea-casino-association-opposes-proposed-higher-tourism-levy-licence-renewal-system"
+  },
+  {
+    "id": "a28ca2aac164",
+    "date": "2026-07-23",
+    "cat": "市場趨勢",
+    "vendor": "市場動態",
+    "game": "南維加斯大道心形賭場飯店獲準興建失敗的摩天輪場地",
+    "game_en": "Heart-Shaped Casino Hotel Permitted for Failed Ferris Wheel Site on South Vegas Strip",
+    "summary": "克拉克縣專員已批准在拉斯維加斯大道最臭名昭著的死區之一——前 SkyVue 摩天輪場地建造新度假村的計劃，其巨大的雙混凝土柱自 2011 年以來一直保持原樣。開發商 Eli Applebaum 透過 Kulik River Capital 獲得了",
+    "summary_en": "Clark County commissioners have signed off on plans for a new resort on one of the Las Vegas Strip’s most notorious dead zones — the former SkyVue ferris wheel site, whose massive twin concrete columns have stood untouched since 2011. Developer Eli Applebaum, through Kulik River Capital, received ap",
+    "stars": 2,
+    "url": "https://www.casino.org/news/heart-shaped-hotel-casino-permitted-for-failed-ferris-wheel-site-on-south-vegas-strip/"
+  },
+  {
+    "id": "376f8f337860",
+    "date": "2026-07-23",
+    "cat": "行銷科技",
+    "vendor": "市場動態",
+    "game": "AI 燒錢速度太驚人！美國陸軍 6 月就花光一年份 Token，被迫恢復限額",
+    "game_en": "AI 燒錢速度太驚人！美國陸軍 6 月就花光一年份 Token，被迫恢復限額",
+    "summary": "美國陸軍近日因生成式 AI 使用量暴增，被迫重新收緊原宣稱「不限量」的 token 配額。軍方信件顯示，陸軍戰 […]",
+    "summary_en": "美國陸軍近日因生成式 AI 使用量暴增，被迫重新收緊原宣稱「不限量」的 token 配額。軍方信件顯示，陸軍戰 […]",
+    "stars": 3,
+    "url": "https://technews.tw/2026/07/23/unlimited-ai-tokens-arent-unlimited-after-all-as-us-army-burns-through-supply/"
+  },
+  {
     "id": "81cadbb4c0e9",
     "date": "2026-07-22",
     "cat": "菲律賓市場",

@@ -1,7 +1,19 @@
 [
   {
-    "id": "4578d64bdad1",
-    "date": "2026-07-25",
+    "id": "b00f6d51b7a8",
+    "date": "2026-07-26",
+    "cat": "行銷科技",
+    "vendor": "市場動態",
+    "game": "4 年營收翻倍破 800 億日圓，解析 3COINS 靠「週週推百款新品」打造的圈粉商模",
+    "game_en": "4 年營收翻倍破 800 億日圓，解析 3COINS 靠「週週推百款新品」打造的圈粉商模",
+    "summary": "從 300 日圓均一商店起家，3COINS 靠著每週上架上百款新品，以及員工社群行銷，不僅吸引日本人常去嘗鮮， […]",
+    "summary_en": "從 300 日圓均一商店起家，3COINS 靠著每週上架上百款新品，以及員工社群行銷，不僅吸引日本人常去嘗鮮， […]",
+    "stars": 3,
+    "url": "https://finance.technews.tw/2026/07/26/3coins-debuts-taiwan-capture-market-share/"
+  },
+  {
+    "id": "3c31d7c8bd92",
+    "date": "2026-07-26",
     "cat": "市場趨勢",
     "vendor": "SA Gaming",
     "game": "本地化：賭場營運商取得全球成功的關鍵",
@@ -9,7 +21,31 @@
     "summary": "透過有效的在地化，在 iGaming 領域取得全球成功。探索提高玩家參與度和增加收入的策略。閱讀更多！",
     "summary_en": "Unlock global success in iGaming with effective localization. Discover strategies to enhance player engagement and boost revenue. Read more!",
     "stars": 3,
-    "url": "https://www.sagaming.com/blog/localization-is-the-key-to-unlocking-global-success-for-casino-operators%20"
+    "url": "https://www.sagaming.com/blog/localization-is-the-key-to-unlocking-global-success-for-casino-operators"
+  },
+  {
+    "id": "4f19a05bfd37",
+    "date": "2026-07-25",
+    "cat": "市場趨勢",
+    "vendor": "市場動態",
+    "game": "最高法院律師湯姆‧戈德斯坦 (Tom Goldstein) 成為高風險撲克玩家，被判六年徒刑",
+    "game_en": "Tom Goldstein, Supreme Court Lawyer Turned High-Stakes Poker Player Sentenced to Six Years",
+    "summary": "今年 56 歲的戈德斯坦今年 2 月被馬裡蘭州聯邦陪審團判定有罪，罪名是透過撲克獎金逃稅數百萬美元，以及在抵押貸款申請中撒謊。作為一名律師，戈德斯坦在最高法院審理了 40 多起案件，並且是 2000 年曆史性的總統選舉中阿爾·戈爾 (Al Gore) 法律團隊的一員。",
+    "summary_en": "Goldstein, 56, was convicted by a Maryland federal jury in February of evading millions of dollars in taxes on poker winnings and lying on mortgage applications. As a lawyer, Goldstein argued more than 40 cases before the Supreme Court and was part of Al Gore’s legal team in the historic 2000 presid",
+    "stars": 3,
+    "url": "https://www.casino.org/news/tom-goldstein-supreme-court-lawyer-turned-high-stakes-poker-player-sentenced-to-six-years/"
+  },
+  {
+    "id": "c52650a07b6c",
+    "date": "2026-07-25",
+    "cat": "行銷科技",
+    "vendor": "市場動態",
+    "game": "如何讓 Gemini 幫你計算訂閱支出，檢查所有收據信件＋扣款前提醒",
+    "game_en": "如何讓 Gemini 幫你計算訂閱支出，檢查所有收據信件＋扣款前提醒",
+    "summary": "現代人手上訂閱一堆串流平台、AI 工具或雲端空間，很多時候只是為「試用 7 天」或完成單一專案，隨後卻忘記取消 […]",
+    "summary_en": "現代人手上訂閱一堆串流平台、AI 工具或雲端空間，很多時候只是為「試用 7 天」或完成單一專案，隨後卻忘記取消 […]",
+    "stars": 3,
+    "url": "https://technews.tw/2026/07/25/how-gemini-can-help-manage-your-subscription-finances/"
   },
   {
     "id": "8c25195db4c5",

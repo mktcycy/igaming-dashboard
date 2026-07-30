@@ -120,6 +120,54 @@
     "url": "https://www.sagaming.com/blog/localization-is-the-key-to-unlocking-global-success-for-casino-operators"
   },
   {
+    "id": "c48a62e1c6c6",
+    "date": "2026-07-30",
+    "cat": "菲律賓市場",
+    "vendor": "PAGCOR",
+    "game": "由於電子遊戲表現疲軟，菲娛樂博彩公司 1H 收入下降 27%，淨利潤下降 85%",
+    "game_en": "Pagcor 1H revenue falls 27pct, net income down 85pct on weaker e-games performance",
+    "summary": "菲律賓娛樂博彩公司 (Pagcor) 報告稱，2026 年上半年總收入年減 26.6%，電子博彩部門的獲利疲軟拖累了國家博彩監管機構的財務表現。截至 6 月的六個月總收入",
+    "summary_en": "The Philippine Amusement and Gaming Corp (Pagcor) reported a 26.6-percent year-on-year decline in total revenue for the first half of 2026, with weaker earnings from the electronic gaming segment weighing on the state gaming regulator’s financial performance. Total revenue for the six months to June",
+    "stars": 5,
+    "url": "https://www.ggrasia.com/pagcor-1h-revenue-falls-27pct-net-income-down-85pct-on-weaker-e-games-performance?utm_source=rss&utm_medium=rss&utm_campaign=pagcor-1h-revenue-falls-27pct-net-income-down-85pct-on-weaker-e-games-performance"
+  },
+  {
+    "id": "96f1b36738dc",
+    "date": "2026-07-30",
+    "cat": "市場趨勢",
+    "vendor": "市場動態",
+    "game": "馬銀行將GEN Malaysia全年獲利預測下調28%，擔心第二季核心淨虧損",
+    "game_en": "Maybank slashes GEN Malaysia full-year earnings forecast by 28pct, fears 2Q core net loss",
+    "summary": "馬來亞銀行投資銀行有限公司 (Maybank Investment Bank Bhd) 將全球賭場營運商雲頂馬來西亞有限公司 (Genting Malaysia Bhd) 的全年盈利預測下調 28%，理由是該集團的馬來西亞賭場壟斷企業雲頂名勝世界 (Resorts World Genting) 和雲頂賭場有限公司 (Genting Casinos United Kingdom LtdR 的博彩總收入 (GG) 的博彩總收入較低。",
+    "summary_en": "Maybank Investment Bank Bhd has cut by 28 percent its full-year earnings forecast for global casino operator Genting Malaysia Bhd, citing “lower” gross gaming revenue (GGR) performance at the group’s Malaysian casino monopoly, Resorts World Genting, and at Genting Casinos United Kingdom Ltd. Analyst",
+    "stars": 4,
+    "url": "https://www.ggrasia.com/maybank-slashes-gen-malaysia-full-year-earnings-forecast-by-28pct-fears-2q-core-net-loss?utm_source=rss&utm_medium=rss&utm_campaign=maybank-slashes-gen-malaysia-full-year-earnings-forecast-by-28pct-fears-2q-core-net-loss"
+  },
+  {
+    "id": "a06c4addc74b",
+    "date": "2026-07-30",
+    "cat": "市場趨勢",
+    "vendor": "市場動態",
+    "game": "分析師認為 Wynn Al Marjan Island 於 2027 年中後期開業仍然可行",
+    "game_en": "Analyst sees Wynn Al Marjan Island opening still feasible by mid- to late-2027",
+    "summary": "世邦魏理仕股票研究公司表示，儘管影響中東的地緣政治緊張局勢存在不確定性，但永利度假村有限公司位於阿拉伯聯合大公國 (UAE) 哈伊馬角阿爾馬里安島的賭場度假村仍可能在 2027 年下半年開業。在周三的一份報告中，分析師 J",
+    "summary_en": "Wynn Resorts Ltd’s casino resort at Al Marjan Island in Ras Al Khaimah, part of the United Arab Emirates (UAE), could still open in the second half of 2027 despite uncertainty linked to geopolitical tensions affecting the Middle East, according to CBRE Equity Research. In a Wednesday note, analyst J",
+    "stars": 3,
+    "url": "https://www.ggrasia.com/analyst-sees-wynn-al-marjan-island-opening-still-feasible-by-mid-to-late-2027?utm_source=rss&utm_medium=rss&utm_campaign=analyst-sees-wynn-al-marjan-island-opening-still-feasible-by-mid-to-late-2027"
+  },
+  {
+    "id": "c406c3dbc3e7",
+    "date": "2026-07-30",
+    "cat": "新遊戲",
+    "vendor": "市場動態",
+    "game": "馬來亞銀行將雲頂馬來西亞 2026 年獲利預測下調 28%，因中東戰爭和世界盃影響，第二季可能出現淨虧損",
+    "game_en": "Maybank cuts Genting Malaysia 2026 earnings forecast by 28% with possible net loss in Q2 on Middle East war, World Cup impact",
+    "summary": "馬來亞銀行投資銀行表示，當雲頂馬來西亞有限公司 (Genting Malaysia Bhd) 發布 2026 年第 2 季業績時，其業績將較弱 […]",
+    "summary_en": "Maybank Investment Bank says it anticipates a weaker performance from Genting Malaysia Bhd when the casino operator releases its 2Q26 […]",
+    "stars": 5,
+    "url": "https://asgam.com/2026/07/30/maybank-cuts-genting-malaysia-2026-earnings-forecast-by-28-with-possible-net-loss-in-q2-on-middle-east-war-world-cup-impact/"
+  },
+  {
     "id": "9ae26f433bc3",
     "date": "2026-07-29",
     "cat": "市場趨勢",
@@ -1198,6 +1246,18 @@
     "summary_en": "PlayStation Studios 前總裁肖恩·雷頓（Shawn Layden）近日接受歐洲媒體《Euro […]",
     "stars": 3,
     "url": "https://ccc.technews.tw/2026/07/30/shawn-layden-urges-industry-to-revive-aa-games/"
+  },
+  {
+    "id": "4f9ed8f59f2e",
+    "date": "2026-07-29",
+    "cat": "行銷科技",
+    "vendor": "市場動態",
+    "game": "2030 年的賭場：賭場誕生以來的人工智慧發展",
+    "game_en": "The casino of 2030: AI developments since casino began",
+    "summary": "隨著人工智慧技術的快速發展，賭場必須隨之發展——但未來五年我們會走向何方？",
+    "summary_en": "With AI-powered technology advancing at a rapid rate, casinos have had to move with it - but where will we be in the next five years?",
+    "stars": 3,
+    "url": "https://www.bonusfinder.com/news/entertainment/casino-of-2030-ai-developments"
   },
   {
     "id": "ffe76d11cb53",

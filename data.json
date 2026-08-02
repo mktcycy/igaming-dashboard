@@ -36,6 +36,30 @@
     "url": "https://www.sagaming.com/blog/localization-is-the-key-to-unlocking-global-success-for-casino-operators%20"
   },
   {
+    "id": "4b86f225511b",
+    "date": "2026-08-02",
+    "cat": "行銷科技",
+    "vendor": "市場動態",
+    "game": "AI 也有政治立場？7 萬次測驗揭露多數 LLM 穩定偏向自由左派",
+    "game_en": "AI 也有政治立場？7 萬次測驗揭露多數 LLM 穩定偏向自由左派",
+    "summary": "推動這波 AI 熱潮的或許是資本主義，但這些大型語言模型（LLM）所展現出的經濟與社會價值觀，顯然與開發它們的 […]",
+    "summary_en": "推動這波 AI 熱潮的或許是資本主義，但這些大型語言模型（LLM）所展現出的經濟與社會價值觀，顯然與開發它們的 […]",
+    "stars": 3,
+    "url": "https://technews.tw/2026/08/02/mainstream-ai-models-liberal-left/"
+  },
+  {
+    "id": "6b53327cc811",
+    "date": "2026-08-02",
+    "cat": "市場趨勢",
+    "vendor": "市場動態",
+    "game": "63% 員工坦承誇大 AI 能力，美國職場「假裝很懂」成生存法則",
+    "game_en": "63% 員工坦承誇大 AI 能力，美國職場「假裝很懂」成生存法則",
+    "summary": "開會被問到 AI 工具怎麼用，你是老實承認還在摸索，還是面不改色地掰出一套說詞？在如今的美國職場，「假裝很懂 […]",
+    "summary_en": "開會被問到 AI 工具怎麼用，你是老實承認還在摸索，還是面不改色地掰出一套說詞？在如今的美國職場，「假裝很懂 […]",
+    "stars": 3,
+    "url": "https://technews.tw/2026/08/02/63-of-employees-admit-to-pretending-they-understand-ai/"
+  },
+  {
     "id": "2d92b11cd102",
     "date": "2026-08-01",
     "cat": "亞洲市場",
@@ -1054,6 +1078,30 @@
     "summary_en": "Strict rules around appealing to minors and personal endorsements are banned from iGaming ads in New Zealand, new guidance has reported.",
     "stars": 4,
     "url": "https://igamingbusiness.com/legal-compliance/no-luck-fate-rituals-in-gambling-ads-new-zealand-legislation-guidance/"
+  },
+  {
+    "id": "2658e1032d2a",
+    "date": "2026-07-31",
+    "cat": "市場趨勢",
+    "vendor": "市場動態",
+    "game": "BetMGM 和萬豪旅享家為 Rob Riggle 提供拉斯維加斯選秀週末獨家優惠",
+    "game_en": "BetMGM and Marriott Bonvoy offering Las Vegas draft weekend exclusive with Rob Riggle",
+    "summary": "一名獲勝者和他們的 11 名嘉賓將飛往拉斯維加斯參加由 Rob Riggle 主辦的夢幻橄欖球選秀派對。",
+    "summary_en": "One winner and 11 of their guests will be flown to Las Vegas for a fantasy football draft party hosted by Rob Riggle.",
+    "stars": 4,
+    "url": "https://www.bonusfinder.com/news/betmgm-and-marriott-bonvoy-offering-las-vegas-draft-weekend-exclusive-with-rob-riggle"
+  },
+  {
+    "id": "ed7af7d48dba",
+    "date": "2026-07-31",
+    "cat": "市場趨勢",
+    "vendor": "市場動態",
+    "game": "谷歌嚴厲打擊賭博運營商和附屬機構的廣告",
+    "game_en": "Google cracks down on advertising for gambling operators and affiliates",
+    "summary": "為了遏制不受監管的賭博，在 Google 上投放廣告的線上賭博營運商和關聯公司必須遵守更新的廣告規則，否則將面臨暫停。",
+    "summary_en": "In an effort to curb unregulated gambling, online gambling operators and affiliates advertising on Google must follow updated advertising rules or face suspension.",
+    "stars": 3,
+    "url": "https://www.bonusfinder.com/news/casino/google-cracks-down-on-advertising-for-gambling-operators-and-affiliates"
   },
   {
     "id": "8164ce004689",

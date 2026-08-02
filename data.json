@@ -1,15 +1,39 @@
 [
   {
-    "id": "3c31d7c8bd92",
-    "date": "2026-08-01",
+    "id": "d5d527787477",
+    "date": "2026-08-02",
+    "cat": "市場趨勢",
+    "vendor": "市場動態",
+    "game": "全球博彩女性將在下週於雪梨舉行的澳洲博彩博覽會上舉辦一系列活動來慶祝成立 10 週年",
+    "game_en": "Global Gaming Women to celebrate 10 years with series of events at next week’s Australasian Gaming Expo in Sydney",
+    "summary": "全球遊戲女性 (GGW) 將在本月於雪梨舉行的澳洲遊戲博覽會 (AGE) 上慶祝成立 10 週年 [...]",
+    "summary_en": "Global Gaming Women (GGW) will celebrate its 10-year anniversary at this month’s Australasian Gaming Expo (AGE) in Sydney by way […]",
+    "stars": 3,
+    "url": "https://asgam.com/2026/08/02/global-gaming-women-to-celebrate-10-years-with-series-of-events-at-next-weeks-australasian-gaming-expo-in-sydney/"
+  },
+  {
+    "id": "de6f64b91204",
+    "date": "2026-08-02",
+    "cat": "行銷科技",
+    "vendor": "市場動態",
+    "game": "讓 AI 接手所有能做的事？專家：先分清是「工作」還是「健身」",
+    "game_en": "讓 AI 接手所有能做的事？專家：先分清是「工作」還是「健身」",
+    "summary": "生成式 AI 日益普及，哪些任務該交給 AI、哪些該自己動手？資安專家哈佛大學甘迺迪學院教授布魯斯·施奈爾（B […]",
+    "summary_en": "生成式 AI 日益普及，哪些任務該交給 AI、哪些該自己動手？資安專家哈佛大學甘迺迪學院教授布魯斯·施奈爾（B […]",
+    "stars": 3,
+    "url": "https://technews.tw/2026/08/02/should-you-use-ai-for-a-task-heres-a-simple-way-to-decide/"
+  },
+  {
+    "id": "4578d64bdad1",
+    "date": "2026-08-02",
     "cat": "市場趨勢",
     "vendor": "SA Gaming",
     "game": "本地化：賭場營運商取得全球成功的關鍵",
     "game_en": "Localization: the Key to Unlocking Global Success for Casino Operators",
-    "summary": "通过有效的本地化，在 iGaming 领域取得全球成功。探索提高玩家参与度和增加收入的策略。閱讀更多！",
+    "summary": "透過有效的在地化，在 iGaming 領域取得全球成功。探索提高玩家參與度和增加收入的策略。閱讀更多！",
     "summary_en": "Unlock global success in iGaming with effective localization. Discover strategies to enhance player engagement and boost revenue. Read more!",
     "stars": 3,
-    "url": "https://www.sagaming.com/blog/localization-is-the-key-to-unlocking-global-success-for-casino-operators"
+    "url": "https://www.sagaming.com/blog/localization-is-the-key-to-unlocking-global-success-for-casino-operators%20"
   },
   {
     "id": "2d92b11cd102",
@@ -34,6 +58,66 @@
     "summary_en": "高通宣布，已完成對 AI 原生軟體基礎架構領先創新企業 Modular 的收購，雙方將打造出領先的 AI 運算 […]",
     "stars": 3,
     "url": "https://technews.tw/2026/08/01/qualcomm-modular/"
+  },
+  {
+    "id": "0831d1b9ae4d",
+    "date": "2026-08-01",
+    "cat": "亞洲市場",
+    "vendor": "市場動態",
+    "game": "澳門 7 月博彩總收入年減 8.4%，但較 6 月反彈",
+    "game_en": "Macau GGR falls 8.4% YoY in July but rebounds from June",
+    "summary": "7 月澳門博彩總營收年減 8.4% 至 25.1 億美元，但較 6 月反彈 9.4%，基本符合分析師預期。 7 月澳門博彩總收入年減 8.4%，但較 6 月份反彈AGB - 亞洲博弈簡報。",
+    "summary_en": "Macau GGR fell 8.4 percent YoY to $2.51 billion in July but rebounded 9.4 percent from June, broadly meeting analyst forecasts. The post Macau GGR falls 8.4% YoY in July but rebounds from June first appeared on Asia Gaming News | AGB - Asia Gaming Brief.",
+    "stars": 5,
+    "url": "https://agbrief.com/intel/01/08/2026/macau-ggr-falls-8-4-yoy-in-july-but-rebounds-from-june/"
+  },
+  {
+    "id": "e403cea276c3",
+    "date": "2026-08-01",
+    "cat": "亞洲市場",
+    "vendor": "市場動態",
+    "game": "澳門7月賭場總收入年減8.4%至25.1億美元：政府",
+    "game_en": "Macau’s July casino GGR down 8.4pct y-o-y to US$2.51bln: govt",
+    "summary": "澳門博彩監察協調局週六公佈的數據顯示，7 月澳門賭場博彩總收入 (GGR) 年減 8.4%，至 202.6 億澳門元（25.1 億美元）。最新的月度 GGR 結果顯示，今年迄今澳門的 GGR 總額達到 147.16 澳門元",
+    "summary_en": "Casino gross gaming revenue (GGR) in Macau fell 8.4 percent year-on-year in July, to MOP20.26 billion (US$2.51 billion), showed data released on Saturday by the city’s Gaming Inspection and Coordination Bureau. The latest monthly GGR result took the Macau aggregate so far this year to MOP147.16 bill",
+    "stars": 4,
+    "url": "https://www.ggrasia.com/macaus-july-casino-ggr-down-8-4pct-y-o-y-to-us2-51bln-govt?utm_source=rss&utm_medium=rss&utm_campaign=macaus-july-casino-ggr-down-8-4pct-y-o-y-to-us2-51bln-govt"
+  },
+  {
+    "id": "06eb30f0c779",
+    "date": "2026-08-01",
+    "cat": "亞洲市場",
+    "vendor": "市場動態",
+    "game": "澳門7月博弈總收入按年下跌8.4%至203億澳門元",
+    "game_en": "Macau GGR down 8.4% year-on-year to MOP$20.3 billion in July",
+    "summary": "7 月澳門博彩總收入達 203 億澳門元（25.1 億美元），年減 8.4%，但與去年同期相比略有改善 [...]",
+    "summary_en": "Macau’s gross gaming revenue reached MOP$20.3 billion (US$2.51 billion) in July, down 8.4% year-on-year although representing a slight improvement compared […]",
+    "stars": 4,
+    "url": "https://asgam.com/2026/08/01/macau-ggr-down-8-4-year-on-year-to-mop20-3-billion-in-july/"
+  },
+  {
+    "id": "e6405c602820",
+    "date": "2026-08-01",
+    "cat": "市場趨勢",
+    "vendor": "市場動態",
+    "game": "為什麼查克·諾里斯去世四個月後在維加斯舉行追悼會",
+    "game_en": "Why Chuck Norris’ Memorial was Held in Vegas Four Months After He Died",
+    "summary": "TMZ 做得非常出色，它從無數的名人消息來源收集線索，這些名人的公關人員希望他們的名字被提及。但上週關於為查克·諾里斯舉行的追悼會的報道中缺少一個細節，那就是解釋為什麼在拉斯維加斯賭場的宴會廳舉行。",
+    "summary_en": "TMZ does a phenomenal job collecting tips from its myriad celebrity sources whose publicists want their name mentioned. But one detail missing from its reports this past week about the memorial service held for Chuck Norris was an explanation for why it was held in a Las Vegas casino ballroom when t",
+    "stars": 3,
+    "url": "https://www.casino.org/news/why-chuck-norris-memorial-was-held-in-vegas-four-months-after-he-died/"
+  },
+  {
+    "id": "2c027a129b9f",
+    "date": "2026-08-01",
+    "cat": "全球法規",
+    "vendor": "市場動態",
+    "game": "歐盟 iGaming 周刊：Betfred 商店關閉、FRA 證據延遲、FDJ UNITED 上半年虧損",
+    "game_en": "EU iGaming weekly: Betfred shop closures, FRA evidence delay, FDJ UNITED’s H1 loss",
+    "summary": "英國的線上稅收上漲開始損害零售業就業機會，博彩委員會推遲其財務風險評估（FRA）…歐盟 iGaming 周刊發布後：Betfred 商店關閉、FRA 證據延遲、FDJ UNITED 上半年虧損首先出現在《歐洲博彩業新聞》上。",
+    "summary_en": "Britain’s online tax rise starts costing retail jobs, the Gambling Commission holds back its financial risk assessment (FRA)… The post EU iGaming weekly: Betfred shop closures, FRA evidence delay, FDJ UNITED’s H1 loss appeared first on European Gaming Industry News.",
+    "stars": 5,
+    "url": "https://europeangaming.eu/portal/latest-news/2026/08/01/210249/eu-igaming-weekly-betfred-cuts-fra-delay-fdj-loss/"
   },
   {
     "id": "1ed834427095",
@@ -958,6 +1042,18 @@
     "summary_en": "美國國務院近日在巴西「2026 年世界愛滋病大會」（AIDS 2026）進行簡報時，被眼尖與會者發現簡報中的非 […]",
     "stars": 3,
     "url": "https://technews.tw/2026/07/31/us-state-department-mislabels-every-african-country-on-briefing-map/"
+  },
+  {
+    "id": "f9a35c71c2cc",
+    "date": "2026-07-31",
+    "cat": "市場趨勢",
+    "vendor": "市場動態",
+    "game": "紐西蘭立法指南警告賭博廣告中不允許運氣、命運或儀式",
+    "game_en": "No luck, fate or rituals allowed in gambling ads warns New Zealand legislation guidance",
+    "summary": "根據新指南報道，紐西蘭的 iGaming 廣告中禁止出現有關吸引未成年人和個人認可的嚴格規定。",
+    "summary_en": "Strict rules around appealing to minors and personal endorsements are banned from iGaming ads in New Zealand, new guidance has reported.",
+    "stars": 4,
+    "url": "https://igamingbusiness.com/legal-compliance/no-luck-fate-rituals-in-gambling-ads-new-zealand-legislation-guidance/"
   },
   {
     "id": "8164ce004689",

@@ -108,6 +108,30 @@
     "url": "https://www.sagaming.com/blog/localization-is-the-key-to-unlocking-global-success-for-casino-operators"
   },
   {
+    "id": "166ae4abfbaa",
+    "date": "2026-08-07",
+    "cat": "市場趨勢",
+    "vendor": "市場動態",
+    "game": "AI 設計全新病毒可滅大腸桿菌，史丹佛研究引發生物安全隱憂",
+    "game_en": "AI 設計全新病毒可滅大腸桿菌，史丹佛研究引發生物安全隱憂",
+    "summary": "一個由史丹佛大學主導的研究團隊利用人工智慧創造出自然界從未出現過的合成病毒，可殺滅大腸桿菌。然而這也引發這項技 […]",
+    "summary_en": "一個由史丹佛大學主導的研究團隊利用人工智慧創造出自然界從未出現過的合成病毒，可殺滅大腸桿菌。然而這也引發這項技 […]",
+    "stars": 3,
+    "url": "https://technews.tw/2026/08/07/ai-designs-a-novel-e-coli-killer/"
+  },
+  {
+    "id": "7fbad39dec8e",
+    "date": "2026-08-07",
+    "cat": "行銷科技",
+    "vendor": "市場動態",
+    "game": "軟體股賣壓再現 Datadog / Figma 財報後崩跌",
+    "game_en": "軟體股賣壓再現 Datadog / Figma 財報後崩跌",
+    "summary": "美國軟體股 6 日賣壓出籠，雲端基礎建設效能監測軟體商 Datadog、UI/UX 軟體設計商 Figma 和 […]",
+    "summary_en": "美國軟體股 6 日賣壓出籠，雲端基礎建設效能監測軟體商 Datadog、UI/UX 軟體設計商 Figma 和 […]",
+    "stars": 3,
+    "url": "https://finance.technews.tw/2026/08/07/datadog-announces-second-quarter-2026-financial-results/"
+  },
+  {
     "id": "9018c39f1e7e",
     "date": "2026-08-06",
     "cat": "市場趨勢",

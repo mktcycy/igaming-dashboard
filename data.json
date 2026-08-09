@@ -1,5 +1,41 @@
 [
   {
+    "id": "497d96652ad5",
+    "date": "2026-08-09",
+    "cat": "菲律賓市場",
+    "vendor": "市場動態",
+    "game": "由於岡田馬尼拉拖累了 2026 年第二季集團業績，UEC 將專注於大眾市場和線上遊戲以推動復甦",
+    "game_en": "UEC to focus on mass market and online gaming to drive recovery as Okada Manila drags down 2Q26 group performance",
+    "summary": "日本環球娛樂公司（UEC）表示，其菲律賓綜合度假村岡田馬尼拉將把精力集中在大眾市場 [...]",
+    "summary_en": "Japan’s Universal Entertainment Corp (UEC) says its Philippines integrated resort Okada Manila will focus its energies on the mass market […]",
+    "stars": 4,
+    "url": "https://asgam.com/2026/08/09/uec-to-focus-on-mass-market-and-online-gaming-to-drive-recovery-as-okada-manila-drags-down-2q26-group-performance/"
+  },
+  {
+    "id": "9fc77c91b5da",
+    "date": "2026-08-09",
+    "cat": "行銷科技",
+    "vendor": "市場動態",
+    "game": "醫療 AI 評測敲響警鐘，OpenAI、Anthropic 等主流模型皆陷「資訊遺漏」盲點",
+    "game_en": "醫療 AI 評測敲響警鐘，OpenAI、Anthropic 等主流模型皆陷「資訊遺漏」盲點",
+    "summary": "一項名為 NOHARM 的最新獨立醫療 AI 基準研究直指當前主流臨床 AI 工具的共通盲點。這項測試涵蓋了包 […]",
+    "summary_en": "一項名為 NOHARM 的最新獨立醫療 AI 基準研究直指當前主流臨床 AI 工具的共通盲點。這項測試涵蓋了包 […]",
+    "stars": 3,
+    "url": "https://technews.tw/2026/08/09/medical-ai-hidden-fatal-flaw/"
+  },
+  {
+    "id": "3c31d7c8bd92",
+    "date": "2026-08-09",
+    "cat": "市場趨勢",
+    "vendor": "SA Gaming",
+    "game": "本地化：賭場營運商取得全球成功的關鍵",
+    "game_en": "Localization: the Key to Unlocking Global Success for Casino Operators",
+    "summary": "透過有效的在地化，在 iGaming 領域取得全球成功。探索提高玩家參與度和增加收入的策略。閱讀更多！",
+    "summary_en": "Unlock global success in iGaming with effective localization. Discover strategies to enhance player engagement and boost revenue. Read more!",
+    "stars": 3,
+    "url": "https://www.sagaming.com/blog/localization-is-the-key-to-unlocking-global-success-for-casino-operators"
+  },
+  {
     "id": "4e72eb6edb4a",
     "date": "2026-08-08",
     "cat": "全球法規",
@@ -12,16 +48,64 @@
     "url": "https://www.casino.org/news/spanish-widow-denied-e35k-lottery-prize-after-dead-husband-secretly-put-her-on-gambling-blacklist/"
   },
   {
-    "id": "4578d64bdad1",
+    "id": "92757a2c7563",
+    "date": "2026-08-08",
+    "cat": "全球法規",
+    "vendor": "市場動態",
+    "game": "隨著速成遊戲市場開放，Aviatrix 在哥倫比亞獲得認證",
+    "game_en": "Aviatrix secures certification in Colombia as market opens to crash titles",
+    "summary": "Aviatrix 已在哥倫比亞獲得認證，並迅速利用 Coljuegos 最近的監管更新，擴大了線上遊戲框架，將速成遊戲和其他即時獎勵遊戲納入其中。隨著市場開放，Aviatrix 在哥倫比亞獲得認證後，速成遊戲首次出現",
+    "summary_en": "Aviatrix has secured certification in Colombia, swiftly capitalizing on recent regulatory updates by Coljuegos that expanded the online gaming framework to include crash and other instant-prize titles. The post Aviatrix secures certification in Colombia as market opens to crash titles first appeared",
+    "stars": 5,
+    "url": "https://agbrief.com/news/world/08/08/2026/aviatrix-secures-certification-in-colombia-as-market-opens-to-crash-titles/"
+  },
+  {
+    "id": "a64e4c78d4ff",
     "date": "2026-08-08",
     "cat": "市場趨勢",
-    "vendor": "SA Gaming",
-    "game": "本地化：賭場營運商取得全球成功的關鍵",
-    "game_en": "Localization: the Key to Unlocking Global Success for Casino Operators",
-    "summary": "透過有效的在地化，在 iGaming 領域取得全球成功。探索提高玩家參與度和增加收入的策略。閱讀更多！",
-    "summary_en": "Unlock global success in iGaming with effective localization. Discover strategies to enhance player engagement and boost revenue. Read more!",
+    "vendor": "市場動態",
+    "game": "諾福克賭場背後的部落為保護酋長波瓦坦的弗吉尼亞出生地而奮鬥",
+    "game_en": "Tribe Behind Norfolk Casino Fights to Protect Chief Powhatan’s Virginia Birthplace",
+    "summary": "諾福克賭場開發背後的美洲原住民部落正在利用其在維吉尼亞州的政治影響力來保護這片近 500 年前波瓦坦酋長出生的土地。帕蒙基印第安部落直到 2015 年才獲得聯邦承認，但位於 King William Cou 的小型部落社區",
+    "summary_en": "The Native American tribe behind the Norfolk casino development is using its political clout in Virginia to protect the land where Chief Powhatan was born nearly 500 years ago. The Pamunkey Indian Tribe only gained federal recognition in 2015, but the small tribal community based in King William Cou",
     "stars": 3,
-    "url": "https://www.sagaming.com/blog/localization-is-the-key-to-unlocking-global-success-for-casino-operators%20"
+    "url": "https://www.casino.org/news/tribe-behind-norfolk-casino-fights-protect-chief-powhatans-birthplace/"
+  },
+  {
+    "id": "c02907210c32",
+    "date": "2026-08-08",
+    "cat": "市場趨勢",
+    "vendor": "市場動態",
+    "game": "關掉九成門市業績反升 40%，日本連鎖店 GEO 靠老遊戲「新鮮感」收服 Z 世代逆勢成長",
+    "game_en": "關掉九成門市業績反升 40%，日本連鎖店 GEO 靠老遊戲「新鮮感」收服 Z 世代逆勢成長",
+    "summary": "在實體零售業普遍面臨數位化衝擊的今天，「縮減門市」往往意味著業務收縮或衰退。然而，日本知名連鎖零售巨頭 GEO […]",
+    "summary_en": "在實體零售業普遍面臨數位化衝擊的今天，「縮減門市」往往意味著業務收縮或衰退。然而，日本知名連鎖零售巨頭 GEO […]",
+    "stars": 3,
+    "url": "https://ccc.technews.tw/2026/08/08/nostalgia-trendiest-fresh-sensation-gen-z/"
+  },
+  {
+    "id": "247c72c89afc",
+    "date": "2026-08-08",
+    "cat": "行銷科技",
+    "vendor": "市場動態",
+    "game": "沒跟著燒錢市值衝上 5 兆美元？蘋果如今恐不得不加入算力競賽",
+    "game_en": "沒跟著燒錢市值衝上 5 兆美元？蘋果如今恐不得不加入算力競賽",
+    "summary": "生成式 AI 掀起全球科技業新一輪投資競賽，微軟、Meta、Alphabet、亞馬遜等科技巨頭近兩年相繼宣布提 […]",
+    "summary_en": "生成式 AI 掀起全球科技業新一輪投資競賽，微軟、Meta、Alphabet、亞馬遜等科技巨頭近兩年相繼宣布提 […]",
+    "stars": 3,
+    "url": "https://finance.technews.tw/2026/08/08/apple-ai-capex-increase/"
+  },
+  {
+    "id": "158c5f82fa88",
+    "date": "2026-08-08",
+    "cat": "行銷科技",
+    "vendor": "市場動態",
+    "game": "教 AI 設計晶片！Anthropic 研究工程師年薪最高 85 萬美元",
+    "game_en": "教 AI 設計晶片！Anthropic 研究工程師年薪最高 85 萬美元",
+    "summary": "AI 不只要寫程式、生成內容，如今更進一步跨足晶片設計。Anthropic 正積極籌組內部晶片團隊、推進客製化 […]",
+    "summary_en": "AI 不只要寫程式、生成內容，如今更進一步跨足晶片設計。Anthropic 正積極籌組內部晶片團隊、推進客製化 […]",
+    "stars": 3,
+    "url": "https://technews.tw/2026/08/08/anthropic-ic-design/"
   },
   {
     "id": "047f090ff0ee",
@@ -898,6 +982,54 @@
     "summary_en": "The title adds an expanded 5×5 Super Bonus Game and a three-way feature system to Playson’s growing Hold… The post Playson launches 4 Supershiny Diamonds: Hold and Win with dual bonus modes appeared first on European Gaming Industry News.",
     "stars": 5,
     "url": "https://europeangaming.eu/portal/press-releases/2026/08/07/210601/playson-4-supershiny-diamonds-hold-and-win-slot/"
+  },
+  {
+    "id": "e332f8c3b959",
+    "date": "2026-08-07",
+    "cat": "新遊戲",
+    "vendor": "市場動態",
+    "game": "西班牙梅利利亞為 iGaming 營運商引入稅收優惠",
+    "game_en": "Spain’s Melilla introduces tax benefits for iGaming operators",
+    "summary": "西班牙自治市梅利利亞為在該轄區開展業務的 iGaming 公司引入了特殊稅收制度，以加強其作為 iGaming 中心的地位並改善經濟活動。儘管該市的賭博活動仍將受到D監管",
+    "summary_en": "Spanish autonomous city Melilla has introduced a special tax regime for iGaming companies conducting their operations in the jurisdiction in an effort to strengthen its position as an iGaming hub and improve economic activity. Although the city’s gambling activities will still be supervised by the D",
+    "stars": 4,
+    "url": "https://affpapa.com/spains-melilla-introduces-tax-benefits-for-igaming-operators/"
+  },
+  {
+    "id": "fd1038304885",
+    "date": "2026-08-07",
+    "cat": "全球法規",
+    "vendor": "市場動態",
+    "game": "斯里蘭卡封鎖24個無證經營賭博網站",
+    "game_en": "Sri Lanka blocks 24 gambling sites operating without licenses",
+    "summary": "斯里蘭卡賭博監管局 (GRA) 已指示電信監管委員會 (TRCSL) 命令服務提供者立即阻止訪問在該國運營的 24 個未經許可的賭博網站。此次执法行动是最大的限制之一",
+    "summary_en": "Sri Lanka’s Gambling Regulatory Authority (GRA) has instructed the Telecommunications Regulatory Commission (TRCSL) to order service providers to immediately block access to 24 gambling websites operating in the country without licenses. The enforcement action marks one of the biggest restrictions a",
+    "stars": 5,
+    "url": "https://affpapa.com/sri-lanka-blocks-24-gambling-sites-operating-without-licenses/"
+  },
+  {
+    "id": "85420dc2ef21",
+    "date": "2026-08-07",
+    "cat": "市場趨勢",
+    "vendor": "市場動態",
+    "game": "巴西就兒童賭博問題對蘋果公司提起訴訟",
+    "game_en": "Brazil hits Apple with lawsuit over child gambling access",
+    "summary": "巴西的三個兒童保護組織敦促法院命令蘋果公司對賭博應用程式執行更嚴格的年齡驗證，此前該公司聲稱允許兒童在應用程式商店中存取這些應用程式。該訴訟由 Anced、Centro Santo Dias de Direitos Humanos 和 Educafro 提起",
+    "summary_en": "Three child-protection organizations in Brazil have urged a court to order Apple to enforce stricter age verifications for gambling apps after claims that the company allowed children to access them on the App Store. The lawsuit was filed by Anced, Centro Santo Dias de Direitos Humanos, and Educafro",
+    "stars": 3,
+    "url": "https://affpapa.com/brazil-hits-apple-with-lawsuit-over-child-gambling-access/"
+  },
+  {
+    "id": "48df03f9a012",
+    "date": "2026-08-07",
+    "cat": "行銷科技",
+    "vendor": "市場動態",
+    "game": "採訪 Income Access 營運副總裁 Geoffrey Smorong",
+    "game_en": "Interview with Geoffrey Smorong – VP of Operations at Income Access",
+    "summary": "AffPapa 最近對 Income Access 的 Geoffrey Smorong 進行了採訪。 Geoffrey 是一位積極進取的領導者，在 iGaming 和聯盟行銷領域擁有近 15 年的經驗。自 2012 年開始在團隊中擔任客戶經理以來，他一直是 Income Access 的重要貢獻者",
+    "summary_en": "AffPapa recently conducted an interview with Geoffrey Smorong from Income Access. Geoffrey is a driven leader with almost 15 years’ experience in iGaming and the affiliate marketing space. He’s been an important contributor to Income Access since 2012, when he started on the team as an Account Manag",
+    "stars": 3,
+    "url": "https://affpapa.com/interview-with-geoffrey-smorong-vp-of-operations-at-income-access/"
   },
   {
     "id": "9018c39f1e7e",
@@ -1846,6 +1978,18 @@
     "summary_en": "The FIFA World Cup drove substantial growth in active sports bettors and first-time depositors across the Americas and Europe, according to a new report from Optimove Insights. As industry experts predicted, the showpiece tournament was a major customer acquisition event for sportsbooks. “World Cup ",
     "stars": 5,
     "url": "https://www.casino.org/news/sports-betting-optimove-study-world-cup-betting-volume/"
+  },
+  {
+    "id": "87e676578110",
+    "date": "2026-08-06",
+    "cat": "新遊戲",
+    "vendor": "市場動態",
+    "game": "ELA Games 推出 Royal Coins 擴大產品組合",
+    "game_en": "ELA Games expands portfolio with Royal Coins launch",
+    "summary": "ELA Games 推出了 Royal Coins，擴大了其老虎機產品組合，這是一款新的 3×3 遊戲，結合了經典賭場風格和 Hold & Win 功能。遊戲以皇家金庫為背景，以黃金、皇冠和傳統賭場符號為特色，提供熟悉的外觀和現代遊戲玩法。在",
+    "summary_en": "ELA Games has expanded its slot portfolio with the launch of Royal Coins, a new 3×3 title that combines a classic casino style with Hold & Win features. Set inside a royal treasury, the game features gold, crowns, and traditional casino symbols, offering a familiar look with modern gameplay. At the ",
+    "stars": 5,
+    "url": "https://affpapa.com/ela-games-expands-portfolio-with-royal-coins-launch/"
   },
   {
     "id": "452ed2e1ea17",

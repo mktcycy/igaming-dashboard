@@ -1,5 +1,17 @@
 [
   {
+    "id": "4578d64bdad1",
+    "date": "2026-08-16",
+    "cat": "市場趨勢",
+    "vendor": "SA Gaming",
+    "game": "本地化：賭場營運商取得全球成功的關鍵",
+    "game_en": "Localization: the Key to Unlocking Global Success for Casino Operators",
+    "summary": "透過有效的在地化，在 iGaming 領域取得全球成功。探索提高玩家參與度和增加收入的策略。閱讀更多！",
+    "summary_en": "Unlock global success in iGaming with effective localization. Discover strategies to enhance player engagement and boost revenue. Read more!",
+    "stars": 3,
+    "url": "https://www.sagaming.com/blog/localization-is-the-key-to-unlocking-global-success-for-casino-operators%20"
+  },
+  {
     "id": "f0ca4753f296",
     "date": "2026-08-15",
     "cat": "菲律賓市場",
@@ -24,16 +36,64 @@
     "url": "https://technews.tw/2026/08/15/study-finds-ai-generated-animal-stories-rarely-have-a-female-lead/"
   },
   {
-    "id": "3c31d7c8bd92",
+    "id": "baa4b4a2ffdd",
     "date": "2026-08-15",
     "cat": "市場趨勢",
-    "vendor": "SA Gaming",
-    "game": "本地化：賭場營運商取得全球成功的關鍵",
-    "game_en": "Localization: the Key to Unlocking Global Success for Casino Operators",
-    "summary": "透過有效的在地化，在 iGaming 領域取得全球成功。探索提高玩家參與度和增加收入的策略。閱讀更多！",
-    "summary_en": "Unlock global success in iGaming with effective localization. Discover strategies to enhance player engagement and boost revenue. Read more!",
+    "vendor": "市場動態",
+    "game": "維加斯博彩報告：隨著季後賽的升溫，WNBA 投注額增長 10%",
+    "game_en": "VEGAS BETTING REPORT: WNBA Betting Handle Up 10% as Playoff Race Heats Up",
+    "summary": "最近幾週，美國女子籃球協會 (WNBA) 場上場下的故事情節大雜燴，圍繞索菲·坎寧安 (Sophie Cunningham) 的爭議引發了爭議，其中包括她在 8 月 8 日的一場比賽中從印第安納狂熱隊 (Indiana Fever) 球員迪喬奈·卡林頓 (Diai Carrington) 手中衣繩奪下的惡意」。",
+    "summary_en": "The Women’s National Basketball Association (WNBA) has been a mishmash of on- and off-court storylines in recent weeks, from the controversy surrounding Sophie Cunningham — including the clothesline, called a Flagrant 2 foul, that she took from the Indiana Fever’s DiJonai Carrington on an Aug. 8 fas",
     "stars": 3,
-    "url": "https://www.sagaming.com/blog/localization-is-the-key-to-unlocking-global-success-for-casino-operators"
+    "url": "https://www.casino.org/news/vegas-betting-report-wnba-betting-handle-up-10-percent/"
+  },
+  {
+    "id": "eff512bc3a3b",
+    "date": "2026-08-15",
+    "cat": "市場趨勢",
+    "vendor": "市場動態",
+    "game": "大西洋城賭場 7 月升溫，博彩收入創 14 年來新高",
+    "game_en": "Atlantic City Casinos Heat Up in July as Gaming Revenue Hits 14-Year High",
+    "summary": "經過夏季的緩慢開局後，大西洋城的賭場在 7 月火爆，博彩總收入 (GGR) 達到 2012 年以來的最高水平。新澤西州博彩執法部門 (DGE) 報告稱，大西洋城的 9 家賭場透過實體老虎機贏得了 3.042 億美元的利潤，",
+    "summary_en": "After a slow start to the summer, Atlantic City casinos sizzled in July, with gross gaming revenue (GGR) reaching its highest level since 2012. The New Jersey Division of Gaming Enforcement (DGE) reports that the nine casinos in Atlantic City won $304.2 million from their physical slot machines and ",
+    "stars": 3,
+    "url": "https://www.casino.org/news/atlantic-city-casinos-heat-up-july-gaming-revenue-14-year-high/"
+  },
+  {
+    "id": "81ae6a90cb92",
+    "date": "2026-08-15",
+    "cat": "市場趨勢",
+    "vendor": "市場動態",
+    "game": "拉斯維加斯劇院新聞：《瘋狂蘋果》和《更年期音樂劇​​》落幕",
+    "game_en": "VEGAS THEATER NEWS: Curtains for ‘Mad Apple’ and ‘Menopause the Musical’",
+    "summary": "太陽馬戲團將關閉其在紐約-紐約的夜生活主題製作《Mad Apple》，預計最終演出將於 2026 年 9 月上旬進行。此次關閉尚未正式宣布，首先由 X 新聞媒體 @LasVegasLocally 報道，隨後由 Casino.org 旗下的 Vital Vegas 證實。",
+    "summary_en": "Cirque du Soleil will shutter Mad Apple, its nightlife‑themed production at New York‑New York, with a final performance expected in early September 2026. The closure, not yet formally announced, was first reported by X news outlet @LasVegasLocally and then confirmed by Casino.org’s own Vital Vegas. ",
+    "stars": 4,
+    "url": "https://www.casino.org/news/vegas-theater-news-curtains-for-mad-apple-and-menopause-the-musical/"
+  },
+  {
+    "id": "b25ccae60b1d",
+    "date": "2026-08-15",
+    "cat": "市場趨勢",
+    "vendor": "市場動態",
+    "game": "歐盟 iGaming 周刊：結果季、網站封鎖、Dart 的 Evolution 出價",
+    "game_en": "EU iGaming weekly: Results season, site blocking, Dart’s Evolution bid",
+    "summary": "四組結果顯示了 40% 關稅的成本，兩個監管機構添加了近千個被屏蔽的域名，…歐盟 iGaming 周刊後：結果季節、網站屏蔽、Dart 的進化出價首先出現在歐洲遊戲行業新聞上。",
+    "summary_en": "Four sets of results showing what the 40% duty costs, two regulators adding almost a thousand blocked domains,… The post EU iGaming weekly: Results season, site blocking, Dart’s Evolution bid appeared first on European Gaming Industry News.",
+    "stars": 4,
+    "url": "https://europeangaming.eu/portal/latest-news/2026/08/15/212766/eu-igaming-weekly-duty-results-evolution-bid/"
+  },
+  {
+    "id": "3ec52de4c371",
+    "date": "2026-08-15",
+    "cat": "市場趨勢",
+    "vendor": "市場動態",
+    "game": "xAI 前共同創辦人新創 River AI 獲 11 億美元融資，主打低成本企業客製化 AI 模型",
+    "game_en": "xAI 前共同創辦人新創 River AI 獲 11 億美元融資，主打低成本企業客製化 AI 模型",
+    "summary": "River AI 於 11 日宣布完成 11 億美元融資，資金用於擴大企業級 AI 工具組，協助客戶利用自有資 […]",
+    "summary_en": "River AI 於 11 日宣布完成 11 億美元融資，資金用於擴大企業級 AI 工具組，協助客戶利用自有資 […]",
+    "stars": 3,
+    "url": "https://finance.technews.tw/2026/08/15/river-ai-raises-1-1-billion-for-enterprise-ai-tools/"
   },
   {
     "id": "635bb942ed66",
@@ -874,6 +934,30 @@
     "summary_en": "The price matches Evolution’s 24 July close and sits 5.7% below its 12 August close, and Candle Lake… The post Candle Lake bids SEK 695 a share for Evolution appeared first on European Gaming Industry News.",
     "stars": 4,
     "url": "https://europeangaming.eu/portal/latest-news/2026/08/14/212690/candle-lake-evolution-mandatory-offer-sek-695/"
+  },
+  {
+    "id": "3d5d3c4488ab",
+    "date": "2026-08-14",
+    "cat": "全球法規",
+    "vendor": "市場動態",
+    "game": "廢除「允許目標」可能會引發英國進一步的賭博改革",
+    "game_en": "Scrapping ‘aim to permit’ risks triggering further UK gambling reform",
+    "summary": "廢除英國的「旨在允許」許可原則可能會給英國已經陷入困境的零售賭博業帶來混亂和潛在的重大立法變化。",
+    "summary_en": "Repealing the UK’s ‘aim to permit’ licensing principle risks messy and potentially major legislative changes for the UK’s already beleaguered retail gambling sector.",
+    "stars": 5,
+    "url": "https://igamingbusiness.com/uncategorized/aim-to-permit-risk-uk-gambling-reform/"
+  },
+  {
+    "id": "d91d4f143610",
+    "date": "2026-08-14",
+    "cat": "全球法規",
+    "vendor": "市場動態",
+    "game": "巴西財政部下令立即暫停 Pixbet",
+    "game_en": "Brazil Ministry of Finance orders immediate suspension of Pixbet",
+    "summary": "該預防措施規定，如果不遵守規定，每天將被處以 20 萬雷亞爾（38,512 美元）的罰款。還下令沒收該公司高達 11 億雷亞爾的資金。",
+    "summary_en": "The precautionary measure stipulates a daily fine of BRL200,000 ($38,512) in case of non-compliance. The seizure of up to BRL1.1 billion from the company was also ordered.",
+    "stars": 5,
+    "url": "https://igamingbusiness.com/money-laundering/brazil-ministry-finance-orders-immediate-suspension-pixbet/"
   },
   {
     "id": "0be4777edbe6",

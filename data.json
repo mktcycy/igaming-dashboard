@@ -1,15 +1,75 @@
 [
   {
-    "id": "4578d64bdad1",
-    "date": "2026-08-22",
+    "id": "3c31d7c8bd92",
+    "date": "2026-08-23",
     "cat": "市場趨勢",
     "vendor": "SA Gaming",
     "game": "本地化：賭場營運商取得全球成功的關鍵",
     "game_en": "Localization: the Key to Unlocking Global Success for Casino Operators",
-    "summary": "透過有效的在地化，在 iGaming 領域取得全球成功。探索提高玩家參與度和增加收入的策略。閱讀更多！",
+    "summary": "通过有效的本地化，在 iGaming 领域取得全球成功。探索提高玩家参与度和增加收入的策略。閱讀更多！",
     "summary_en": "Unlock global success in iGaming with effective localization. Discover strategies to enhance player engagement and boost revenue. Read more!",
     "stars": 3,
-    "url": "https://www.sagaming.com/blog/localization-is-the-key-to-unlocking-global-success-for-casino-operators%20"
+    "url": "https://www.sagaming.com/blog/localization-is-the-key-to-unlocking-global-success-for-casino-operators"
+  },
+  {
+    "id": "48fa60a45d38",
+    "date": "2026-08-22",
+    "cat": "亞洲市場",
+    "vendor": "市場動態",
+    "game": "2026 年第二季澳門 GDP 成長放緩至 0.3%",
+    "game_en": "Macau GDP growth slows to 0.3% in 2Q26",
+    "summary": "2026 年第二季度，澳門 GDP 成長放緩至 0.3%，零售額年增 12.1%，其中奢侈品類別帶動成長。亞洲博弈新聞 | 2026 年第二季澳門 GDP 增速放緩至 0.3% 後首次出現AGB - 亞洲博弈簡報。",
+    "summary_en": "Macau’s GDP growth slowed to 0.3% in 2Q26, while retail sales rose 12.1% year-on-year, led by luxury categories. The post Macau GDP growth slows to 0.3% in 2Q26 first appeared on Asia Gaming News | AGB - Asia Gaming Brief.",
+    "stars": 5,
+    "url": "https://agbrief.com/news/macau/22/08/2026/macau-gdp-growth-slows-to-0-3-in-2q26/"
+  },
+  {
+    "id": "db381287d7a2",
+    "date": "2026-08-22",
+    "cat": "全球法規",
+    "vendor": "市場動態",
+    "game": "NFL 體育博彩團隊針對涉嫌向投注者小費的調查擴大",
+    "game_en": "NFL Sports Betting Investigation Expands Over Team Exec Allegedly Tipping Bettor",
+    "summary": "針對 NFL 前高層是否提供了有關球隊活動的內幕消息的調查正在擴大，亞利桑那州和馬薩諸塞州的州博彩監管機構據報正在調查這些指控。 7 月，NFL 宣布瑞安·戈尔德 (Ryan Gold) 已在球队工作了 13 年。",
+    "summary_en": "The investigation into whether a former NFL executive provided inside information regarding a team’s activities is widening, with state gaming regulators in Arizona and now Massachusetts reportedly probing the allegations. In July, the NFL announced that Ryan Gold, a 13-year front office veteran of ",
+    "stars": 4,
+    "url": "https://www.casino.org/news/nfl-sports-betting-investigation-expands-over-team-exec/"
+  },
+  {
+    "id": "c41d3d6201fa",
+    "date": "2026-08-22",
+    "cat": "市場趨勢",
+    "vendor": "市場動態",
+    "game": "學生負責下令，AI 負責讀大學：AI 代理「幫上課」成高等教育危機",
+    "game_en": "學生負責下令，AI 負責讀大學：AI 代理「幫上課」成高等教育危機",
+    "summary": "AI 代理正將大學線上課程的作弊問題推向新階段。《紐約時報》報導，學生只要下簡單指令，如「登入並完成我的測驗」 […]",
+    "summary_en": "AI 代理正將大學線上課程的作弊問題推向新階段。《紐約時報》報導，學生只要下簡單指令，如「登入並完成我的測驗」 […]",
+    "stars": 3,
+    "url": "https://technews.tw/2026/08/23/i-found-a-prompt-that-keeps-ai-agents-from-taking-tasks-too-far/"
+  },
+  {
+    "id": "5f96177cdde7",
+    "date": "2026-08-22",
+    "cat": "行銷科技",
+    "vendor": "市場動態",
+    "game": "Sora 關門它卻爆紅，AI 影片新創 Higgsfield 如何逆勢衝出 54 億美元身價",
+    "game_en": "Sora 關門它卻爆紅，AI 影片新創 Higgsfield 如何逆勢衝出 54 億美元身價",
+    "summary": "AI 影片新創 Higgsfield 8 月 17 日宣布完成 4 億美元（約新台幣 127 億元）B 輪募資 […]",
+    "summary_en": "AI 影片新創 Higgsfield 8 月 17 日宣布完成 4 億美元（約新台幣 127 億元）B 輪募資 […]",
+    "stars": 3,
+    "url": "https://technews.tw/2026/08/22/higgsfield-valued-at-5-4bn-as-goldman-and-intel-back-ai-video-start-up/"
+  },
+  {
+    "id": "b9178bef90f0",
+    "date": "2026-08-22",
+    "cat": "市場趨勢",
+    "vendor": "市場動態",
+    "game": "特斯拉正有意放缓 Model Y 加入 Robotaxi 车队，押注 Cybercab",
+    "game_en": "特斯拉正有意放缓 Model Y 加入 Robotaxi 车队，押注 Cybercab",
+    "summary": "IT之家 8 月 23 日消息，特斯拉本月早些时候邀请摩根大通分析师参观了旗下的一座工厂，这家华尔街投行随后在最新发布的投资者报告中披露了此次考察的发现。其中一项值得关注的信息是，特斯拉承认正在放缓将 Model Y 纳入 Robotaxi 车队的速度，但公司对此有充分理由。摩根大通分析师近日参观了特斯拉弗里蒙特工厂，并与该公司的投资者关系团队进行了交流。通过此次考察，分析师对特斯拉的 Robotaxi 战略有了更清晰的认识。根据摩根大通的报告，特斯拉目前正有意控制 Model Y 加入 Robotaxi 车队的速度。该行分析师表示：“特斯拉表示，公司正在有意放缓向 Robotaxi 车队增加",
+    "summary_en": "IT之家 8 月 23 日消息，特斯拉本月早些时候邀请摩根大通分析师参观了旗下的一座工厂，这家华尔街投行随后在最新发布的投资者报告中披露了此次考察的发现。其中一项值得关注的信息是，特斯拉承认正在放缓将 Model Y 纳入 Robotaxi 车队的速度，但公司对此有充分理由。摩根大通分析师近日参观了特斯拉弗里蒙特工厂，并与该公司的投资者关系团队进行了交流。通过此次考察，分析师对特斯拉的 Robotaxi 战略有了更清晰的认识。根据摩根大通的报告，特斯拉目前正有意控制 Model Y 加入 Robotaxi 车队的速度。该行分析师表示：“特斯拉表示，公司正在有意放缓向 Robotaxi 车队增加",
+    "stars": 3,
+    "url": "https://www.ithome.com/0/993/128.htm"
   },
   {
     "id": "2cd5b8222273",
@@ -898,6 +958,30 @@
     "summary_en": "生成式 AI 讓寫軟體這件事變得越來越容易，這促使過去擅長押注軟體與網路服務的矽谷創投，開始把資金移往更難被 AI 複製的實體世界。專注 AI 的創投公司 Gradient 合夥人 Darian Shirazi 直言，傳統軟體已不再有吸引力，因為 AI 能輕易複製，像 Anthropic 這樣的公司幾秒內就能生出一套軟體。根據 Crunchbase 統計，光是 2026 上半年，Physical AI 新創的募資金額就達 474 億美元，較去年同期成長近 80%。 曾押注 Snap、Uber 的創投，開始寫支票給晶片與機器人 Crunchbase 將 Physical AI 界定為涵蓋機器人、",
     "stars": 3,
     "url": "https://techorange.com/2026/08/21/vcs-pour-billions-into-physical-ai/?utm_source=rss&utm_medium=feed&utm_campaign=techorange_rss"
+  },
+  {
+    "id": "c54aa6a4a1f5",
+    "date": "2026-08-21",
+    "cat": "全球法規",
+    "vendor": "市場動態",
+    "game": "內華達州監管機構批准威尼斯人 AML 720 萬美元罰款，拉斯維加斯金沙集團的罪責成為焦點",
+    "game_en": "Culpability of Las Vegas Sands in spotlight as Nevada regulators approve $7.2 million Venetian AML fine",
+    "summary": "威尼斯人目前的所有者阿波羅全球管理公司接受了巨額反洗錢處罰，同時與金沙集團相比，淡化了其角色。",
+    "summary_en": "The Venetian's current owners, Apollo Global Management, accepted a significant AML penalty while downplaying its role in comparison to Sands.",
+    "stars": 4,
+    "url": "https://igamingbusiness.com/legal-compliance/regulation/venetian-hearing-bowyer-fine/"
+  },
+  {
+    "id": "6bc743607bc1",
+    "date": "2026-08-21",
+    "cat": "市場趨勢",
+    "vendor": "市場動態",
+    "game": "AGCO 因安大略省老虎機自動播放功能違規而對供應商處以 70,000 美元罰款",
+    "game_en": "AGCO fines supplier $70,000 for auto-play feature breach in Ontario slots",
+    "summary": "自 2021 年起，安大略省已禁止自動播放。",
+    "summary_en": "Auto-play has been banned in Ontario since 2021.",
+    "stars": 5,
+    "url": "https://igamingbusiness.com/legal-compliance/agco-fines-supplier-70000-for-auto-play-feature-breach-in-ontario-slots/"
   },
   {
     "id": "1c4ea2425086",

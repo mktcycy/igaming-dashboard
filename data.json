@@ -1,5 +1,53 @@
 [
   {
+    "id": "c1302d0ba3ee",
+    "date": "2026-08-30",
+    "cat": "市場趨勢",
+    "vendor": "市場動態",
+    "game": "NFL 與 Fanatics、DraftKings 和 FanDuel 簽署體育博彩協議",
+    "game_en": "NFL Signs Sports Betting Deals With Fanatics, DraftKings and FanDuel",
+    "summary": "美国国家橄榄球联盟 (NFL) 已正式将 Fanatics Sportsbook 与 DraftKings 和 FanDuel 一起添加到其体育博彩合作伙伴名单中。 Casino.org 于 8 月 18 日首次报道 Fanatics 交易。 DraftKings 和 FanDuel 自 2021 年以来一直持有这一称号。所有三個運營商均已簽署",
+    "summary_en": "The National Football League (NFL) has officially added Fanatics Sportsbook to its roster of sports betting partners alongside DraftKings and FanDuel. Casino.org first reported the Fanatics deal on Aug. 18. DraftKings and FanDuel have held the designation since 2021. All three operators have signed ",
+    "stars": 5,
+    "url": "https://www.casino.org/news/sports-betting-fanatics-draftkings-fanduel-nfl/"
+  },
+  {
+    "id": "63a5e51dc746",
+    "date": "2026-08-30",
+    "cat": "市場趨勢",
+    "vendor": "市場動態",
+    "game": "失落的維加斯：失蹤的鮑勃·斯圖帕克雕像在 eBay 上重新出現",
+    "game_en": "LOST VEGAS: Missing Bob Stupak Statue Resurfaces on eBay",
+    "summary": "鮑勃·斯圖帕克 (Bob Stupak) 的青銅雕像再次出現在 eBay 上，這座雕像曾經歡迎遊客進入平流層，最後一次公開亮相是在 20 多年前，地點是 Tropicana 的一家賭場博物館。它的現任所有者要價 90,000 美元（或最佳報價），並承認其索賠 — 寫在其牌匾上",
+    "summary_en": "A bronze statue of Bob Stupak that once welcomed visitors into the Stratosphere, and was last publicly seen more than 20 years ago at a casino museum at the Tropicana, has resurfaced on eBay. Its current owner is asking $90,000 (or best offer), and acknowledges that its claim — written on its plaque",
+    "stars": 3,
+    "url": "https://www.casino.org/news/lost-vegas-missing-bob-stupak-statue-resurfaces-on-ebay/"
+  },
+  {
+    "id": "3c64e7779181",
+    "date": "2026-08-30",
+    "cat": "市場趨勢",
+    "vendor": "市場動態",
+    "game": "好莱坞明星扎堆入局微短剧，美国市场今年收入预计达 15 亿美元",
+    "game_en": "好莱坞明星扎堆入局微短剧，美国市场今年收入预计达 15 亿美元",
+    "summary": "IT之家 8 月 30 日消息，据 TechCrunch 今日报道，好莱坞一众顶尖人士 —— 这些早已习惯八位数巨额片酬、置身异域电影片场的从业者，如今正押注一个体量小得多的领域：微短剧。据悉，微短剧是专为手机观看打造的有剧本短篇剧集。单集通常仅有几分钟，剧情大多借鉴肥皂剧模式，充满戏剧反转与悬念结尾，目的是牢牢抓住观众，促使观众继续追更，甚至付费观看下一集。报道称，这种内容形式最早在中国火爆，随后迅速在全球走红。Omdia 公司预估，今年美国微短剧市场营收有望达到 15 亿美元（IT之家注：现汇率约合 101.19 亿元人民币）。越来越多应用程序抓住这一风口，其中就包括 ReelShort",
+    "summary_en": "IT之家 8 月 30 日消息，据 TechCrunch 今日报道，好莱坞一众顶尖人士 —— 这些早已习惯八位数巨额片酬、置身异域电影片场的从业者，如今正押注一个体量小得多的领域：微短剧。据悉，微短剧是专为手机观看打造的有剧本短篇剧集。单集通常仅有几分钟，剧情大多借鉴肥皂剧模式，充满戏剧反转与悬念结尾，目的是牢牢抓住观众，促使观众继续追更，甚至付费观看下一集。报道称，这种内容形式最早在中国火爆，随后迅速在全球走红。Omdia 公司预估，今年美国微短剧市场营收有望达到 15 亿美元（IT之家注：现汇率约合 101.19 亿元人民币）。越来越多应用程序抓住这一风口，其中就包括 ReelShort ",
+    "stars": 3,
+    "url": "https://www.ithome.com/0/996/082.htm"
+  },
+  {
+    "id": "4578d64bdad1",
+    "date": "2026-08-30",
+    "cat": "市場趨勢",
+    "vendor": "SA Gaming",
+    "game": "本地化：賭場營運商取得全球成功的關鍵",
+    "game_en": "Localization: the Key to Unlocking Global Success for Casino Operators",
+    "summary": "透過有效的在地化，在 iGaming 領域取得全球成功。探索提高玩家參與度和增加收入的策略。閱讀更多！",
+    "summary_en": "Unlock global success in iGaming with effective localization. Discover strategies to enhance player engagement and boost revenue. Read more!",
+    "stars": 3,
+    "url": "https://www.sagaming.com/blog/localization-is-the-key-to-unlocking-global-success-for-casino-operators%20"
+  },
+  {
     "id": "d6fdbf8643bf",
     "date": "2026-08-29",
     "cat": "市場趨勢",
@@ -10,18 +58,6 @@
     "summary_en": "隨著 AI 生成影像、濾鏡修圖與網紅式精緻生活持續充斥社群平台，消費者似乎正出現審美疲勞。彭博商業周刊資深記者 […]",
     "stars": 3,
     "url": "https://technews.tw/2026/08/29/ai-perfection-fuels-a-return-to-looking-human/"
-  },
-  {
-    "id": "3c31d7c8bd92",
-    "date": "2026-08-29",
-    "cat": "市場趨勢",
-    "vendor": "SA Gaming",
-    "game": "本地化：賭場營運商取得全球成功的關鍵",
-    "game_en": "Localization: the Key to Unlocking Global Success for Casino Operators",
-    "summary": "透過有效的在地化，在 iGaming 領域取得全球成功。探索提高玩家參與度和增加收入的策略。閱讀更多！",
-    "summary_en": "Unlock global success in iGaming with effective localization. Discover strategies to enhance player engagement and boost revenue. Read more!",
-    "stars": 3,
-    "url": "https://www.sagaming.com/blog/localization-is-the-key-to-unlocking-global-success-for-casino-operators"
   },
   {
     "id": "182eed03c830",
@@ -70,6 +106,30 @@
     "summary_en": "全球首個 Agentic AI 原生品質工程平台 TestMu AI（前稱 LambdaTest）今日宣布推出 […]",
     "stars": 3,
     "url": "https://infosecu.technews.tw/2026/08/29/testmu-ai-agent-assurance-validates-safe-ai-agent-deployment/"
+  },
+  {
+    "id": "d34c250b8935",
+    "date": "2026-08-29",
+    "cat": "市場趨勢",
+    "vendor": "市場動態",
+    "game": "艾伯塔省部長指責 BCLC 主席“不誠實”",
+    "game_en": "Alberta Minister Accuses BCLC Chair of Being ‘Disingenuous’",
+    "summary": "領導該省競爭性 iGaming 市場的艾伯塔省政府部長對不列顛哥倫比亞省彩票公司 (BCLC) 主席格雷格·摩爾 (Greg Moore) 的批評進行了尖銳反駁。 「另一個省份的皇冠博彩公司的董事長批評另一個省份的皇冠博彩公司是不誠實的。",
+    "summary_en": "The Alberta government minister who spearheaded the province’s competitive iGaming market has issued a sharp rebuttal to criticism from British Columbia Lottery Corporation (BCLC) chair Greg Moore. “It is disingenuous for the chair of another province’s Crown gaming corporation to criticize another ",
+    "stars": 3,
+    "url": "https://www.casino.org/news/canadian-gaming-alberta-minister-rebukes-bclc-chair/"
+  },
+  {
+    "id": "674e11983eb1",
+    "date": "2026-08-29",
+    "cat": "市場趨勢",
+    "vendor": "市場動態",
+    "game": "AI 設計「胞內抗體」有望為阿茲海默症、巴金森氏症與漸凍症開啟新療法",
+    "game_en": "AI 設計「胞內抗體」有望為阿茲海默症、巴金森氏症與漸凍症開啟新療法",
+    "summary": "英國艾塞克斯大學（University of Essex）運用人工智慧（AI）重新設計抗體，開發出可直接在人類 […]",
+    "summary_en": "英國艾塞克斯大學（University of Essex）運用人工智慧（AI）重新設計抗體，開發出可直接在人類 […]",
+    "stars": 3,
+    "url": "https://technews.tw/2026/08/30/ai-designed-intrabodies-could-unlock-new-treatments-for-alzheimers-parkinsons-and-mnd/"
   },
   {
     "id": "2984153d973f",
@@ -858,7 +918,7 @@
     "vendor": "市場動態",
     "game": "旅客減少，澳門7月飯店入住率達91.6%",
     "game_en": "Macau records 91.6% hotel occupancy in July amid guest decline",
-    "summary": "Macau’s hotel occupancy rose to 91.6% in July despite a 4.3% fall in guests, while international guests increased by 9.5%. The post Macau records 91.6% hotel occupancy in July amid guest decline first appeared on Asia Gaming News | AGB - Asia Gaming Brief.",
+    "summary": "儘管賓客人數下降 4.3%，但 7 月澳門飯店入住率仍升至 91.6%，而國際賓客則成長 9.5%。亞洲博弈新聞 | 澳門 7 月份酒店入住率因客人減少而錄得 91.6% 的帖子AGB - 亞洲博彩簡報。",
     "summary_en": "Macau’s hotel occupancy rose to 91.6% in July despite a 4.3% fall in guests, while international guests increased by 9.5%. The post Macau records 91.6% hotel occupancy in July amid guest decline first appeared on Asia Gaming News | AGB - Asia Gaming Brief.",
     "stars": 5,
     "url": "https://agbrief.com/news/macau/28/08/2026/macau-records-91-6-hotel-occupancy-in-july-amid-guest-decline/"
@@ -868,9 +928,9 @@
     "date": "2026-08-28",
     "cat": "菲律賓市場",
     "vendor": "市場動態",
-    "game": "PhilWeb names Lance Gokongwei as its new Chairman of the Board to further AI ambitions",
+    "game": "PhilWeb 任命 Lance Gokongwei 為新任董事會主席，以進一步推進人工智慧雄心",
     "game_en": "PhilWeb names Lance Gokongwei as its new Chairman of the Board to further AI ambitions",
-    "summary": "Philippines business tycoon Lance Gokongwei has been appointed Chairman of the Board of Directors of online gaming platform provider PhilWeb […]",
+    "summary": "菲律賓商業大亨 Lance Gokongwei 被任命為線上遊戲平台供應商 PhilWeb 的董事會主席 [...]",
     "summary_en": "Philippines business tycoon Lance Gokongwei has been appointed Chairman of the Board of Directors of online gaming platform provider PhilWeb […]",
     "stars": 4,
     "url": "https://asgam.com/2026/08/28/philweb-names-lance-gokongwei-as-its-new-chairman-of-the-board-to-further-ai-ambitions/"
@@ -880,7 +940,7 @@
     "date": "2026-08-28",
     "cat": "全球法規",
     "vendor": "市場動態",
-    "game": "Digital Trading Card Boom Raises New Gambling Questions",
+    "game": "數位交易卡的繁榮引發了新的賭博問題",
     "game_en": "Digital Trading Card Boom Raises New Gambling Questions",
     "summary": "隨著法律審查和負責任的賭博問題開始迎頭趕上，隨機數位卡產品正在模糊收集和賭博之間的界線。包括 Whatnot、基於加密貨幣的 Collector Crypt 和 Courtyard.io 在內的數位交易卡平台正在處理數十億美元的銷售額",
     "summary_en": "Randomized digital card products are blurring the line between collecting and gambling as legal scrutiny and responsible gambling concerns begin to catch up. Digital trading-card platforms, including Whatnot, crypto-based Collector Crypt, and Courtyard.io, are handling billions of dollars in sales a",
@@ -1162,6 +1222,18 @@
     "summary_en": "Technical progress has encouraged a new batch of companies to jump in on the promise of profits from humanoid robots. And they're all Chinese automakers.",
     "stars": 3,
     "url": "https://techcrunch.com/2026/08/28/chinese-automakers-are-following-teslas-bet-that-robots-are-the-next-big-profit-machine/"
+  },
+  {
+    "id": "00bb075fab89",
+    "date": "2026-08-28",
+    "cat": "業界大事",
+    "vendor": "市場動態",
+    "game": "凱撒集團設定 9 月股東對 Fertitta 收購賭場巨頭私有化的投票日期",
+    "game_en": "Caesars sets Sept. date for shareholder vote on Fertitta bid to take casino giant private",
+    "summary": "Fertitta 收購 Caesars 將使該營運商私有化",
+    "summary_en": "Fertitta's acquisition of Caesars will take the operator private",
+    "stars": 5,
+    "url": "https://igamingbusiness.com/strategy/caesars-sets-sept-date-for-shareholder-vote-on-fertitta-bid/"
   },
   {
     "id": "93cb4df804e4",

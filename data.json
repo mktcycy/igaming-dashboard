@@ -1,5 +1,65 @@
 [
   {
+    "id": "892074eea1cf",
+    "date": "2026-08-31",
+    "cat": "菲律賓市場",
+    "vendor": "市場動態",
+    "game": "亞洲博彩電子簡報：IEC 計劃於 9 月推出線上博彩",
+    "game_en": "Asia Gaming eBrief: IEC targets September online gaming launch",
+    "summary": "上線只是等式的一部分。 International Entertainment 的目標是在 8 月底或 9 月推出菲律賓線上遊戲，根據一項協議，其子公司將擁有 3% 的 GGR 股份，其與 DigiPlus 相關的技術合作夥伴將擁有 97% 的股份。第一階段將以電子箱子為特色",
+    "summary_en": "Going live is only part of the equation. International Entertainment is targeting a late-August or September launch for Philippine online gaming under a deal that gives its subsidiary 3 percent of GGR and its DigiPlus-linked technology partner 97 percent. The first phase will feature electronic casi",
+    "stars": 5,
+    "url": "https://agbrief.com/news/31/08/2026/iec-targets-september-online-gaming-launch/"
+  },
+  {
+    "id": "cff93b0ffbf9",
+    "date": "2026-08-31",
+    "cat": "新遊戲",
+    "vendor": "市場動態",
+    "game": "監管 2027 年雪梨比賽開始徵集演講者並公佈策略合作機會",
+    "game_en": "Regulating the Game Sydney 2027 opens call for speakers and unveils strategic partnership opportunities",
+    "summary": "Regulatory the Game 正式宣布 2027 年悉尼大会即将成形，开启了备受期待的演讲者征集活动，并为即将举行的全球赌博法律和监管会议推出了独家合作伙伴关系。 2027 年雪梨遊戲監管貼文開始徵求演講者",
+    "summary_en": "Regulating the Game has officially announced that Sydney 2027 is taking shape, opening its highly anticipated Call for Speakers and launching exclusive partnership tiers for the upcoming global gambling law and regulation conference. The post Regulating the Game Sydney 2027 opens call for speakers a",
+    "stars": 5,
+    "url": "https://agbrief.com/news/australia/31/08/2026/regulating-the-game-sydney-2027-opens-call-for-speakers-and-unveils-strategic-partnership-opportunities/"
+  },
+  {
+    "id": "1005b26ae055",
+    "date": "2026-08-31",
+    "cat": "全球法規",
+    "vendor": "市場動態",
+    "game": "洩漏的文件稱明星娛樂在新所有權下治理崩潰",
+    "game_en": "Leaked documents allege governance breakdown at Star Entertainment under new ownership",
+    "summary": "洩漏的文件稱，明星娛樂公司在做出關鍵賭場牌照決定之前削減了合規人員和問題賭博保障措施。洩漏的文件稱 Star Entertainment 在新所有權下的治理崩潰首先出現在《亞洲博彩新聞》| AGB - 亞洲博彩簡報。",
+    "summary_en": "Leaked documents allege Star Entertainment cut compliance staffing and problem-gambling safeguards ahead of a key casino license decision. The post Leaked documents allege governance breakdown at Star Entertainment under new ownership first appeared on Asia Gaming News | AGB - Asia Gaming Brief.",
+    "stars": 5,
+    "url": "https://agbrief.com/news/australia/31/08/2026/leaked-documents-allege-governance-breakdown-at-star-entertainment-under-new-ownership/"
+  },
+  {
+    "id": "798550c00217",
+    "date": "2026-08-31",
+    "cat": "菲律賓市場",
+    "vendor": "市場動態",
+    "game": "馬尼拉新濠天地正在評估進入菲律賓線上遊戲：Seaport Research",
+    "game_en": "City of Dreams Manila evaluating entry into Philippines online gaming: Seaport Research",
+    "summary": "經紀海港研究合作夥伴表示，馬尼拉新濠天地 (CoD) 的管理層正在「評估進入菲律賓線上遊戲的可能性」。該機構發表的評論是 2026 年與賭場公司新濠博亞娛樂有限公司管理層討論總結的一部分",
+    "summary_en": "Brokerage Seaport Research Partners says management for City of Dreams (CoD) Manila is “evaluating potential entry into Philippines online gaming”. The institution gave the commentary as part of its summary from discussions with management at casino firm Melco Resorts & Entertainment Ltd at the 2026",
+    "stars": 4,
+    "url": "https://www.ggrasia.com/city-of-dreams-manila-evaluating-entry-into-philippines-online-gaming-seaport-research?utm_source=rss&utm_medium=rss&utm_campaign=city-of-dreams-manila-evaluating-entry-into-philippines-online-gaming-seaport-research"
+  },
+  {
+    "id": "3c31d7c8bd92",
+    "date": "2026-08-31",
+    "cat": "市場趨勢",
+    "vendor": "SA Gaming",
+    "game": "本地化：賭場營運商取得全球成功的關鍵",
+    "game_en": "Localization: the Key to Unlocking Global Success for Casino Operators",
+    "summary": "透過有效的在地化，在 iGaming 領域取得全球成功。探索提高玩家參與度和增加收入的策略。閱讀更多！",
+    "summary_en": "Unlock global success in iGaming with effective localization. Discover strategies to enhance player engagement and boost revenue. Read more!",
+    "stars": 3,
+    "url": "https://www.sagaming.com/blog/localization-is-the-key-to-unlocking-global-success-for-casino-operators"
+  },
+  {
     "id": "c1302d0ba3ee",
     "date": "2026-08-30",
     "cat": "市場趨勢",
@@ -34,18 +94,6 @@
     "summary_en": "IT之家 8 月 30 日消息，据 TechCrunch 今日报道，好莱坞一众顶尖人士 —— 这些早已习惯八位数巨额片酬、置身异域电影片场的从业者，如今正押注一个体量小得多的领域：微短剧。据悉，微短剧是专为手机观看打造的有剧本短篇剧集。单集通常仅有几分钟，剧情大多借鉴肥皂剧模式，充满戏剧反转与悬念结尾，目的是牢牢抓住观众，促使观众继续追更，甚至付费观看下一集。报道称，这种内容形式最早在中国火爆，随后迅速在全球走红。Omdia 公司预估，今年美国微短剧市场营收有望达到 15 亿美元（IT之家注：现汇率约合 101.19 亿元人民币）。越来越多应用程序抓住这一风口，其中就包括 ReelShort ",
     "stars": 3,
     "url": "https://www.ithome.com/0/996/082.htm"
-  },
-  {
-    "id": "4578d64bdad1",
-    "date": "2026-08-30",
-    "cat": "市場趨勢",
-    "vendor": "SA Gaming",
-    "game": "本地化：賭場營運商取得全球成功的關鍵",
-    "game_en": "Localization: the Key to Unlocking Global Success for Casino Operators",
-    "summary": "透過有效的在地化，在 iGaming 領域取得全球成功。探索提高玩家參與度和增加收入的策略。閱讀更多！",
-    "summary_en": "Unlock global success in iGaming with effective localization. Discover strategies to enhance player engagement and boost revenue. Read more!",
-    "stars": 3,
-    "url": "https://www.sagaming.com/blog/localization-is-the-key-to-unlocking-global-success-for-casino-operators%20"
   },
   {
     "id": "63d2c715303f",
@@ -94,6 +142,126 @@
     "summary_en": "隨著生成式 AI 普及，人們越來越依賴其獲取資訊與分析。然而，一項發表於《Scientific Reports […]",
     "stars": 3,
     "url": "https://technews.tw/2026/08/30/ai-ideological-chameleon-exacerbates-political-polarization/"
+  },
+  {
+    "id": "aedcaf01064f",
+    "date": "2026-08-30",
+    "cat": "市場趨勢",
+    "vendor": "市場動態",
+    "game": "SBC 宣布五位行業領袖入選 2026 年名人堂",
+    "game_en": "SBC announces five industry leaders for 2026 Hall of Fame",
+    "summary": "SBC 公佈了入選 2026 年名人堂的五位行業領袖，表彰那些成就和影響力幫助塑造全球博彩和遊戲行業的個人。 SBC 宣布 2026 年名人堂的五位行業領袖首次出現在 Asia Gaming 上",
+    "summary_en": "SBC has unveiled the five industry leaders selected for its Hall of Fame Class of 2026, recognising individuals whose achievements and influence have helped shape the global betting and gaming industry. The post SBC announces five industry leaders for 2026 Hall of Fame first appeared on Asia Gaming ",
+    "stars": 4,
+    "url": "https://agbrief.com/news/europe/30/08/2026/sbc-announces-five-industry-leaders-for-2026-hall-of-fame/"
+  },
+  {
+    "id": "0c4a90d68a0e",
+    "date": "2026-08-30",
+    "cat": "市場趨勢",
+    "vendor": "市場動態",
+    "game": "信華世界 1H 虧損收窄 72%，營收增至 6,170 萬美元",
+    "game_en": "Shin Hwa World 1H loss narrows 72pct as revenue rises to US$61.7mln",
+    "summary": "在香港上市的新華世界有限公司是濟州神話世界（如圖）的發起人，該度假村位於韓國度假島濟州島，設有僅限外國人的賭場。該公司 2026 年上半年的淨虧損年減了 72.1%。該公司所有者應佔虧損約為",
+    "summary_en": "Hong Kong-listed Shin Hwa World Ltd, promoter of Jeju Shinhwa World (pictured), a resort with a foreigner-only casino on the South Korean holiday island of Jeju, narrowed its net loss by 72.1 percent year-on-year in the first half of 2026. The loss attributable to owners of the company was approxima",
+    "stars": 4,
+    "url": "https://www.ggrasia.com/shin-hwa-world-1h-loss-narrows-72pct-as-revenue-rises-to-us61-7mln?utm_source=rss&utm_medium=rss&utm_campaign=shin-hwa-world-1h-loss-narrows-72pct-as-revenue-rises-to-us61-7mln"
+  },
+  {
+    "id": "0382a5e9be0a",
+    "date": "2026-08-30",
+    "cat": "市場趨勢",
+    "vendor": "市場動態",
+    "game": "亞洲先鋒上半年利潤躍升至 28.4 萬美元，營收成長 47%",
+    "game_en": "Asia Pioneer first-half profit jumps to US$284k, revenue up 47pct",
+    "summary": "香港上市公司亞洲先鋒娛樂控股有限公司報告稱，2026 年上半年利潤約為 230 萬港元（284,370 美元），而去年同期僅為 24,959 港元。這家總部位於澳門的電子博彩設備供應商在周五提交的文件中表示，收入成長了 47",
+    "summary_en": "Hong Kong-listed Asia Pioneer Entertainment Holdings Ltd reported a profit of approximately HKD2.3 million (US$284,370) for the first half of 2026, compared with just HKD24,959 in the prior-year period. The Macau-based electronic gaming equipment supplier said in a Friday filing that revenue rose 47",
+    "stars": 4,
+    "url": "https://www.ggrasia.com/asia-pioneer-first-half-profit-jumps-to-us284k-revenue-up-47pct?utm_source=rss&utm_medium=rss&utm_campaign=asia-pioneer-first-half-profit-jumps-to-us284k-revenue-up-47pct"
+  },
+  {
+    "id": "9fbdf87c7b57",
+    "date": "2026-08-30",
+    "cat": "市場趨勢",
+    "vendor": "市場動態",
+    "game": "截至 6 月 30 日，國際娛樂公司虧損擴大至 6,200 萬美元，博彩收入成長 61%",
+    "game_en": "Int Ent loss for year to June 30 widens to US$62mln, gaming revenue up 61pct",
+    "summary": "國際娛樂公司是一家在香港上市的菲律賓賭場酒店和線上博彩業務投資者，截至 6 月 30 日的 12 個月內，虧損擴大至 4.864 億港元（6,200 萬美元）。上一财年的亏损为 2.821 亿港元。國際企業",
+    "summary_en": "International Entertainment Corp, a Hong Kong-listed investor in a casino hotel and online gaming business in the Philippines, widened its loss to HKD486.4 million (US$62.0 million) for the 12 months to June 30. Its loss had been HKD282.1 million in the preceding financial year. International Entert",
+    "stars": 3,
+    "url": "https://www.ggrasia.com/int-ent-loss-for-year-to-june-30-widens-to-us62mln-gaming-revenue-up-61pct?utm_source=rss&utm_medium=rss&utm_campaign=int-ent-loss-for-year-to-june-30-widens-to-us62mln-gaming-revenue-up-61pct"
+  },
+  {
+    "id": "dea4f274861c",
+    "date": "2026-08-30",
+    "cat": "市場趨勢",
+    "vendor": "市場動態",
+    "game": "澳門匯彩娛樂在2025年上半年虧損跌至1,050萬美元後，著眼於重返北美賭場市場",
+    "game_en": "Macau’s Paradise Entertainment eyes return to North American casino market after falling to US$10.5 million loss in 1H25",
+    "summary": "澳門匯彩娛樂有限公司概述了其供應商 LT Game 重新進入美國博彩市場的計劃 [...]",
+    "summary_en": "Macau’s Paradise Entertainment Ltd has outlined plans for its supplier arm LT Game to re-enter the US gaming market as […]",
+    "stars": 3,
+    "url": "https://asgam.com/2026/08/31/macaus-paradise-entertainment-eyes-return-to-north-american-casino-market-after-falling-to-us10-5-million-loss-in-1h25/"
+  },
+  {
+    "id": "30632311b39e",
+    "date": "2026-08-30",
+    "cat": "市場趨勢",
+    "vendor": "市場動態",
+    "game": "韓國濟州神話世界將 1H26 虧損收窄至 870 萬美元，博彩和非博彩收入均成長",
+    "game_en": "Korea’s Jeju Shinhwa World narrows 1H26 loss to US$8.7 million with both gaming and non-gaming revenues on the rise",
+    "summary": "在香港上市的新華世界有限公司將虧損從去年同期的 2.444 億港元（3,120 萬美元）收窄至 6,830 萬港元 […]",
+    "summary_en": "Hong Kong-listed Shin Hwa World Ltd narrowed its loss from HK$244.4 million (US$31.2 million) a year earlier to HK$68.3 million […]",
+    "stars": 3,
+    "url": "https://asgam.com/2026/08/31/koreas-jeju-shinhwa-world-narrows-1h26-loss-to-us8-7-million-with-both-gaming-and-non-gaming-revenues-on-the-rise/"
+  },
+  {
+    "id": "5fe188f9ef4d",
+    "date": "2026-08-30",
+    "cat": "亞洲市場",
+    "vendor": "市場動態",
+    "game": "澳門衛星賭場關閉後，十六浦投資者Success Universe 1H26虧損降至670萬美元",
+    "game_en": "Ponte 16 investor Success Universe falls to US$6.7 million 1H26 loss following closure of Macau satellite casino",
+    "summary": "香港上市公司實德環球集團報告，公司所有者應佔虧損為 5,290 萬港元（675 萬美元）[...]",
+    "summary_en": "Hong Kong-listed Success Universe Group has reported a loss attributable to owners of the company of HK$52.9 million (US$6.75 million) […]",
+    "stars": 3,
+    "url": "https://asgam.com/2026/08/31/ponte-16-investor-success-universe-falls-to-us6-7-million-1h26-loss-following-closure-of-macau-satellite-casino/"
+  },
+  {
+    "id": "8c0938c438b9",
+    "date": "2026-08-30",
+    "cat": "市場趨勢",
+    "vendor": "市場動態",
+    "game": "維加斯馬特威脅要起訴反賭博倡導者",
+    "game_en": "Vegas Matt Threatens to Sue Anti-Gambling Advocate",
+    "summary": "YouTube 賭博生態系統的兩個對立角落之間爆發了法律糾紛。 Vegas Matt 是最大的線上老虎機內容創作者之一，Rob Minnick（又名 Rob ODAAT）是賭博成癮復原倡導者。這場爭議引發了關於賭博創作者如何",
+    "summary_en": "A legal dispute has erupted between two opposing corners of YouTube’s gambling ecosystem. Vegas Matt, one of the largest slot‑machine content creators online, and Rob Minnick, known as Rob ODAAT, a gambling‑addiction recovery advocate. The dispute raises broader questions about how gambling creators",
+    "stars": 3,
+    "url": "https://www.casino.org/news/vegas-matt-threatens-to-sue-anti-gambling-advocate/"
+  },
+  {
+    "id": "97c0c4d2d7aa",
+    "date": "2026-08-30",
+    "cat": "行銷科技",
+    "vendor": "市場動態",
+    "game": "企業深陷「AI 績效幻象」，研究示警：僅 5% 專案獲利，盲目跟風恐致營運危機",
+    "game_en": "企業深陷「AI 績效幻象」，研究示警：僅 5% 專案獲利，盲目跟風恐致營運危機",
+    "summary": "隨著生成式 AI 成為企業轉型的熱門關鍵字，職場卻也逐漸浮現一個日益明顯的怪象：企業評價的焦點不再是「成果本身 […]",
+    "summary_en": "隨著生成式 AI 成為企業轉型的熱門關鍵字，職場卻也逐漸浮現一個日益明顯的怪象：企業評價的焦點不再是「成果本身 […]",
+    "stars": 3,
+    "url": "https://finance.technews.tw/2026/08/31/companies-implementing-ai-misplaced-priorities/"
+  },
+  {
+    "id": "f89f7863ddd7",
+    "date": "2026-08-30",
+    "cat": "市場趨勢",
+    "vendor": "市場動態",
+    "game": "馬斯克加快生產更多燃氣渦輪機的步伐也帶來了污染問題",
+    "game_en": "Musk’s faster path to more gas turbines comes with pollution problem",
+    "summary": "馬斯克 (Elon Musk) 表示，一家秘密的新 SpaceX 鑄造廠將讓他自己鑄造渦輪葉片，並比其他人更快 18 個月獲得天然氣發電——但這是對燃料來源的賭注，而這種燃料來源已經在他（和其他人的）渦輪機所在的任何地方引發了訴訟和健康研究。",
+    "summary_en": "Elon Musk says a secretive new SpaceX foundry will let him cast his own turbine blades and get gas power online 18 months faster than anyone else — but it's a bet on a fuel source that's already triggering lawsuits and health studies everywhere his (and others') turbines have gone in.",
+    "stars": 3,
+    "url": "https://techcrunch.com/2026/08/30/musks-faster-path-to-more-gas-turbines-comes-with-pollution-problem/"
   },
   {
     "id": "d6fdbf8643bf",
@@ -178,6 +346,18 @@
     "summary_en": "英國艾塞克斯大學（University of Essex）運用人工智慧（AI）重新設計抗體，開發出可直接在人類 […]",
     "stars": 3,
     "url": "https://technews.tw/2026/08/30/ai-designed-intrabodies-could-unlock-new-treatments-for-alzheimers-parkinsons-and-mnd/"
+  },
+  {
+    "id": "7305b3a67e9a",
+    "date": "2026-08-29",
+    "cat": "新遊戲",
+    "vendor": "市場動態",
+    "game": "ELA Games 透過新老虎機 Silly Chilli Dogs 釋放嘉年華",
+    "game_en": "ELA Games unleashes the Fiesta with the new slot Silly Chilli Dogs",
+    "summary": "《Silly Chilli Dogs》的推出標誌著 ELA Games 不斷增長的產品組合中又一個充滿活力的補充，凸顯了該工作室將引人入勝的角色驅動遊戲與功能豐富的機制相結合的能力。 ELA Games 推出新老虎機“Silly Chilli Dogs”，首次亮相 A 平台",
+    "summary_en": "The launch of Silly Chilli Dogs marks another vibrant addition to ELA Games’ growing portfolio, highlighting the studio’s ability to combine engaging character-driven gameplay with feature-rich mechanics. The post ELA Games unleashes the Fiesta with the new slot Silly Chilli Dogs first appeared on A",
+    "stars": 5,
+    "url": "https://agbrief.com/news/world/29/08/2026/ela-games-unleashes-the-fiesta-with-the-new-slot-silly-chilli-dogs/"
   },
   {
     "id": "2984153d973f",
@@ -1280,6 +1460,18 @@
     "game_en": "Caesars sets Sept. date for shareholder vote on Fertitta bid to take casino giant private",
     "summary": "Fertitta 收購 Caesars 將使該營運商私有化",
     "summary_en": "Fertitta's acquisition of Caesars will take the operator private",
+    "stars": 5,
+    "url": "https://igamingbusiness.com/strategy/caesars-sets-sept-date-for-shareholder-vote-on-fertitta-bid/"
+  },
+  {
+    "id": "0c41100281cb",
+    "date": "2026-08-28",
+    "cat": "業界大事",
+    "vendor": "市場動態",
+    "game": "Caesars sets September date for shareholder vote on Fertitta bid to take casino giant private",
+    "game_en": "Caesars sets September date for shareholder vote on Fertitta bid to take casino giant private",
+    "summary": "Fertitta 收購 Caesars 將使該營運商私有化。",
+    "summary_en": "Fertitta's acquisition of Caesars will take the operator private.",
     "stars": 5,
     "url": "https://igamingbusiness.com/strategy/caesars-sets-sept-date-for-shareholder-vote-on-fertitta-bid/"
   },

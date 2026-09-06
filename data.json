@@ -1,5 +1,41 @@
 [
   {
+    "id": "bf08824a04e9",
+    "date": "2026-09-06",
+    "cat": "亞洲市場",
+    "vendor": "市場動態",
+    "game": "新加坡法院對威尼斯人澳門有限公司的具有里程碑意義的裁決使外國賭場債務的執行受到質疑",
+    "game_en": "Landmark Singapore court ruling against Venetian Macau Ltd puts enforcement of foreign casino debts in question",
+    "summary": "這項裁決可能會對亞洲各地賭場如何以及何時向豪賭客發放信貸產生重大影響，[...]",
+    "summary_en": "In a ruling that could have significant implications for how and when casinos across Asia issue credit to high rollers, […]",
+    "stars": 3,
+    "url": "https://asgam.com/2026/09/06/landmark-singapore-court-ruling-against-venetian-macau-ltd-puts-enforcement-of-foreign-casino-debts-in-question/"
+  },
+  {
+    "id": "dd896173bec3",
+    "date": "2026-09-06",
+    "cat": "市場趨勢",
+    "vendor": "市場動態",
+    "game": "AI 設計出人工噬菌體，成功狙擊抗藥性大腸桿菌",
+    "game_en": "AI 設計出人工噬菌體，成功狙擊抗藥性大腸桿菌",
+    "summary": "研究人員正將人工智慧與噬菌體技術結合，尋找對抗抗藥性細菌的新方法。噬菌體本來就是以細菌為目標的病毒，過去科學家 […]",
+    "summary_en": "研究人員正將人工智慧與噬菌體技術結合，尋找對抗抗藥性細菌的新方法。噬菌體本來就是以細菌為目標的病毒，過去科學家 […]",
+    "stars": 3,
+    "url": "https://technews.tw/2026/09/06/scientists-are-using-ai-and-viruses-to-help-defeat-superbugs/"
+  },
+  {
+    "id": "3c31d7c8bd92",
+    "date": "2026-09-06",
+    "cat": "市場趨勢",
+    "vendor": "SA Gaming",
+    "game": "本地化：賭場營運商取得全球成功的關鍵",
+    "game_en": "Localization: the Key to Unlocking Global Success for Casino Operators",
+    "summary": "透過有效的在地化，在 iGaming 領域取得全球成功。探索提高玩家參與度和增加收入的策略。閱讀更多！",
+    "summary_en": "Unlock global success in iGaming with effective localization. Discover strategies to enhance player engagement and boost revenue. Read more!",
+    "stars": 3,
+    "url": "https://www.sagaming.com/blog/localization-is-the-key-to-unlocking-global-success-for-casino-operators"
+  },
+  {
     "id": "fc33eaaa76c5",
     "date": "2026-09-05",
     "cat": "市場趨勢",
@@ -12,18 +48,6 @@
     "url": "https://technews.tw/2026/09/05/1-unconventional-hobby-that-boosts-your-intelligence-by-a-psychologist/"
   },
   {
-    "id": "4578d64bdad1",
-    "date": "2026-09-05",
-    "cat": "市場趨勢",
-    "vendor": "SA Gaming",
-    "game": "本地化：賭場營運商取得全球成功的關鍵",
-    "game_en": "Localization: the Key to Unlocking Global Success for Casino Operators",
-    "summary": "透過有效的在地化，在 iGaming 領域取得全球成功。探索提高玩家參與度和增加收入的策略。閱讀更多！",
-    "summary_en": "Unlock global success in iGaming with effective localization. Discover strategies to enhance player engagement and boost revenue. Read more!",
-    "stars": 3,
-    "url": "https://www.sagaming.com/blog/localization-is-the-key-to-unlocking-global-success-for-casino-operators%20"
-  },
-  {
     "id": "595197431c95",
     "date": "2026-09-05",
     "cat": "市場趨勢",
@@ -34,6 +58,90 @@
     "summary_en": "兩家新創公司正將目光投向家用電腦與遊戲主機的閒置算力，試圖打造可出租 AI 推論資源的市場。來自阿布達比的 F […]",
     "stars": 3,
     "url": "https://technews.tw/2026/09/05/startups-want-to-rent-your-idle-gaming-pc-for-ai-tasks/"
+  },
+  {
+    "id": "1f148aef8399",
+    "date": "2026-09-05",
+    "cat": "亞洲市場",
+    "vendor": "市場動態",
+    "game": "內地被捕後，澳門還押涉嫌賭場安全敲詐勒索的頭目",
+    "game_en": "Macau remands alleged casino security extortion ringleader after mainland arrest",
+    "summary": "一名涉嫌澳門賭場敲詐勒索的頭目在大陸被捕後已被還押，使待審人數達到五人。在大陸逮捕涉嫌賭場安全勒索頭目後，澳門將其還押的帖子首次出現在《亞洲博彩新聞》| AGB - 亞洲博彩簡報。",
+    "summary_en": "An alleged Macau casino extortion ringleader has been remanded after his mainland arrest, bringing the number held pending trial to five. The post Macau remands alleged casino security extortion ringleader after mainland arrest first appeared on Asia Gaming News | AGB - Asia Gaming Brief.",
+    "stars": 4,
+    "url": "https://agbrief.com/news/macau/05/09/2026/macau-remands-alleged-casino-security-extortion-ringleader-after-mainland-arrest/"
+  },
+  {
+    "id": "bb4513934e5d",
+    "date": "2026-09-05",
+    "cat": "全球法規",
+    "vendor": "市場動態",
+    "game": "2025/26 財年新加坡博彩稅收入成長 11.9% 至 $2.8B",
+    "game_en": "Singapore betting tax revenue rises 11.9% to $2.8B in FY2025/26",
+    "summary": "2025/26 財年，新加坡的博彩稅收入成長了 11.9%，達到 28.4 億美元，超過了整體稅收的成長。 2025/26 財年新加坡博彩稅收入成長 11.9% 至 $2.8B 首次出現在亞洲博彩新聞 | AGB - 亞洲博彩簡報。",
+    "summary_en": "Singapore’s betting tax revenue rose 11.9% to $2.84 billion in FY2025/26, outpacing the growth in overall tax collections. The post Singapore betting tax revenue rises 11.9% to $2.8B in FY2025/26 first appeared on Asia Gaming News | AGB - Asia Gaming Brief.",
+    "stars": 5,
+    "url": "https://agbrief.com/intel/05/09/2026/singapore-betting-tax-revenue-rises-11-9-to-2-8b/"
+  },
+  {
+    "id": "72569ff97dc2",
+    "date": "2026-09-05",
+    "cat": "市場趨勢",
+    "vendor": "市場動態",
+    "game": "比洛克西規劃委員會批准在退伍軍人大道開設黑馬林賭場",
+    "game_en": "Biloxi Planning Commission Approves Black Marlin Casino at Veterans Avenue",
+    "summary": "比洛克西規劃委員會批准了一家賭場開發商的請求，重新規劃位於 US 90/Beach Boulevard 和 Veterans Avenue 的三塊土地。该批准推动了拟议的赌场开发，现在被称为黑马林赌场。比洛克西規劃委員會股份公司",
+    "summary_en": "The Biloxi Planning Commission gave its blessing to a casino developer’s request to rezone three parcels of land at US 90/Beach Boulevard and Veterans Avenue. The approval moves forward the proposed casino development that’s now being called the Black Marlin Casino. The Biloxi Planning Commission ag",
+    "stars": 3,
+    "url": "https://www.casino.org/news/biloxi-planning-commission-approves-black-marlin-casino/"
+  },
+  {
+    "id": "fa24a7b8bad5",
+    "date": "2026-09-05",
+    "cat": "全球法規",
+    "vendor": "市場動態",
+    "game": "歐盟 iGaming 周刊：Entain 退出富時指數、匈牙利監管機構審查、Lottomatica 與 CIRSA 合併",
+    "game_en": "EU iGaming weekly: Entain’s FTSE exit, Hungary’s regulator review, Lottomatica–CIRSA merger",
+    "summary": "Entain 於 9 月 21 日退出富時 100 指數，匈牙利政府已下令進行審查，可能會結束…歐盟 iGaming 周刊後：Entain 退出富時指數、匈牙利監管機構審查、Lottomatica 與 CIRSA 合併首先出現在《歐洲博彩業新聞》上。",
+    "summary_en": "Entain leaves the FTSE 100 on 21 September, Hungary’s government has ordered a review that could close the… The post EU iGaming weekly: Entain’s FTSE exit, Hungary’s regulator review, Lottomatica–CIRSA merger appeared first on European Gaming Industry News.",
+    "stars": 5,
+    "url": "https://europeangaming.eu/portal/latest-news/2026/09/05/213637/eu-igaming-weekly-entain-ftse-exit-lottomatica-cirsa-merger/"
+  },
+  {
+    "id": "8cc3e172c3c3",
+    "date": "2026-09-05",
+    "cat": "行銷科技",
+    "vendor": "市場動態",
+    "game": "星等評論失靈，「可驗證證據」成AI 時代網購買單關鍵",
+    "game_en": "星等評論失靈，「可驗證證據」成AI 時代網購買單關鍵",
+    "summary": "隨著生成式 AI 深度介入線上購物流程，網購生態正迎來重大轉變。當消費者對「看起來像 AI 寫的」或疑似造假的 […]",
+    "summary_en": "隨著生成式 AI 深度介入線上購物流程，網購生態正迎來重大轉變。當消費者對「看起來像 AI 寫的」或疑似造假的 […]",
+    "stars": 3,
+    "url": "https://technews.tw/2026/09/06/online-shopping-reviews-evidence/"
+  },
+  {
+    "id": "57813460d72d",
+    "date": "2026-09-05",
+    "cat": "行銷科技",
+    "vendor": "市場動態",
+    "game": "生成式 AI 重寫影視成本結構：「協調成本」驟降，一人製片時代來臨",
+    "game_en": "生成式 AI 重寫影視成本結構：「協調成本」驟降，一人製片時代來臨",
+    "summary": "生成式 AI 工具的快速普及，正在徹底重寫影視與影音製作的成本結構。從行銷影片到規模達百億美元的短劇產業，AI […]",
+    "summary_en": "生成式 AI 工具的快速普及，正在徹底重寫影視與影音製作的成本結構。從行銷影片到規模達百億美元的短劇產業，AI […]",
+    "stars": 3,
+    "url": "https://technews.tw/2026/09/05/ai-rewriting-video-production-economics/"
+  },
+  {
+    "id": "4038b2dcc1ee",
+    "date": "2026-09-05",
+    "cat": "市場趨勢",
+    "vendor": "市場動態",
+    "game": "越依賴 AI 越像機器人？研究揭購物代理難以預測還悄悄重塑人類行為",
+    "game_en": "越依賴 AI 越像機器人？研究揭購物代理難以預測還悄悄重塑人類行為",
+    "summary": "最新研究指出，AI 代理在購物情境中的表現遠不如外界預期般穩定，反而時常給出難以預測且前後矛盾的結果。隨著消費 […]",
+    "summary_en": "最新研究指出，AI 代理在購物情境中的表現遠不如外界預期般穩定，反而時常給出難以預測且前後矛盾的結果。隨著消費 […]",
+    "stars": 3,
+    "url": "https://technews.tw/2026/09/05/ai-agents-shopping-habits-unpredictable/"
   },
   {
     "id": "10c438910d6b",
@@ -838,6 +946,42 @@
     "summary_en": "Gemini Spark can edit and curate photo albums, create shared collections, turn photos into calendar events, and handle other Google Photos tasks for AI Pro and Ultra subscribers.",
     "stars": 3,
     "url": "https://techcrunch.com/2026/09/04/googles-gemini-spark-can-now-manage-your-google-photos-library/"
+  },
+  {
+    "id": "c22d704c9a1c",
+    "date": "2026-09-04",
+    "cat": "市場趨勢",
+    "vendor": "市場動態",
+    "game": "Entain被從富時100指數中剔除，但分析師仍看好數位轉型",
+    "game_en": "Entain removed from FTSE 100 Index, but analysts remain bullish on digital turnaround",
+    "summary": "儘管股價連續五年低迷，Entain 的扭虧為盈的努力已獲得回報，分析師認為其股票具有「歐洲理論上最高的上漲潛力」。",
+    "summary_en": "Despite a five year share price downturn, Entain's turnaround efforts have been paying off, and analysts believe its shares offer the \"highest theoretical upside potential within Europe\".",
+    "stars": 3,
+    "url": "https://igamingbusiness.com/finance/investment/entain-removed-ftse-100-analysts-remain-bullish/"
+  },
+  {
+    "id": "d6e329b9aedd",
+    "date": "2026-09-04",
+    "cat": "全球法規",
+    "vendor": "市場動態",
+    "game": "SBC 與 GRAF 合作提升非洲博彩監管對話",
+    "game_en": "SBC and GRAF partner to elevate African gaming regulatory dialogue",
+    "summary": "SBC 已与非洲博彩监管机构论坛 (GRAF) 建立战略合作伙伴关系，加强非洲博彩监管机构、行业利益相关者和更广泛的国际博彩界之间的对话。 SBC 與 GRAF 合作後首先提升非洲博彩監管對話",
+    "summary_en": "SBC has entered into a strategic partnership with the Gaming Regulators Africa Forum (GRAF), strengthening dialogue among African gaming regulators, industry stakeholders, and the wider international gaming community. The post SBC and GRAF partner to elevate African gaming regulatory dialogue first ",
+    "stars": 5,
+    "url": "https://agbrief.com/news/europe/04/09/2026/sbc-and-graf-partner-to-elevate-african-gaming-regulatory-dialogue/"
+  },
+  {
+    "id": "b7131d10b898",
+    "date": "2026-09-04",
+    "cat": "行銷科技",
+    "vendor": "市場動態",
+    "game": "Nordic Partners Gaming 為 2026 年坎昆 AffPapa 會議的電競區提供支持",
+    "game_en": "Nordic Partners Gaming powers Esports Zone at AffPapa Conference Cancun 2026",
+    "summary": "AffPapa 宣布 Nordic Partners Gaming (NPG) 成為 2026 年 AffPapa 坎昆會議的官方電競贊助商，該會議將於 11 月 23 日至 25 日在墨西哥坎昆舉行。 Nordic Partners Gaming 為 2026 年坎昆 AffPapa 會議上的電子競技區提供動力的帖子首次出現在亞洲博彩新聞 |一個",
+    "summary_en": "AffPapa has announced Nordic Partners Gaming (NPG) as the official Esports Sponsor of AffPapa Conference Cancun 2026, set to take place in Cancun, Mexico, from November 23–25. The post Nordic Partners Gaming powers Esports Zone at AffPapa Conference Cancun 2026 first appeared on Asia Gaming News | A",
+    "stars": 4,
+    "url": "https://agbrief.com/news/world/04/09/2026/nordic-partners-gaming-powers-esports-zone-at-affpapa-conference-cancun-2026/"
   },
   {
     "id": "5710f92d3647",

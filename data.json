@@ -1,7 +1,19 @@
 [
   {
-    "id": "4578d64bdad1",
-    "date": "2026-09-19",
+    "id": "dca5e0b632f9",
+    "date": "2026-09-20",
+    "cat": "行銷科技",
+    "vendor": "市場動態",
+    "game": "書籍總量激增 19 倍、營收卻只漲 8 倍，AI「書海戰術」發威導致單本收入暴跌",
+    "game_en": "書籍總量激增 19 倍、營收卻只漲 8 倍，AI「書海戰術」發威導致單本收入暴跌",
+    "summary": "AI 生成內容正以前所未有的速度改寫線上圖書市場的生態。最新研究與業界觀察指出，大量疑似由大型語言模型（LLM […]",
+    "summary_en": "AI 生成內容正以前所未有的速度改寫線上圖書市場的生態。最新研究與業界觀察指出，大量疑似由大型語言模型（LLM […]",
+    "stars": 3,
+    "url": "https://technews.tw/2026/09/20/ai-disrupts-publishing-industry/"
+  },
+  {
+    "id": "3c31d7c8bd92",
+    "date": "2026-09-20",
     "cat": "市場趨勢",
     "vendor": "SA Gaming",
     "game": "Localization: the Key to Unlocking Global Success for Casino Operators",
@@ -9,7 +21,7 @@
     "summary": "Unlock global success in iGaming with effective localization. Discover strategies to enhance player engagement and boost revenue. Read more!",
     "summary_en": "Unlock global success in iGaming with effective localization. Discover strategies to enhance player engagement and boost revenue. Read more!",
     "stars": 3,
-    "url": "https://www.sagaming.com/blog/localization-is-the-key-to-unlocking-global-success-for-casino-operators%20"
+    "url": "https://www.sagaming.com/blog/localization-is-the-key-to-unlocking-global-success-for-casino-operators"
   },
   {
     "id": "ba5acf39ca20",
@@ -22,6 +34,30 @@
     "summary_en": "社群平台近期掀起一股把自拍照丟給 ChatGPT、請它幫忙「變美」的風潮。使用者不只想看 AI 生成的前後對照 […]",
     "stars": 3,
     "url": "https://technews.tw/2026/09/19/chatgpt-selfie-beauty-test-reveals-outdated-tips-photo-retention-risk/"
+  },
+  {
+    "id": "030c8875cc91",
+    "date": "2026-09-19",
+    "cat": "行銷科技",
+    "vendor": "市場動態",
+    "game": "你越低潮它越推，首份腦波研究證實短影音演算法恐加劇負面情緒迴圈",
+    "game_en": "你越低潮它越推，首份腦波研究證實短影音演算法恐加劇負面情緒迴圈",
+    "summary": "社群平台的短影音演算法不僅能精準推播內容，還可能無形中影響心理健康。美國德州大學達拉斯分校（UT Dallas […]",
+    "summary_en": "社群平台的短影音演算法不僅能精準推播內容，還可能無形中影響心理健康。美國德州大學達拉斯分校（UT Dallas […]",
+    "stars": 3,
+    "url": "https://technews.tw/2026/09/19/social-media-algorithms-depression/"
+  },
+  {
+    "id": "9b3eaaa9fdf9",
+    "date": "2026-09-19",
+    "cat": "行銷科技",
+    "vendor": "市場動態",
+    "game": "矽光子走出資料中心跨界發威，搶攻自駕、生醫與國防高利基商機",
+    "game_en": "矽光子走出資料中心跨界發威，搶攻自駕、生醫與國防高利基商機",
+    "summary": "在生成式 AI 帶動下，半導體產業焦點多集中於資料中心伺服器的「光進銅退」。然而，受限於雲端大廠的高度集中與嚴 […]",
+    "summary_en": "在生成式 AI 帶動下，半導體產業焦點多集中於資料中心伺服器的「光進銅退」。然而，受限於雲端大廠的高度集中與嚴 […]",
+    "stars": 3,
+    "url": "https://technews.tw/2026/09/19/silicon-photonics-next-stop-autonomous-vehicle-eyes-biomedical-sensor-chips-drone-compasses/"
   },
   {
     "id": "6ce5cabc9f34",
@@ -946,6 +982,42 @@
     "summary_en": "PG Soft — CHRIS GAYLE BRINGS HIS WINNING ENERGY TO FORTUNE HORSE",
     "stars": 3,
     "url": "https://www.pgsoft.com/news/260"
+  },
+  {
+    "id": "9efb8f892daa",
+    "date": "2026-09-18",
+    "cat": "行銷科技",
+    "vendor": "市場動態",
+    "game": "Entain renews call for unlicensed sponsorship ban after DCMS consultation closes",
+    "game_en": "Entain renews call for unlicensed sponsorship ban after DCMS consultation closes",
+    "summary": "Entain has urged the government to act \"without delay\" after identifying 11 Premier League clubs with unlicensed sponsorship arrangements.",
+    "summary_en": "Entain has urged the government to act \"without delay\" after identifying 11 Premier League clubs with unlicensed sponsorship arrangements.",
+    "stars": 5,
+    "url": "https://igamingbusiness.com/marketing-affiliates/sponsorship/entain-immediate-ban-unlicensed-sponsorships-uk-sport/"
+  },
+  {
+    "id": "3efa33eb3eff",
+    "date": "2026-09-18",
+    "cat": "市場趨勢",
+    "vendor": "市場動態",
+    "game": "UK gambling yield up 4% to £17.5bn, as latest GC data shows growing gaming machine activity",
+    "game_en": "UK gambling yield up 4% to £17.5bn, as latest GC data shows growing gaming machine activity",
+    "summary": "Gaming machines in arcades recorded £800.1 million in GGY (up 10.7%), mainly across adult gaming centres (£761.4 million, +11.3%).",
+    "summary_en": "Gaming machines in arcades recorded £800.1 million in GGY (up 10.7%), mainly across adult gaming centres (£761.4 million, +11.3%).",
+    "stars": 4,
+    "url": "https://igamingbusiness.com/legal-compliance/uks-17-5bn-gambling-market-gc-figures/"
+  },
+  {
+    "id": "b65190d36f47",
+    "date": "2026-09-18",
+    "cat": "市場趨勢",
+    "vendor": "市場動態",
+    "game": "Top US slot games played at bet365 in August 2026",
+    "game_en": "Top US slot games played at bet365 in August 2026",
+    "summary": "Operator bet365 reveals what slot games its US players were spinning the most in August. Topping the list is Cash Eruption!",
+    "summary_en": "Operator bet365 reveals what slot games its US players were spinning the most in August. Topping the list is Cash Eruption!",
+    "stars": 3,
+    "url": "https://www.bonusfinder.com/news/casino/us-slot-games-played-at-bet365-in-august-2026"
   },
   {
     "id": "2c4c64ae8c7f",

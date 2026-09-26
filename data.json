@@ -36,6 +36,18 @@
     "url": "https://www.sagaming.com/blog/localization-is-the-key-to-unlocking-global-success-for-casino-operators"
   },
   {
+    "id": "72b7736d7cd7",
+    "date": "2026-09-26",
+    "cat": "行銷科技",
+    "vendor": "市場動態",
+    "game": "從 iPhone 到 Mac 叢集：蘋果揭露地端 AI 戰力，最高可跑 1.6 兆參數模型",
+    "game_en": "從 iPhone 到 Mac 叢集：蘋果揭露地端 AI 戰力，最高可跑 1.6 兆參數模型",
+    "summary": "蘋果近日公布地端 AI 能力矩陣，首次以裝置規格對應可承載的大型語言模型規模，從 iPhone、iPad 到 […]",
+    "summary_en": "蘋果近日公布地端 AI 能力矩陣，首次以裝置規格對應可承載的大型語言模型規模，從 iPhone、iPad 到 […]",
+    "stars": 3,
+    "url": "https://technews.tw/2026/09/26/apple-rates-m5-ultra-mac-studio-for-480b-local-llms-1-6t-clusters/"
+  },
+  {
     "id": "3e6c839a3ce6",
     "date": "2026-09-25",
     "cat": "市場趨勢",

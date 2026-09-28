@@ -1,7 +1,19 @@
 [
   {
-    "id": "4578d64bdad1",
-    "date": "2026-09-27",
+    "id": "f960ebfa2016",
+    "date": "2026-09-28",
+    "cat": "全球法規",
+    "vendor": "市場動態",
+    "game": "Brazil bans online betting as Lula signs measure to end regulated market",
+    "game_en": "Brazil bans online betting as Lula signs measure to end regulated market",
+    "summary": "Brazilian President Luiz Inácio Lula da Silva has signed a provisional measure banning fixed-odds betting and online casino games, bringing the country’s recently regulated betting market to an abrupt halt. The measure, signed on September 25, prohibits the exploitation, offering, intermediation and",
+    "summary_en": "Brazilian President Luiz Inácio Lula da Silva has signed a provisional measure banning fixed-odds betting and online casino games, bringing the country’s recently regulated betting market to an abrupt halt. The measure, signed on September 25, prohibits the exploitation, offering, intermediation and",
+    "stars": 5,
+    "url": "https://www.yogonet.com/international/news/2026/09/28/126593-brazil-bans-online-betting-as-lula-signs-measure-to-end-regulated-market"
+  },
+  {
+    "id": "3c31d7c8bd92",
+    "date": "2026-09-28",
     "cat": "市場趨勢",
     "vendor": "SA Gaming",
     "game": "Localization: the Key to Unlocking Global Success for Casino Operators",
@@ -9,7 +21,7 @@
     "summary": "Unlock global success in iGaming with effective localization. Discover strategies to enhance player engagement and boost revenue. Read more!",
     "summary_en": "Unlock global success in iGaming with effective localization. Discover strategies to enhance player engagement and boost revenue. Read more!",
     "stars": 3,
-    "url": "https://www.sagaming.com/blog/localization-is-the-key-to-unlocking-global-success-for-casino-operators%20"
+    "url": "https://www.sagaming.com/blog/localization-is-the-key-to-unlocking-global-success-for-casino-operators"
   },
   {
     "id": "7b6d8bf8141d",
@@ -22,6 +34,150 @@
     "summary_en": "過去幾年，生成式 AI 的投資熱潮席捲全球創投市場。自 ChatGPT 問世後，大量資本湧向 AI 軟體新創， […]",
     "stars": 3,
     "url": "https://technews.tw/2026/09/27/silicon-valley-sees-hard-tech-revival/"
+  },
+  {
+    "id": "3b3ba2f5c125",
+    "date": "2026-09-27",
+    "cat": "市場趨勢",
+    "vendor": "市場動態",
+    "game": "Zitro’s FANTASY cabinet arrives at Casino Buenos Aires with trio of hit games",
+    "game_en": "Zitro’s FANTASY cabinet arrives at Casino Buenos Aires with trio of hit games",
+    "summary": "Zitro has expanded the gaming floor at Casino Buenos Aires with its premium FANTASY cabinet, bringing players the exclusive titles Brave Dragon and Lion Falls, alongside the regional debut of Legendary Hammer. The post Zitro’s FANTASY cabinet arrives at Casino Buenos Aires with trio of hit games fir",
+    "summary_en": "Zitro has expanded the gaming floor at Casino Buenos Aires with its premium FANTASY cabinet, bringing players the exclusive titles Brave Dragon and Lion Falls, alongside the regional debut of Legendary Hammer. The post Zitro’s FANTASY cabinet arrives at Casino Buenos Aires with trio of hit games fir",
+    "stars": 4,
+    "url": "https://agbrief.com/news/world/27/09/2026/zitros-fantasy-cabinet-arrives-at-casino-buenos-aires-with-trio-of-hit-games/"
+  },
+  {
+    "id": "59909b2d2958",
+    "date": "2026-09-27",
+    "cat": "業界大事",
+    "vendor": "市場動態",
+    "game": "Pascal Gaming to showcase Ronaldinho titles and growing portfolio at SBC Summit 2026",
+    "game_en": "Pascal Gaming to showcase Ronaldinho titles and growing portfolio at SBC Summit 2026",
+    "summary": "Pascal Gaming will exhibit at SBC Summit Lisbon from September 29 to October 1 at the Feira Internacional de Lisboa and MEO Arena, where it will present its expanding content portfolio and global expansion plans at Stand B220. The post Pascal Gaming to showcase Ronaldinho titles and growing portfoli",
+    "summary_en": "Pascal Gaming will exhibit at SBC Summit Lisbon from September 29 to October 1 at the Feira Internacional de Lisboa and MEO Arena, where it will present its expanding content portfolio and global expansion plans at Stand B220. The post Pascal Gaming to showcase Ronaldinho titles and growing portfoli",
+    "stars": 4,
+    "url": "https://agbrief.com/news/world/27/09/2026/pascal-gaming-to-showcase-ronaldinho-titles-and-growing-portfolio-at-sbc-summit-2026/"
+  },
+  {
+    "id": "815b4b963166",
+    "date": "2026-09-27",
+    "cat": "菲律賓市場",
+    "vendor": "PAGCOR",
+    "game": "PAGCOR’s Alejandro Tengco discusses Philippine industry potential and local trade show outlook",
+    "game_en": "PAGCOR’s Alejandro Tengco discusses Philippine industry potential and local trade show outlook",
+    "summary": "In the third of a four-part series from a recent interview conducted by Inside Asian Gaming at the IAG EXPO, […]",
+    "summary_en": "In the third of a four-part series from a recent interview conducted by Inside Asian Gaming at the IAG EXPO, […]",
+    "stars": 4,
+    "url": "https://asgam.com/2026/09/28/pagcors-alejandro-tengco-discusses-philippine-industry-potential-and-local-trade-show-outlook/"
+  },
+  {
+    "id": "dafc049288fa",
+    "date": "2026-09-27",
+    "cat": "新遊戲",
+    "vendor": "市場動態",
+    "game": "LT Game debuts latest slot game “Burstin’Chillies” at Solaire",
+    "game_en": "LT Game debuts latest slot game “Burstin’Chillies” at Solaire",
+    "summary": "Macau-based gaming supplier LT Game has announced the launch of its latest slot machine game, “Burstin’Chillies,” at Manila’s Solaire Resort […]",
+    "summary_en": "Macau-based gaming supplier LT Game has announced the launch of its latest slot machine game, “Burstin’Chillies,” at Manila’s Solaire Resort […]",
+    "stars": 5,
+    "url": "https://asgam.com/2026/09/28/lt-game-debuts-latest-slot-game-burstinchillies-at-solaire/"
+  },
+  {
+    "id": "187eb078771e",
+    "date": "2026-09-27",
+    "cat": "菲律賓市場",
+    "vendor": "PAGCOR",
+    "game": "Century Entertainment insists still PAGCOR compliant despite joint venture partner losing its GSA license",
+    "game_en": "Century Entertainment insists still PAGCOR compliant despite joint venture partner losing its GSA license",
+    "summary": "Hong Kong-listed Century Entertainment International Holdings Ltd has insisted it remains compliant under Philippine gaming regulator PAGCOR’s new regulatory framework […]",
+    "summary_en": "Hong Kong-listed Century Entertainment International Holdings Ltd has insisted it remains compliant under Philippine gaming regulator PAGCOR’s new regulatory framework […]",
+    "stars": 5,
+    "url": "https://asgam.com/2026/09/28/century-entertainment-insists-still-pagcor-compliant-despite-joint-venture-partner-losing-its-gsa-license/"
+  },
+  {
+    "id": "56dbf2a1595f",
+    "date": "2026-09-27",
+    "cat": "新遊戲",
+    "vendor": "市場動態",
+    "game": "Play’n GO launches Lawn n’ Complete Disorder video slot built around Coin symbol",
+    "game_en": "Play’n GO launches Lawn n’ Complete Disorder video slot built around Coin symbol",
+    "summary": "iGaming content provider Play’n GO has released Lawn n’ Complete Disorder, a ways-to-win video slot centred on a single Coin symbol that triggers its bonus features. Set in Frank’s suburban garden, the game sees a gang of gnomes next door declare war on his lawn. Objects fly over the fence, fires br",
+    "summary_en": "iGaming content provider Play’n GO has released Lawn n’ Complete Disorder, a ways-to-win video slot centred on a single Coin symbol that triggers its bonus features. Set in Frank’s suburban garden, the game sees a gang of gnomes next door declare war on his lawn. Objects fly over the fence, fires br",
+    "stars": 5,
+    "url": "https://www.yogonet.com/international/news/2026/09/28/126554-playn-go-launches-lawn-n-complete-disorder-video-slot-built-around-coin-symbol"
+  },
+  {
+    "id": "09cdd5550db9",
+    "date": "2026-09-27",
+    "cat": "新遊戲",
+    "vendor": "市場動態",
+    "game": "Ainsworth to debut larger Raptor A865 cabinet and expanded game portfolio at G2E 2026",
+    "game_en": "Ainsworth to debut larger Raptor A865 cabinet and expanded game portfolio at G2E 2026",
+    "summary": "Ainsworth Game Technology is bringing a new exhibit, the debut of its largest Raptor cabinet to date, an expanded lineup of new games for the Raptor 65, Raptor 49, three-screen Raptor 32 and 32 Lite, and a selection of new global studio content to Global Gaming Expo (G2E) 2026. Taking place Septembe",
+    "summary_en": "Ainsworth Game Technology is bringing a new exhibit, the debut of its largest Raptor cabinet to date, an expanded lineup of new games for the Raptor 65, Raptor 49, three-screen Raptor 32 and 32 Lite, and a selection of new global studio content to Global Gaming Expo (G2E) 2026. Taking place Septembe",
+    "stars": 4,
+    "url": "https://www.yogonet.com/international/news/2026/09/25/126583-ainsworth-to-debut-larger-raptor-a865-cabinet-and-expanded-game-portfolio-at-g2e-2026"
+  },
+  {
+    "id": "c5c641f1a007",
+    "date": "2026-09-27",
+    "cat": "新遊戲",
+    "vendor": "市場動態",
+    "game": "1spin4win launches Egypt-themed Lucky Foxilian Hold and Win slot",
+    "game_en": "1spin4win launches Egypt-themed Lucky Foxilian Hold and Win slot",
+    "summary": "iGaming content provider 1spin4win has released Lucky Foxilian Hold and Win, an Egypt-themed slot that pairs a treasure-hunt storyline with the Hold and Win Bonus round. The title will be the centerpiece of the company&#39;s Stand B239 at SBC Summit 2026 in Lisbon. The game&#39;s lead character, Fox",
+    "summary_en": "iGaming content provider 1spin4win has released Lucky Foxilian Hold and Win, an Egypt-themed slot that pairs a treasure-hunt storyline with the Hold and Win Bonus round. The title will be the centerpiece of the company&#39;s Stand B239 at SBC Summit 2026 in Lisbon. The game&#39;s lead character, Fox",
+    "stars": 5,
+    "url": "https://www.yogonet.com/international/news/2026/09/28/126569-1spin4win-launches-egyptthemed-lucky-foxilian-hold-and-win-slot"
+  },
+  {
+    "id": "261bd3fe470f",
+    "date": "2026-09-27",
+    "cat": "業界大事",
+    "vendor": "市場動態",
+    "game": "Penn and NASCAR break ground on hotel adjacent to Hollywood Casino at Kansas Speedway",
+    "game_en": "Penn and NASCAR break ground on hotel adjacent to Hollywood Casino at Kansas Speedway",
+    "summary": "Kansas Entertainment, a joint venture between PENN Entertainment and NASCAR, hosted a groundbreaking ceremony on Friday for a new boutique hotel adjacent to Hollywood Casino at Kansas Speedway. The hotel will be affiliated with the Tribute Portfolio, part of Marriott Bonvoy, and will be financed, de",
+    "summary_en": "Kansas Entertainment, a joint venture between PENN Entertainment and NASCAR, hosted a groundbreaking ceremony on Friday for a new boutique hotel adjacent to Hollywood Casino at Kansas Speedway. The hotel will be affiliated with the Tribute Portfolio, part of Marriott Bonvoy, and will be financed, de",
+    "stars": 4,
+    "url": "https://www.yogonet.com/international/news/2026/09/25/126581-penn-and-nascar-break-ground-on-hotel-adjacent-to-hollywood-casino-at-kansas-speedway"
+  },
+  {
+    "id": "14f641e43c18",
+    "date": "2026-09-27",
+    "cat": "行銷科技",
+    "vendor": "市場動態",
+    "game": "AI Agents Secretly Colluded to Count Cards in Blackjack Experiment",
+    "game_en": "AI Agents Secretly Colluded to Count Cards in Blackjack Experiment",
+    "summary": "Artificial intelligence agents successfully used coded table talk to secretly share card-counting information during blackjack games in a new study that effectively recreated the methods of traditional blackjack teams. AI agents are systems designed to perform tasks and make decisions with a degree",
+    "summary_en": "Artificial intelligence agents successfully used coded table talk to secretly share card-counting information during blackjack games in a new study that effectively recreated the methods of traditional blackjack teams. AI agents are systems designed to perform tasks and make decisions with a degree ",
+    "stars": 3,
+    "url": "https://www.casino.org/news/ai-agents-secretly-colluded-to-count-cards-in-blackjack-experiment/"
+  },
+  {
+    "id": "27e0f0d156cd",
+    "date": "2026-09-27",
+    "cat": "全球法規",
+    "vendor": "市場動態",
+    "game": "Hacker Behind Curaçao ‘Casino Secrets’ Leak Wins MGA Court Battle",
+    "game_en": "Hacker Behind Curaçao ‘Casino Secrets’ Leak Wins MGA Court Battle",
+    "summary": "A German activist and hacker who breached the systems of the gaming authorities of Malta and Curaçao said Friday (September 25) that a new court judgment allows her to use documents she obtained from the Malta hack. Lilith Wittmann told followers on X that the Berlin Regional Court II ruling also al",
+    "summary_en": "A German activist and hacker who breached the systems of the gaming authorities of Malta and Curaçao said Friday (September 25) that a new court judgment allows her to use documents she obtained from the Malta hack. Lilith Wittmann told followers on X that the Berlin Regional Court II ruling also al",
+    "stars": 4,
+    "url": "https://www.casino.org/news/hacker-behind-curacao-casino-secrets-leak-wins-mga-court-battle/"
+  },
+  {
+    "id": "df51761b0ed2",
+    "date": "2026-09-27",
+    "cat": "市場趨勢",
+    "vendor": "市場動態",
+    "game": "Stefan Williams, The Pools, on Goal Rush: ‘Subscribers have higher player value and much lower churn’",
+    "game_en": "Stefan Williams, The Pools, on Goal Rush: ‘Subscribers have higher player value and much lower churn’",
+    "summary": "In an interview with European Gaming, Stefan Williams, senior product manager at The Pools, explains how Goal Rush… The post Stefan Williams, The Pools, on Goal Rush: ‘Subscribers have higher player value and much lower churn’ appeared first on European Gaming Industry News.",
+    "summary_en": "In an interview with European Gaming, Stefan Williams, senior product manager at The Pools, explains how Goal Rush… The post Stefan Williams, The Pools, on Goal Rush: ‘Subscribers have higher player value and much lower churn’ appeared first on European Gaming Industry News.",
+    "stars": 4,
+    "url": "https://europeangaming.eu/portal/interviews/2026/09/27/214822/stefan-williams-the-pools-interview/"
   },
   {
     "id": "6aa5b334c141",

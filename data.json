@@ -1,5 +1,17 @@
 [
   {
+    "id": "4578d64bdad1",
+    "date": "2026-10-11",
+    "cat": "市場趨勢",
+    "vendor": "SA Gaming",
+    "game": "Localization: the Key to Unlocking Global Success for Casino Operators",
+    "game_en": "Localization: the Key to Unlocking Global Success for Casino Operators",
+    "summary": "Unlock global success in iGaming with effective localization. Discover strategies to enhance player engagement and boost revenue. Read more!",
+    "summary_en": "Unlock global success in iGaming with effective localization. Discover strategies to enhance player engagement and boost revenue. Read more!",
+    "stars": 3,
+    "url": "https://www.sagaming.com/blog/localization-is-the-key-to-unlocking-global-success-for-casino-operators%20"
+  },
+  {
     "id": "a336cfd07be7",
     "date": "2026-10-10",
     "cat": "行銷科技",
@@ -12,16 +24,100 @@
     "url": "https://finance.technews.tw/2026/10/10/higher-market-share-more-losses-ai-agent-portals-openai-meta-goldmine-money-pit/"
   },
   {
-    "id": "3c31d7c8bd92",
+    "id": "8193be4cc311",
     "date": "2026-10-10",
     "cat": "市場趨勢",
-    "vendor": "SA Gaming",
-    "game": "Localization: the Key to Unlocking Global Success for Casino Operators",
-    "game_en": "Localization: the Key to Unlocking Global Success for Casino Operators",
-    "summary": "Unlock global success in iGaming with effective localization. Discover strategies to enhance player engagement and boost revenue. Read more!",
-    "summary_en": "Unlock global success in iGaming with effective localization. Discover strategies to enhance player engagement and boost revenue. Read more!",
+    "vendor": "市場動態",
+    "game": "Las Vegas Sands CEO Patrick Dumont says better economic relations between US and China would benefit all",
+    "game_en": "Las Vegas Sands CEO Patrick Dumont says better economic relations between US and China would benefit all",
+    "summary": "Las Vegas Sands (LVS) Chairman and CEO Patrick Dumont has called on the United States and China to sort out […]",
+    "summary_en": "Las Vegas Sands (LVS) Chairman and CEO Patrick Dumont has called on the United States and China to sort out […]",
     "stars": 3,
-    "url": "https://www.sagaming.com/blog/localization-is-the-key-to-unlocking-global-success-for-casino-operators"
+    "url": "https://asgam.com/2026/10/11/las-vegas-sands-ceo-patrick-dumont-says-better-economic-relations-between-us-and-china-would-benefit-all/"
+  },
+  {
+    "id": "57d9e3d18963",
+    "date": "2026-10-10",
+    "cat": "市場趨勢",
+    "vendor": "市場動態",
+    "game": "Macau’s Chief Executive says no consideration given to lowering this year’s GGR forecast",
+    "game_en": "Macau’s Chief Executive says no consideration given to lowering this year’s GGR forecast",
+    "summary": "Macau’s gross gaming revenue (GGR) has suffered year-on-year declines for the past four months in a row, however Macau’s Chief […]",
+    "summary_en": "Macau’s gross gaming revenue (GGR) has suffered year-on-year declines for the past four months in a row, however Macau’s Chief […]",
+    "stars": 3,
+    "url": "https://asgam.com/2026/10/11/macaus-chief-executive-says-no-consideration-given-to-lowering-this-years-ggr-forecast/"
+  },
+  {
+    "id": "3be84426b229",
+    "date": "2026-10-10",
+    "cat": "市場趨勢",
+    "vendor": "市場動態",
+    "game": "Caesars Virginia Opens Visitors Center to Drive Guests to Local Businesses",
+    "game_en": "Caesars Virginia Opens Visitors Center to Drive Guests to Local Businesses",
+    "summary": "Caesars Virginia has opened a visitors center inside the casino resort that’s dedicated to promoting local business in Danville. When Caesars Entertainment bid for the Danville casino opportunity, the casino giant pledged to be a community partner by boosting local tax revenue and serving as a catal",
+    "summary_en": "Caesars Virginia has opened a visitors center inside the casino resort that’s dedicated to promoting local business in Danville. When Caesars Entertainment bid for the Danville casino opportunity, the casino giant pledged to be a community partner by boosting local tax revenue and serving as a catal",
+    "stars": 3,
+    "url": "https://www.casino.org/news/caesars-virginia-opens-visitors-center-drive-guests-local-businesses/"
+  },
+  {
+    "id": "b7e09e621b9b",
+    "date": "2026-10-10",
+    "cat": "市場趨勢",
+    "vendor": "市場動態",
+    "game": "Stake’s Brazil Return Comes With 12 Court-Ordered Conditions",
+    "game_en": "Stake’s Brazil Return Comes With 12 Court-Ordered Conditions",
+    "summary": "Stake Brazil injunction restores operations until October 25, but imposes 12 conditions and leaves the operator’s longer-term licence unresolved. The post Stake’s Brazil Return Comes With 12 Court-Ordered Conditions appeared first on CasinoBeats.",
+    "summary_en": "Stake Brazil injunction restores operations until October 25, but imposes 12 conditions and leaves the operator’s longer-term licence unresolved. The post Stake’s Brazil Return Comes With 12 Court-Ordered Conditions appeared first on CasinoBeats.",
+    "stars": 4,
+    "url": "https://casinobeats.com/2026/10/10/stake-brazil-injunction/"
+  },
+  {
+    "id": "1d4aef8f4a6c",
+    "date": "2026-10-10",
+    "cat": "市場趨勢",
+    "vendor": "市場動態",
+    "game": "Federal-State Divide Sharpens Over Sports Event Contracts",
+    "game_en": "Federal-State Divide Sharpens Over Sports Event Contracts",
+    "summary": "The CFTC excludes casino-style wagers from swaps while seeking federal oversight of event contracts tied to sports, politics and weather. The post Federal-State Divide Sharpens Over Sports Event Contracts appeared first on CasinoBeats.",
+    "summary_en": "The CFTC excludes casino-style wagers from swaps while seeking federal oversight of event contracts tied to sports, politics and weather. The post Federal-State Divide Sharpens Over Sports Event Contracts appeared first on CasinoBeats.",
+    "stars": 4,
+    "url": "https://casinobeats.com/2026/10/10/event-contracts-cftc-rule/"
+  },
+  {
+    "id": "ec69e5f7b8d6",
+    "date": "2026-10-10",
+    "cat": "市場趨勢",
+    "vendor": "市場動態",
+    "game": "EU iGaming weekly: Jumpman RGD win, ICE deal, Sportradar’s Synergy sale",
+    "game_en": "EU iGaming weekly: Jumpman RGD win, ICE deal, Sportradar’s Synergy sale",
+    "summary": "Jumpman Gaming won its appeal against £13.2 million in HMRC duty assessments, Informa agreed to buy ICE owner… The post EU iGaming weekly: Jumpman RGD win, ICE deal, Sportradar’s Synergy sale appeared first on European Gaming Industry News.",
+    "summary_en": "Jumpman Gaming won its appeal against £13.2 million in HMRC duty assessments, Informa agreed to buy ICE owner… The post EU iGaming weekly: Jumpman RGD win, ICE deal, Sportradar’s Synergy sale appeared first on European Gaming Industry News.",
+    "stars": 5,
+    "url": "https://europeangaming.eu/portal/latest-news/2026/10/10/215733/eu-igaming-weekly-jumpman-rgd-informa-ice-sportradar-synergy/"
+  },
+  {
+    "id": "3d18f69ffa61",
+    "date": "2026-10-10",
+    "cat": "市場趨勢",
+    "vendor": "市場動態",
+    "game": "AI 設計抗體實測出爐：最佳化既有抗體成效最佳，從零設計仍需實驗把關",
+    "game_en": "AI 設計抗體實測出爐：最佳化既有抗體成效最佳，從零設計仍需實驗把關",
+    "summary": "人工智慧（AI）正逐步改變新藥研發方式，改良治療用抗體正是最受期待的應用之一。抗體是能辨識特定標的的蛋白質，已 […]",
+    "summary_en": "人工智慧（AI）正逐步改變新藥研發方式，改良治療用抗體正是最受期待的應用之一。抗體是能辨識特定標的的蛋白質，已 […]",
+    "stars": 3,
+    "url": "https://technews.tw/2026/10/10/ai-and-therapeutic-antibody-design/"
+  },
+  {
+    "id": "5f6dbdad24df",
+    "date": "2026-10-10",
+    "cat": "行銷科技",
+    "vendor": "市場動態",
+    "game": "破解機器人訓練資料荒，世界模型可在虛擬環境生成無限練習經驗",
+    "game_en": "破解機器人訓練資料荒，世界模型可在虛擬環境生成無限練習經驗",
+    "summary": "在大型語言模型（LLM）持續擴張應用版圖之際，科技界對「世界模型」（World Models）的關注度正快速升 […]",
+    "summary_en": "在大型語言模型（LLM）持續擴張應用版圖之際，科技界對「世界模型」（World Models）的關注度正快速升 […]",
+    "stars": 3,
+    "url": "https://technews.tw/2026/10/10/exploring-world-models-embodied-ai/"
   },
   {
     "id": "cb03a50983a4",
@@ -958,6 +1054,18 @@
     "summary_en": "最新觀點指出，智慧型手機、社群媒體與生成式 AI 對人類的影響，早已超越單純的「讓人分心」，而是正在化學層面上 […]",
     "stars": 3,
     "url": "https://technews.tw/2026/10/10/technology-reshapes-brain/"
+  },
+  {
+    "id": "06628f7949dc",
+    "date": "2026-10-09",
+    "cat": "行銷科技",
+    "vendor": "市場動態",
+    "game": "AI a service enhancer, not a staff replacer: Las Vegas Sands CEO",
+    "game_en": "AI a service enhancer, not a staff replacer: Las Vegas Sands CEO",
+    "summary": "Las Vegas Sands Corp is using artificial intelligence (AI) to improve customer engagement and operational efficiency, but sees the technology as supporting rather than replacing the people delivering service at its resorts, says chairman and chief executive Patrick Dumont. “We are a human capital bu",
+    "summary_en": "Las Vegas Sands Corp is using artificial intelligence (AI) to improve customer engagement and operational efficiency, but sees the technology as supporting rather than replacing the people delivering service at its resorts, says chairman and chief executive Patrick Dumont. “We are a human capital bu",
+    "stars": 3,
+    "url": "https://www.ggrasia.com/ai-a-service-enhancer-not-a-staff-replacer-las-vegas-sands-ceo?utm_source=rss&utm_medium=rss&utm_campaign=ai-a-service-enhancer-not-a-staff-replacer-las-vegas-sands-ceo"
   },
   {
     "id": "668fa8f41595",
